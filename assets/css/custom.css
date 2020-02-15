@@ -1,8 +1,7 @@
+
 body {
     font: 300 15px/28px "Poppins",sans-serif;
-    color: #707070;
-}
-body {
+    color: #73738c;
     letter-spacing: 0px;
     padding: 0;
     overflow-x: hidden;
@@ -651,7 +650,7 @@ a.popup-youtube .fa {
     background:#ffffff;
 }
 .banner_btn {
-    font: 500 15px "Poppins",sans-serif;
+    font: 500 16px "Poppins",sans-serif;
     -webkit-box-shadow: 0px 20px 30px 0px rgba(12,0,46,.1);
     box-shadow: 0px 20px 30px 0px rgba(12,0,46,.1);
     border-radius: 4px;
@@ -724,12 +723,12 @@ img.vfit {
   width:100%;
 }
 .title_spc{
-  padding-bottom:50px;
+  padding-bottom:60px;
 }
 /*content benefit*/
 .content_benefits h6{
-  color:#181818;
-  font-size:18px;
+  color:#4a5269;
+  font-size:20px;
   padding-bottom:10px;
 }
 .outline-round{
@@ -775,7 +774,7 @@ img.vfit {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    padding: 25px 15px;
+    padding: 20px 15px;
     margin-bottom:30px;
     cursor:pointer;
 }
@@ -800,8 +799,8 @@ img.vfit {
 }
 .left-activity{
     padding-right: 0px;
-    max-width: 29%;
-    margin-left: 50px;
+    max-width: 20%;
+    margin-left: 15%;
     margin-top:85px;
     position: relative;
     right: -8px;
@@ -812,18 +811,27 @@ img.vfit {
 }
 .right-activity{
     padding-left: 0px;
-    max-width: 29%;
-    margin-right: 50px;
+    max-width: 20%;
+    margin-right: 15%;
     margin-top:85px;
     position: relative;
     left: -8px;
 }
 .vc_active{
   color:#F15162;
-  font-weight:500;
+  font-weight:400;
+  font-size:18px;
 }
 .title_second h3{
-  color:#181818;
+  color:#282835;
+  font-size:35px;
+  font-weight:500;
+}
+.title_second h3 span{
+  font-weight:300;
+}
+.healthforce p{
+  font-size:16px;
 }
 .title_second {
   padding:60px 0px;
@@ -979,14 +987,22 @@ select:focus, textarea:focus {
 .page-template .title_head{
   font-size:40px;
   color:#2c2d4f;
-  font-weight:700;
+  font-weight:600;
 }
 .page-template .title_head span {
     font-weight: 400;
 }
 
 /*request demo ends*/
-
+.secondarytext{
+  color:#4a5269;
+}
+.vc_active:hover{
+  text-decoration:underline;
+}
+.vc_active:hover span{
+  text-decoration:none;
+  }
 
 
 
