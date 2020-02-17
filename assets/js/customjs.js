@@ -36,15 +36,13 @@
         $('.offcanfas_menu .dropdown').on('hide.bs.dropdown', function(e){
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500);
         });
-        $(".box_item").find(".first-image").addClass("activebox");
         $(".box_item").hover(function() {
            $(".mid-activity").find(".active-img").removeClass("active-img");
            $(".features").find(".active-sec").removeClass("active-sec");
             $('#' + $(this).attr('data-img') + ' ' +'img').addClass("active-img");
             $(this).addClass("active-sec");
-            $(this).find(".second-image").addClass("activebox");
 
-            $(this).find(".first-image").removeClass("activebox");
+            
     
         });
             

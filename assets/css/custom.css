@@ -1056,11 +1056,13 @@ select:focus, textarea:focus {
   position:relative;
   bottom:-40px;
 }
-.first-image.activebox,
-.second-image.activebox{
-  display: block;
+.second-image{
+  display:none;
 }
-.second-image,.first-image{
+.active-sec .second-image{
+  display:inline-block;
+}
+.active-sec .first-image{
   display:none;
 }
 /*request demo ends*/
