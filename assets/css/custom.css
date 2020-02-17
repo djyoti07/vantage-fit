@@ -934,6 +934,18 @@ img.vfit {
     -o-transform: translateY(-2px);
     transform: translateY(-2px);
 }
+.image-content div {
+  font-weight:600;
+  margin-bottom:10px;
+  }
+.image-content img {
+    width: 30px;
+    padding-right:10px;
+}
+.healthyworkforce img{
+  position:relative;
+  bottom:-26px;
+}
 /*request demo*/
 label {
     width: 100%;
