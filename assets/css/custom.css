@@ -127,7 +127,7 @@ p{
     transition: color .2s linear;
 }
 .footer_bottom p a {
-    color: #707070;
+    color: rgba(255, 255, 255, 0.8);
     -webkit-transition: color .2s linear;
     -o-transition: color .2s linear;
     transition: color .2s linear;
@@ -1072,6 +1072,16 @@ select:focus, textarea:focus {
 }
 .transform.button-black span {
     display: block;
+}
+.linkstore {
+    padding: 17px;
+    border: 1px solid #282835;
+    margin-right: 10px;
+    border-radius: 4px;
+    display:inline;
+}
+.linkstore img {
+    width: 30%;
 }
 /*request demo ends*/
 .secondarytext{
