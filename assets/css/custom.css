@@ -661,12 +661,18 @@ a.popup-youtube .fa {
     cursor: pointer;
 }
 .banner_btn:hover,
-.icons:hover {
+.icons:hover,
+.transform:hover {
     -webkit-transform: translateY(-2px);
     -moz-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     -o-transform: translateY(-2px);
     transform: translateY(-2px);
+}
+.transform{
+  -webkit-transition: all .2s linear; 
+  -o-transition: all .2s linear;
+   transition: all .2s linear;
 }
 .white_button{
   border:1px solid #ffffff;
@@ -859,11 +865,12 @@ img.vfit {
     margin-bottom:30px;
 }
 .guide{
-    background:#D7D6D7;
-    font-size:14px;
+    background:transparent;
+    font-size:15px;
     margin-bottom:15px;
-    padding:3px 5px;
+    padding:3px 10px;
     color:#ffffff;
+    font-weight:500;
 }
 .outline-round-li{
   list-style:none;
@@ -1022,7 +1029,30 @@ select:focus, textarea:focus {
 .page-template .title_head span {
     font-weight: 400;
 }
-
+.button-black a{
+    background: transparent;
+    color: #282835;
+    border: 1px solid #282835;
+    font: 500 16px "Poppins",sans-serif;
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(12,0,46,.1);
+    box-shadow: 0px 20px 30px 0px rgba(12,0,46,.1);
+    border-radius: 4px;
+    padding: 18px 43px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.wellness-background{
+  background-image:url("https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/orange-background-ebook.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 430px;
+}
+.downloadbook{
+  position:relative;
+  bottom:-40px;
+}
 /*request demo ends*/
 .secondarytext{
   color:#4a5269;
