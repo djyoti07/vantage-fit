@@ -819,7 +819,7 @@ img.vfit {
     padding-right: 0px;
     max-width: 22%;
     margin-left: 13%;
-    margin-top:85px;
+    margin-top:135px;
     position: relative;
     right: -8px;
 }
@@ -833,11 +833,14 @@ img.vfit {
   padding:0px;
   z-index:9;
 }
+.mid-activity{
+  max-width:29%;
+}
 .right-activity{
     padding-left: 0px;
     max-width: 22%;
     margin-right: 13%;
-    margin-top:85px;
+    margin-top:135px;
     position: relative;
     left: -8px;
 }
@@ -1052,6 +1055,13 @@ select:focus, textarea:focus {
 .downloadbook{
   position:relative;
   bottom:-40px;
+}
+.first-image.activebox,
+.second-image.activebox{
+  display: block;
+}
+.second-image,.first-image{
+  display:none;
 }
 /*request demo ends*/
 .secondarytext{
