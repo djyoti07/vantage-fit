@@ -89,10 +89,7 @@
 	.row_elementor{
 		display:grid;
 	}
-	.column-change{
-		display: flex;
-    	flex-direction: column-reverse;
-	}
+	
 	section.section_space {
 	    padding: 35px 0px 0px 0px;
 	}
@@ -103,7 +100,7 @@
 	.title_spc {
 	    padding-bottom: 20px;
 	}
-	.outline-round {
+	.outline-round:last-child {
 	    margin-bottom: 0px;
 	}
 	.box_item div, .box_item h6{
@@ -121,6 +118,35 @@
 	}
 	.image-fit{
 	  padding-top:0px;
+	}
+	.active-sec .second-image {
+	    display: none;
+	}
+	.featurestext{
+		text-align:center;
+	}
+	.linkstore{
+		padding:7px;
+	}
+	.linkstore img {
+	    width: 35%;
+	}
+	.title_second {
+	    padding: 50px 0px;
+	}
+	.image-change img{
+		margin-bottom:30px;
+	}
+	.wellness-background{
+		background-image: -moz-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  		background-image: -webkit-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  		background-image: -ms-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  		min-height:290px;
+  		height:auto;
+  
+	}
+	.section_space.mob-section{
+		padding-top:10px;
 	}
 			
 
@@ -187,6 +213,10 @@
 	.hidden-xs{
 		display:none;
 	}
+	.column-change{
+		display: flex;
+    	flex-direction: column-reverse;
+	}
 	
 	
 }
@@ -203,6 +233,24 @@
 		margin-top:10px;
 		display:block;
 		margin-bottom:15px;
+	}
+	.ipadcolumn-change{
+		display: flex;
+    	flex-direction: column-reverse;
+	}
+	.page-template .title_head{
+		margin-bottom:35px;
+	}
+	.downloadbook {
+	    width: 61%;
+	    position: relative;
+	    bottom: -13px;
+	    padding: 20px 0px;
+	}
+}
+@media and (min-width:768px) and (max-width:1024px){
+	.hidden-sm{
+		display:none;
 	}
 }
 @media only screen and (min-width:1024px) and (max-width:1200px){
