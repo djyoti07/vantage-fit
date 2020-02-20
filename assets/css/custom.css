@@ -932,6 +932,7 @@ img.vfit {
 }
 .main_title{
   color:#ffffff;
+  font-size:50px;
 }
 .main-content{
   padding:120px 0px;
@@ -1061,15 +1062,40 @@ select:focus, textarea:focus {
     box-shadow: 0px 20px 30px 0px rgba(12,0,46,.1);
 }
 .wellness-background{
-  background-image:url("https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/orange-background-ebook.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
-  height: 430px;
+  background-image: -moz-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  position:relative;
+}
+.welness-bottom{
+  background-image: -moz-linear-gradient( 0deg, rgba(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  opacity:.3;
+  min-height: 70px; 
+}
+.images-wellness img{
+  position:absolute;
+}
+.images-wellness .img-1 {
+    top: 0px;
+    left:10%;
+}
+.images-wellness .img-2 {
+    top: 35px;
+    right:13%;
+}
+.images-wellness .img-3 {
+    bottom: 0px;
+}
+.images-wellness .img-4 {
+    bottom: 25px;
+    right:6%;
 }
 .downloadbook{
   position:relative;
   bottom:-40px;
+  z-index:9;
 }
 .second-image{
   display:none;

@@ -132,19 +132,12 @@
 	    width: 35%;
 	}
 	.title_second {
-	    padding: 50px 0px;
+	    padding: 40px 0px;
 	}
 	.image-change img{
 		margin-bottom:30px;
 	}
-	.wellness-background{
-		background-image: -moz-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
-  		background-image: -webkit-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
-  		background-image: -ms-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
-  		min-height:290px;
-  		height:auto;
-  
-	}
+
 	.section_space.mob-section{
 		padding-top:10px;
 	}
@@ -244,7 +237,15 @@
 	.request-demo-form{
 		width:100%;
 	}
-	
+	.downloadbook{
+		width:85%;
+	}
+	.wellness-background .transform {
+	    margin-bottom: 40px;
+	}
+	.text-right.mob-pull{
+		text-align:center!important;
+	}
 	
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
@@ -271,13 +272,18 @@
 	.downloadbook {
 	    width: 61%;
 	    position: relative;
-	    bottom: -13px;
 	    padding: 20px 0px;
 	}
 }
-@media and (min-width:768px) and (max-width:1024px){
-	.hidden-sm{
+@media only screen and  (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+	.hidden-sml{
 		display:none;
+	}
+	.left-activity,.right-activity{
+		margin-top:70px;
+	}
+	.featurestext h6{
+		font-size:14px;
 	}
 }
 @media only screen and (min-width:1024px) and (max-width:1200px){
