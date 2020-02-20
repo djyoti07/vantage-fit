@@ -153,6 +153,9 @@
 }
 @media (min-width: 1250px){
 	.container {
+	    max-width: 1370px;
+	}
+	.container.custom-container {
 	    max-width: 1200px;
 	}
 }
