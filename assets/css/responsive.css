@@ -70,7 +70,7 @@
 	    padding-bottom:0px;
 	}
 	.wellnessprogram p{
-	  	padding:20px 0px 0px;
+	  	padding:0px;
 	}
 	.title_head{
 		font-size:20px;
@@ -107,7 +107,7 @@
 		padding-left:0px;
 	}
 	.default-spc {
-	    margin-top: 30px;
+	    margin-top: 10px;
 	    margin-bottom: 20px;
 	}
 	.page-template .title_head {
@@ -148,7 +148,16 @@
 	.section_space.mob-section{
 		padding-top:10px;
 	}
-			
+	.featurestext{
+		width:100%;
+	}
+	.box_item.active-sec{
+		box-shadow: 0px 3px 10.92px 1.08px rgba(0, 0, 0, 0.07);
+	}
+	.wellnessprogram {
+	    padding-top: 0px;
+	}
+				
 
 }
 @media (min-width: 1250px){
@@ -191,7 +200,7 @@
 	    margin-bottom: 16px;
 	}
 	.banner_btn{
-		padding: 10px 13px;
+		padding: 10px 13px!important;
     	font-size: 12px;
 	}
 	.header_area .navbar .navbar-nav .menu-item{
@@ -220,6 +229,21 @@
 		display: flex;
     	flex-direction: column-reverse;
 	}
+	.content_benefits h6{
+		font-size:17px;
+	}
+	.breadcrumb_area_two{
+		padding:127px 0 67px;
+	}
+	.breadcrumb_content h1 {
+	    font-size: 20px;
+	}
+	.main-content {
+	    padding: 50px 0px;
+	}
+	.request-demo-form{
+		width:100%;
+	}
 	
 	
 }
@@ -242,7 +266,7 @@
     	flex-direction: column-reverse;
 	}
 	.page-template .title_head{
-		margin-bottom:35px;
+		margin-bottom:10px;
 	}
 	.downloadbook {
 	    width: 61%;
