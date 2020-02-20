@@ -1078,7 +1078,7 @@ select:focus, textarea:focus {
   position:absolute;
 }
 .images-wellness .img-1 {
-    top: 0px;
+    top: -4px;
     left:10%;
 }
 .images-wellness .img-2 {
@@ -1086,10 +1086,10 @@ select:focus, textarea:focus {
     right:13%;
 }
 .images-wellness .img-3 {
-    bottom: 0px;
+    bottom: -4px;
 }
 .images-wellness .img-4 {
-    bottom: 25px;
+    bottom: 55px;
     right:6%;
 }
 .downloadbook{
@@ -1176,4 +1176,23 @@ h6.moodmeter {
     margin-top: 12px;
 }
 */
+
+
+/*404*/
+.error_area {
+    background-image: -moz-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(250,105,103) 0%, rgb(245,103,101) 1%, rgb(237,106,88) 100%);
+ display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 650px;
+    color:#ffffff;
+}
 
