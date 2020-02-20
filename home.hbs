@@ -116,12 +116,12 @@ into the {body} of the default.hbs template --}}
         <div class="row_elementor">
           <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 hidden-xs hidden-sm">
             <div class="wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s; animation-name: fadeInLeft;"> 
-              <img class="img-responsive image-fit" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/increase-employee-engagement.png" alt="engagement">
+              <img class="img-responsive" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/increase-employee-engagement.png" alt="engagement">
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 content_benefits ">
               <div class="wow fadeInRight animated outline-round" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s; animation-name: fadeInRight;">
-                <div class="rel_text">
+                <div class="rel_text mb-20">
                   <h6 >Promote Healthy Habits</h6>
                   <p>Every great thing begins with adopting healthy habits, and workplace wellness programs are specially designed for this purpose. By initiating a wellness program in your organization, you can help your employees develop healthy habits and transform their lifestyles both at home and work.</p>
                 </div>
@@ -317,7 +317,7 @@ into the {body} of the default.hbs template --}}
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInRight animated animated text-center image-change" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
-          <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/admindashboard.png" alt="admindashboard" class="img-responsive">
+          <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/admindashboard.png" alt="admindashboard" class="img-responsive image-fit">
         </div>
         </div>
       </div>
@@ -351,12 +351,12 @@ into the {body} of the default.hbs template --}}
   <!--12 week campaign-->
   <section class="section_space" >
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align_items_center">
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInLeft animated animated text-center" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
           <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/12-week-campaign.png" alt="campaign" class="img-responsive">
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
-          <h2 class="title_head default-spc"><span>12 week</span><br> campaign</h2>
+          <h2 class="title_head default-spc"><span>12 Week</span><br> Campaign</h2>
           <p>Creating wellness challenges is a walk in the park with Vantage Fit’s 12-week Campaign feature, which allows you to focus on a different aspect of health every week for 12 weeks. With highly customizable campaigns, every week is part of a journey towards a healthier lifestyle.</p>
         </div>
         
@@ -388,14 +388,66 @@ into the {body} of the default.hbs template --}}
   </div>
   </section>
   
+  <!--test
 
+<div class="progressbar" data-animate="false">
+    <div class="circle" data-percent="91">
+        <div></div>
+    </div>
+</div>
+<div class="progressbar" data-animate="false">
+    <div class="circle" data-percent="61">
+        <div></div>
+    </div>
+</div>
+<div class="progressbar" data-animate="false">
+    <div class="circle" data-percent="22">
+        <div></div>
+    </div>
+</div>
+<div class="progressbar" data-animate="false">
+    <div class="circle" data-percent="49">
+        <div></div>
+    </div>
+</div>
 
+-->
 
 	
 <!--{{content}}-->
 </div>
 {{/page}}
 <script>
+/*$(document).ready(function ($) {
+    function animateElements() {
+        $('.progressbar').each(function () {
+            var elementPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            var percent = $(this).find('.circle').attr('data-percent');
+            var percentage = parseInt(percent, 10) / parseInt(100, 10);
+            var animate = $(this).data('animate');
+            if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                $(this).data('animate', true);
+                $(this).find('.circle').circleProgress({
+                    startAngle: -Math.PI / 2,
+                    value: percent / 100,
+                    thickness: 5,
+                    fill: {
+                        color: '#05c8ad'
+                    }
+                }).on('circle-animation-progress', function (event, progress, stepValue) {
+                    $(this).find('div').text((stepValue*100).toFixed(1) + "%");
+                }).stop();
+            }
+        });
+    }
+
+    // Show animated elements
+    animateElements();
+    $(window).scroll(animateElements);
+});
+*/
+
 
 (function($) {
   $.fn.circleGraphic = function(options) {
@@ -410,7 +462,7 @@ into the {body} of the default.hbs template --}}
       var percentage = $(this).find('.circle').attr('data-percent');
       //var percentage = $this.html();
       var ID = "c" + percentage + Math.random();
-      $this.append("<canvas id='" + ID + "'></canvas>");
+      $this.append("<canvas width='200' height='200' id='" + ID + "'></canvas>");
       var canvas = document.getElementById(ID),
       context = canvas.getContext('2d');
       var Width = $this.width();
@@ -426,7 +478,7 @@ into the {body} of the default.hbs template --}}
 
       function drawTrackArc() {
         context.beginPath();
-        context.strokeStyle = '#ECECEC';
+        context.strokeStyle = '#ecfdfb';
         context.lineWidth = 7;
         context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (endAngle * 360 + 270), false);
         context.stroke();
@@ -440,7 +492,7 @@ into the {body} of the default.hbs template --}}
         context.strokeStyle = color;
         context.lineWidth = 7;
 
-        context.font = '70px Poppins,sans-serif';
+        context.font = '300 70px Poppins,sans-serif';
         context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (angle * 360 - 90), false);
         context.stroke();
         context.closePath();
@@ -454,10 +506,11 @@ into the {body} of the default.hbs template --}}
         var textWidth = metrics.width;
         var xPos = Width / 2 - textWidth / 2,
           yPos = Height / 2 + textWidth / 2;
-          console.log(xPos);
+          console.log(context);
           console.log(yPos);
-
-        context.fillText(angle + "%", 79, 160);
+          context.textAlign ='center';
+          context.direction = 'ltr'
+        context.fillText(angle + "%", 137, 157);
       }
 
       function drawACircleInTheEnd() {

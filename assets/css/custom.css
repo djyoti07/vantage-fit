@@ -682,6 +682,10 @@ a.popup-youtube .fa {
   border:1px solid #ffffff;
   color:#F15162;
 }
+.mb-20{
+  margin-top:20px;
+}
+
 .mb_40 {
     margin-top: 40px;
     margin-bottom:40px;
@@ -693,7 +697,9 @@ section.section_space {
   width:75%;
   margin-top:45px;
 }
-
+.align_items_center{
+  align-items: center;
+}
 /*progress bar */
 
 /*
@@ -778,9 +784,9 @@ img.vfit {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 15px;
-    -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 3px 10.92px 1.08px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 3px 10.92px 1.08px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 3px 10.92px 1.08px rgba(0, 0, 0, 0.07);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     padding: 20px 15px;
@@ -788,7 +794,11 @@ img.vfit {
     cursor:pointer;
     min-height:80px;
 }
-
+.box_item.active-sec{
+   -webkit-box-shadow:  0px 3px 10.92px 1.08px rgba(248, 104, 92, 0.19);
+    -moz-box-shadow:  0px 3px 10.92px 1.08px rgba(248, 104, 92, 0.19);
+    box-shadow:  0px 3px 10.92px 1.08px rgba(248, 104, 92, 0.19);
+}
 .Image-Overlay{
   display:none;
 }
@@ -798,7 +808,7 @@ img.vfit {
 .featurestext{
   display:inline;
   width:69%;
-  float"left;
+  float:left;
 }
 .featurestext h6{
   margin-bottom:0px;
@@ -867,7 +877,6 @@ img.vfit {
   padding:60px 0px;
 }
 .default-spc{
-    margin-top:35px;
     margin-bottom:40px;
 }
 .guide{
@@ -901,7 +910,13 @@ img.vfit {
     top: 0;
     z-index: -1;
     height: 100%;
-    left: 0;
+    width:50%;
+}
+.breadcrumb_pulse{
+  position: absolute;
+    right: 0px;
+    top: 25%;
+    width:22%;
 }
 .vc-btn-gradient-general {
     background-image: -webkit-linear-gradient( -45deg, rgb(255,108,124) 0%, rgb(245,102,76) 100%);
@@ -911,10 +926,7 @@ img.vfit {
 .breadcrumb_area {
     padding: 200px 0px 60px;
 }
-.breadcrumb_area .breadcrumb_shap {
-    height: 100%;
-    width: 100%;
-}
+
 .breadcrumb_area_two {
     background-image: linear-gradient(-90deg, #F15162 0%, #F8654A 100%);
     position: relative;
@@ -925,14 +937,14 @@ img.vfit {
   color:#ffffff;
 }
 .main-content{
-  padding:60px 0px;
+  padding:120px 0px;
   width:100%;
 }
 .main-button,.hs_submit.hs-submit input{
     background: #F15162;
     color: #ffffff;
     border-color: #F15162;    
-    padding: 10px 50px;
+    padding: 12px 55px;
     border-radius: 5px;
     margin-top: 40px;
     outline:none;
@@ -1002,7 +1014,7 @@ label {
     border-radius: 4px;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
     width: 90%;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     float: right;
 }
 ul.hs-error-msgs.inputs-list {
@@ -1055,6 +1067,7 @@ select:focus, textarea:focus {
   background-image:url("https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/orange-background-ebook.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center top;
   height: 430px;
 }
 .downloadbook{
@@ -1078,14 +1091,14 @@ select:focus, textarea:focus {
     display: block;
 }
 .linkstore {
-    padding: 17px;
+    padding: 20px 24px;
     border: 1px solid #282835;
     margin-right: 10px;
     border-radius: 4px;
     display:inline;
 }
 .linkstore img {
-    width: 30%;
+    width: 27%;
 }
 h6.moodmeter {
     padding-top: 8px;
@@ -1102,4 +1115,42 @@ h6.moodmeter {
   }
 
 
+/*
+
+.progressbar {
+    display: inline-block;
+    width: 20%;
+    margin: 25px;
+}
+.circle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.circle canvas {
+    vertical-align: middle;
+}
+.circle div {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+*/
 
