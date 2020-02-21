@@ -930,7 +930,7 @@ img.vfit {
     padding: 210px 0px 150px;
     z-index: 1;
 }
-.main_title{
+.main_title h1{
   color:#ffffff;
   font-size:50px;
 }
@@ -1196,3 +1196,14 @@ h6.moodmeter {
     color:#ffffff;
 }
 
+/*features page*/
+.featurespage img {
+    width: 6%;
+    padding-bottom:15px;
+}
+.featurescontent {
+    margin-bottom: 40px;
+}
+.main_features.img-responsive{
+  width:auto;
+}
