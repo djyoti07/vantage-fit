@@ -691,8 +691,9 @@ section.section_space {
     padding: 100px 0px 25px;
 }
 .mobile_img .mobile_banner{
-  width:75%;
   margin-top:45px;
+  position:relative;
+  left:-44%;
 }
 .align_items_center{
   align-items: center;
