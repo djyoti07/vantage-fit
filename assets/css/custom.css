@@ -1136,7 +1136,10 @@ h6.moodmeter {
 .vc_active:hover span{
   text-decoration:none;
   }
-
+.runningimg{
+  position:absolute;
+  top:133%;
+}
 
 /*
 
