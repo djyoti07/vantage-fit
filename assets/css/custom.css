@@ -698,20 +698,6 @@ section.section_space {
 .align_items_center{
   align-items: center;
 }
-/*progress bar */
-
-/*
-.circleGraphic {
-    width: 200px;
-    text-align:center;
-}
-.circleGraphic canvas {
-    width: 220px;
-    text-align: center;
-    height: 220px;
-    position:relative;
-    top:50px;
-}*/
 img.vfit {    
     position: absolute;
     left: 20%;
@@ -777,7 +763,7 @@ img.vfit {
     display: flex;
 }
 
-/*features*/
+/*features section in home page*/
 .box_item {
     background: #fff;
     border: 1px solid #eee;
@@ -901,7 +887,7 @@ img.vfit {
 }
 
 
-/*page heading*/
+/*page heading for all inner pages*/
 .breadcrumb_area_two .breadcrumb_shap {
     position: absolute;
     right: 0;
@@ -970,7 +956,166 @@ img.vfit {
   position:relative;
   bottom:-30px;
 }
-/*request demo*/
+/*home page video section*/
+section.section_space.video_area {
+    position: relative;
+    z-index: 1;
+    background: #f7f7f7;
+    padding-bottom: 110px;
+    margin-top:70px;
+}
+.video_content {
+    position: relative;
+}
+.video_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-size: cover;
+    -webkit-box-shadow: 0px 50px 70px 0px rgba(0, 11, 40, 0.24);
+    box-shadow: 0px 50px 70px 0px rgba(0, 11, 40, 0.24);
+    height: 450px;
+    max-width: 770px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1582785116/VantageFit/website/video_vantagefit.png) no-repeat; 
+    background-size: cover;
+}
+.video_icons {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    font-size: 30px;
+    position: relative;
+    /* -webkit-transition: all 0.3s linear; */
+    -o-transition: all 0.3s linear;
+    /* transition: all 0.3s linear; */
+    display: inline-block;
+}
+
+.video_icons i {
+    color: #17c7bd;
+    text-shadow: 0px 6px 25px rgba(16, 147, 140, 0.9);
+    position: relative;
+}
+.video_icons i:after {
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 1px 15px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 15px 1px rgba(255, 255, 255, 0.5);
+    content: "";
+    -webkit-animation: pulse 2s infinite;
+    -ms-transform: scale(8);
+    transform: scale(8); 
+    animation: pulse 2s infinite; 
+}
+.video_icons:after {
+    -webkit-transform: scale(3.8);
+    -ms-transform: scale(3.8);
+    transform: scale(3.8);
+}
+.video_info::after {
+    position: absolute;
+    background:rgba(83, 90, 114,.9);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    content: '';
+}
+.video_icons:before {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    transform: scale(2.5); 
+}
+/*
+.pulse {
+  margin:100px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: animate 4s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 0 50px rgba(204,169,44, 0.6);
+  }
+  80% {
+      -webkit-box-shadow: 0 0 0 50px rgba(204,169,44, 0.7);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 30px rgba(204,169,44, 0.2);
+  }
+}*/
+.iconplay
+{
+  float: left;
+  margin: 40px;
+  width: 130px;
+  height: 130px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  animation: shadow-pulse 2s infinite;
+}
+.iconplay i
+{
+  font-size:45px;
+  position: relative;
+  left:42%;
+  color: #F15162;
+}
+.wrapper
+{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+/*request demo page css*/
 label {
     width: 100%;
     text-align: left;

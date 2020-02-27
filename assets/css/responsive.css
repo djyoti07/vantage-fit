@@ -252,6 +252,23 @@
 	.section_space.features-section{
 		padding-top:0px;
 	}
+	.iconplay i {
+	    font-size: 25px;
+	}
+	.iconplay{
+		width:70px;
+		height:70px;
+	}
+	.video_info{
+		height:auto;
+	}
+	.wrapper {
+	    padding: 0;
+	}
+	section.section_space.video_area {
+	    padding-bottom: 40px;
+	    margin-top: 40px;
+	}
 	
 	
 }
