@@ -1408,4 +1408,9 @@ ul.pricetick li .fa {
 .main_title p {
     padding: 0px 190px;
 }
+ul.pricetick  .fa-info-circle {
+    font-size: 13px;
+    margin-top: -2px;
+    margin-left: 4px;
+}
 
