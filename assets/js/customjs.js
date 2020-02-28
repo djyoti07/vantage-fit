@@ -45,6 +45,7 @@
             
     
         });
+        $('[data-toggle="popover"]').popover(); 
 
             
 
@@ -56,6 +57,7 @@ jQuery(function ($) {
             $(this).addClass('active');
         }
     });
+
     
 
 });
