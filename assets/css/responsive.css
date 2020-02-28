@@ -153,6 +153,9 @@
 	.mobile_img .mobile_banner{
 		left:0;
 	}
+	.main_title p {
+	    padding: 0px 20px;
+	}
 				
 
 }
