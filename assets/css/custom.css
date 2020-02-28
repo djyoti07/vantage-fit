@@ -1413,4 +1413,8 @@ ul.pricetick  .fa-info-circle {
     margin-top: -2px;
     margin-left: 4px;
 }
+ul.pricetick button {
+    background: none;
+    border: none;
+}
 
