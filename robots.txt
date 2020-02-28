@@ -1,0 +1,5 @@
+User-agent: *
+Sitemap: https://www.vantagefit.io/sitemap-pages.xml
+Disallow: /ghost/
+Disallow: /p/
+
