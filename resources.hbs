@@ -1,0 +1,38 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+
+
+<div class="elementor">
+    <div class="elementor-inner">
+        <div class="elementor-section-wrap">
+        <section class="breadcrumb_area breadcrumb_area_two vc-btn-gradient-color vc-btn-gradient-general"> 
+            <img class="breadcrumb_shap hidden-xs " src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/lines.png" alt="lines">
+            <img class="breadcrumb_pulse hidden-xs" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/heart-lines.png" alt="pulse">
+            <div class="container">
+                <div class="breadcrumb_content text-center main_title  wow fadeInUp animated " data-wow-delay=".1s" style="visibility: visible;-webkit-animation-delay: .1s; -moz-animation-delay: .1s; animation-delay: .1s;">
+                    <h1> Resources</h1>
+                    <p style="color:#ffffff">Ebooks, guides, and best practices to help you transform your company culture.</p>         
+                </div>
+            </div> 
+        </section>
+        </div>
+    </div>
+</div>
+<div class="main-content" style="padding-bottom:100px">
+    <section>
+        <div class="container custom-container">
+            <div class="row">
+                {{#foreach posts}}
+
+                        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                        {{> "post-card"}}
+
+                {{/foreach}}
+            </div>
+        </div>
+    </section>
+</div>
