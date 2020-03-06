@@ -10,7 +10,24 @@ into the {body} of the default.hbs template --}}
 <div class="elementor">
     <div class="elementor-inner">
         <div class="elementor-section-wrap">
-            {{content}}
+        	<section class="breadcrumb_area breadcrumb_area_two vc-btn-gradient-color vc-btn-gradient-general"> 
+	        	<img class="breadcrumb_shap hidden-xs " src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/lines.png" alt="lines">
+	            <img class="breadcrumb_pulse hidden-xs" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/heart-lines.png" alt="pulse">
+	        	<div class="container">
+	        		<div class="breadcrumb_content text-center main_title  wow fadeInUp animated " data-wow-delay=".1s" style="visibility: visible;-webkit-animation-delay: .1s; -moz-animation-delay: .1s; animation-delay: .1s;">
+	        			<h1 class="post-title"> {{title}}</h1>
+	        		</div>
+	        	</div> 
+	        </section>
+        	<div class="main-content">
+			    <section>
+			        <div class="container custom-container">
+			            <div class="row post-content">
+            			{{content}}
+	            		</div>
+	            	</div>
+	            </section>
+	        </div>
         </div>
     </div>
 </div>

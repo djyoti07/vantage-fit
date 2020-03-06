@@ -1442,4 +1442,10 @@ article.post-card{
 article.post-card .post-card-content{
   padding:20px;
 }
+.main_title h1.post-title{
+  font-size:40px;
+}
+.post-content img{
+  width:100%;
+}
 
