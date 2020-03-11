@@ -163,6 +163,9 @@
 		border-right:0;
 		padding:0px 40px;
 	}
+	.details-post {
+	    max-width: 100%;
+	}
 				
 
 }
