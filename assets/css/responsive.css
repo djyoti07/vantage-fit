@@ -282,6 +282,9 @@
 	    padding-bottom: 40px;
 	    margin-top: 40px;
 	}
+	.hs-input{
+		width:100%;
+	}
 	
 	
 }
@@ -317,6 +320,9 @@
 	.banner_btn {
 	    font: 500 14px "Poppins",sans-serif;
 	    padding: 14px 22px;
+	}
+	.request-demo-form{
+		width:100%;
 	}
 }
 @media only screen and  (min-width:768px) and (max-width:1024px) and (orientation:landscape){
