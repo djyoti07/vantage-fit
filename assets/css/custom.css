@@ -1419,6 +1419,9 @@ ul.pricetick button {
     background: none;
     border: none;
 }
+.fa-info-circle:before {
+    color: #73738c;
+}
 /*resource page*/
 .post-card-image-link img {
     margin-bottom: 30px;
