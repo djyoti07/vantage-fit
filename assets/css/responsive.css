@@ -166,7 +166,15 @@
 	.details-post {
 	    max-width: 100%;
 	}
-				
+	.pclr{
+		padding:0px 15px;
+	}	
+	.post-content .img-ind{
+		margin-bottom:15px;
+	}	
+	.post-title{
+		text-align:center;
+	}
 
 }
 @media (min-width: 1250px){
