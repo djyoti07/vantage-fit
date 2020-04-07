@@ -1652,9 +1652,12 @@ h4{
 }
 .giftsection {
     position: absolute;
-    bottom: -11px;
+    bottom: -65px;
     left: 33%;
 }
 .giftsection  img{
   width:79%;
+}
+.campaignwellness .max-leng{
+  max-width:300px;
 }
