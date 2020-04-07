@@ -1,7 +1,8 @@
 
 body {
     font: 300 15px/28px "Poppins",sans-serif;
-    color: #73738c;
+    /*color: #73738c;*/
+    color:#4C5267;
     letter-spacing: 0px;
     padding: 0;
     overflow-x: hidden;
@@ -1580,4 +1581,80 @@ blockquote p {
 .downloadsection .banner_btn{
   padding:10px 15px;
   margin-top:10px;
+}
+/*ebook*/
+
+.ebook{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.ebookcontent{
+  margin-bottom:20px;
+  line-height:30px;
+}
+
+
+/*campaign*/
+h4{
+  color:#2c2d4f;
+}
+
+.campaignlpage h4 {
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.campaignlpage h4 span{
+  font-weight:400;
+}
+.imagerunning{
+  max-width:80%;
+}
+.campaigncontainer{
+  max-width:600px;
+}
+.imagesteps{
+    border: 1px solid #F15162;
+    padding: 20px;
+    border-radius: 6px;
+    width:75%;
+    border-color:rgba(#F15162,#F15162,#F15162,0.3);
+
+}
+
+.breadcrumb_pulse.campaign{
+    position: absolute;
+    right: 0px;
+    top: 0%;
+    width: 35%;
+}
+.activecolor {
+  color:#F15162;
+  font-weight:500;
+  margin-bottom:15px;
+  font-size: 20px;
+}
+
+.downloadlogo{
+  background:#4C5267;
+  padding:15px 35px;
+  border-radius:5px;
+}
+.campaignwellness{
+  padding:60px 40px;
+}
+.prizeimg{
+  margin-bottom:40px;
+}
+.title_default{
+  margin-bottom:30px;
+}
+.giftsection {
+    position: absolute;
+    bottom: -11px;
+    left: 33%;
+}
+.giftsection  img{
+  width:79%;
 }
