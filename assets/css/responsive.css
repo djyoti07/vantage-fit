@@ -207,7 +207,7 @@
 		display:inline-block;
 	}
 	.breadcrumb_content h1.mob_firstheading {
-	    font-size: 25px;
+	    font-size: 23px;
 	}
 
 
@@ -344,7 +344,7 @@
 		width:100%;
 	}
 	img.downloadlogo {
-	    width: 65%;
+	    width: 60%;
 	}
 	.winner{
 		margin-top:30px;
@@ -368,10 +368,19 @@
 	    padding-bottom: 10px;
 	}
 	.downloadlogo{
-		padding:15px 20px;
+		padding:15px 17px;
 	}
 	.campaignlpage h4,.page-template .campaignlandingpage .title_head{
-		font-size:20px;
+		font-size:17px;
+	}
+	.campaignlandingpage,.campaignlandingpage p{
+		font-size:14px;
+	}
+	.campaignlpage h4{
+		line-height:22px;
+	}
+	.last-sectio{
+		margin-top:20px;
 	}
 	
 }
