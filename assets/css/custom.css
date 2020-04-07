@@ -1640,6 +1640,7 @@ h4{
   background:#2c2d4f;
   padding:15px 35px;
   border-radius:5px;
+  max-width:80%;
 }
 .campaignwellness{
   padding:60px 40px;
@@ -1663,4 +1664,10 @@ h4{
 }
 .new_footer_area .footer_bottom.campaignfooter{
   padding:20px;
+}
+.textright{
+  text-align:left;
+}
+.textleft{
+  text-align:right;
 }
