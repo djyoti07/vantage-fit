@@ -208,6 +208,9 @@
 	.mobheader .navbar{
 		display:inline-block;
 	}
+	.breadcrumb_content h1.mob_firstheading {
+	    font-size: 30px;
+	}
 
 }
 @media (min-width: 1250px){
@@ -342,7 +345,9 @@
 	.winner{
 		margin-top:30px;
 	}
-	
+	.breadcrumb_area_two.campaginbreadcrumb {
+	    padding: 127px 0 40px 0px;
+	}
 	
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
