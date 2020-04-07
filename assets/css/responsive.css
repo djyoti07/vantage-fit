@@ -175,15 +175,32 @@
 	.post-title{
 		text-align:center;
 	}
-	.campaignlandingpage img{
-		width:100%;
-	}
+	
 	.campaignwellness {
 	    padding: 30px 20px;
 	    text-align: center;
 	}
 	.campaignwellness .max-leng{
 	  max-width:100%;
+	}
+	.campaignlandingpage img.imagesteps{
+		
+		margin-bottom:20px;
+		margin-top:20px;
+		padding:10px;
+	}
+	.imagelogoleft{
+		width:30%;
+	}
+	.imagelogoright{
+		width:69%;
+	}
+	.activecolor{
+		font-size:16px;
+		margin-bottom:5px;
+	}
+	.campaignlpage h4{
+		font-size:25px;
 	}
 
 }
@@ -306,6 +323,16 @@
 	.hs-input{
 		width:100%;
 	}
+	.imagerunning{
+		max-width:100%;
+		margin-bottom:30px;
+	}
+	.campaignlandingpage img{
+		width:100%;
+	}
+	img.downloadlogo {
+	    width: auto;
+	}
 	
 	
 }
@@ -344,6 +371,14 @@
 	}
 	.request-demo-form{
 		width:100%;
+	}
+	.imagerunning{
+		margin-bottom:30px;
+	}
+	.winner{
+		width: 50%;
+    	margin-top: 30px;
+
 	}
 }
 @media only screen and  (min-width:768px) and (max-width:1024px) and (orientation:landscape){
