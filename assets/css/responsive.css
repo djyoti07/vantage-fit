@@ -337,7 +337,7 @@
 	    margin-top: 40px;
 	}
 	.hs-input{
-		width:100%;
+		width:100%!important;
 	}
 	.imagerunning{
 		max-width:100%;
@@ -392,6 +392,14 @@
 
 	.breadcrumb_content h1.mob_firstheading {
 	    font-size: 22px;
+	}
+	.request-demo-form.ebook {
+	    width: 100%;
+	    max-width: 100%;
+	    padding: 20px;
+	}
+	.ebook-image {
+	    margin-bottom: 30px;
 	}
 		
 }
