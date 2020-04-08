@@ -353,10 +353,10 @@
 		margin-top:30px;
 	}
 	.breadcrumb_area_two.campaginbreadcrumb {
-	    padding: 110px 0 15px 0px;
+	    padding: 95px 0 5px 0px;
 	}
 	.main-content.campaignlandingpage{
-		padding:40px 0px;
+		padding:30px 0px;
 	}
 	.campaignlandingpage.page-template .title_head{
 		font-size:23px;
@@ -365,10 +365,10 @@
 	    padding: 25px 0px 0px 0px;
 	}
 	.title_default{
-		margin-bottom:20px;
+		margin-bottom:15px;
 	}
 	.campaignlandingpage .title_spc {
-	    padding-bottom: 20px;
+	    padding-bottom: 15px;
 	}
 	.downloadlogo{
 		padding:15px 20px;
@@ -386,11 +386,12 @@
 		margin-top:20px;
 	}
 	.campaign_sectitle{
-	  font-size:14px;
+	  font-size:13px;
+	  line-height:20px;
 	}
 
 	.breadcrumb_content h1.mob_firstheading {
-	    font-size: 25px;
+	    font-size: 22px;
 	}
 		
 }
