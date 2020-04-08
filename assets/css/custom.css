@@ -1628,6 +1628,8 @@ h4{
     right: 0px;
     top: 0%;
     width: 35%;
+    height:100%;
+    bottom:0;
 }
 .activecolor {
   color:#F15162;
@@ -1670,4 +1672,13 @@ h4{
 }
 .textleft{
   text-align:right;
+}
+.mobileview{
+  display:none;
+}
+.main-content.campaignlandingpage{
+  padding-bottom:60px;
+}
+.campaign_sectitle{
+  font-size:17px;
 }

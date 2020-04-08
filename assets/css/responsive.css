@@ -187,13 +187,13 @@
 		
 		margin-bottom:5px;
 		margin-top:5px;
-		padding:7px;
+		padding:10px;
 	}
 	.imagelogoleft{
-		width:20%;
+		width:30%;
 	}
 	.imagelogoright{
-		width:100%;
+		width:68%;
 	}
 	.activecolor{
 		font-size:16px;
@@ -206,10 +206,13 @@
 	.mobheader .navbar{
 		display:inline-block;
 	}
-	.breadcrumb_content h1.mob_firstheading {
-	    font-size: 23px;
-	}
 
+	.mobileview{
+	  display:block!important;
+	}
+	.desktopview{
+		display:none;
+	}
 
 }
 @media (min-width: 1250px){
@@ -350,25 +353,25 @@
 		margin-top:30px;
 	}
 	.breadcrumb_area_two.campaginbreadcrumb {
-	    padding: 95px 0 10px 0px;
+	    padding: 110px 0 15px 0px;
 	}
 	.main-content.campaignlandingpage{
-		padding:30px 0px;
+		padding:40px 0px;
 	}
 	.campaignlandingpage.page-template .title_head{
 		font-size:23px;
 	}
 	.campaignlandingpage section.section_space {
-	    padding: 15px 0px 0px 0px;
+	    padding: 25px 0px 0px 0px;
 	}
 	.title_default{
-		margin-bottom:10px;
+		margin-bottom:20px;
 	}
 	.campaignlandingpage .title_spc {
-	    padding-bottom: 10px;
+	    padding-bottom: 20px;
 	}
 	.downloadlogo{
-		padding:15px 17px;
+		padding:15px 20px;
 	}
 	.campaignlpage h4,.page-template .campaignlandingpage .title_head{
 		font-size:17px;
@@ -379,10 +382,17 @@
 	.campaignlpage h4{
 		line-height:22px;
 	}
-	.last-sectio{
+	.last-sectio,.mob-space{
 		margin-top:20px;
 	}
-	
+	.campaign_sectitle{
+	  font-size:14px;
+	}
+
+	.breadcrumb_content h1.mob_firstheading {
+	    font-size: 25px;
+	}
+		
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
 		.widget img {
@@ -421,7 +431,7 @@
 		width:100%;
 	}
 	.imagerunning{
-		margin-bottom:30px;
+		margin-bottom:40px;
 	}
 	.winner{
 		width: 50%;
@@ -429,13 +439,13 @@
 
 	}
 	.breadcrumb_area_two.campaginbreadcrumb {
-	    padding: 120px 0 10px 0px;
+	    padding: 130px 0 30px 0px;
 	}
 	.main-content.campaignlandingpage{
-		padding:80px 0px;
+		padding:60px 0px;
 	}
 	.campaignlandingpage.page-template .title_head{
-		font-size:27px;
+		font-size:30px;
 	}
 	.campaignlandingpage section.section_space {
 	    padding: 50px 0px 0px 0px;
@@ -450,7 +460,14 @@
 		padding:15px 20px;
 	}
 	.campaignlpage h4,.page-template .campaignlandingpage .title_head{
-		font-size:27px;
+		font-size:30px;
+	}
+
+	.breadcrumb_content h1.mob_firstheading {
+	    font-size: 30px;
+	}
+	.mob-space{
+		margin-top:30px;
 	}
 }
 @media only screen and  (min-width:320px) and (max-width:1024px) and (orientation:landscape){
