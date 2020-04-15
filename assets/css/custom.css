@@ -723,10 +723,13 @@ img.vfit {
   padding-bottom:60px;
 }
 /*content benefit*/
-.content_benefits h6{
+.content_benefits .innertext{
   color:#4a5269;
   font-size:20px;
   padding-bottom:10px;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .outline-round{
   margin-bottom:30px;
@@ -795,8 +798,11 @@ img.vfit {
   width:69%;
   float:left;
 }
-.featurestext h6{
+.featurestext .trackertext{
   margin-bottom:0px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size:16px;
 }
 .featuresimg{
   display:inline;
@@ -847,12 +853,14 @@ img.vfit {
   font-weight:400;
   font-size:18px;
 }
-.title_second h3{
+.title_second .second_heading{
   color:#282835;
   font-size:35px;
   font-weight:500;
+  line-height:1.2;
+  margin-bottom: .5rem;
 }
-.title_second h3 span{
+.title_second .second_heading span{
   font-weight:300;
 }
 .healthforce p{
@@ -1190,6 +1198,10 @@ select:focus, textarea:focus {
   font-size:40px;
   color:#2c2d4f;
   font-weight:600;
+  line-height:1.2;
+}
+.secondarytext{
+  margin-top:10px;
 }
 .page-template .title_head span {
     font-weight: 400;
@@ -1272,7 +1284,7 @@ select:focus, textarea:focus {
 .linkstore img {
     width: 27%;
 }
-h6.moodmeter {
+.trackertext.moodmeter {
     padding-top: 8px;
 }
 /*request demo ends*/
