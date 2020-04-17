@@ -213,6 +213,16 @@
 	.desktopview{
 		display:none;
 	}
+	.button_width{
+		min-width:auto;
+	}
+	.app_downloadbanner{
+		margin-bottom:30px;
+	}
+	.app_downloadbanner svg{
+		display:inline-block!important;
+		width:40%;
+	}
 
 }
 @media (min-width: 1250px){

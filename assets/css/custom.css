@@ -651,6 +651,20 @@ a.popup-youtube .fa {
     /*border: 1px solid #ffffff;*/
     background:#ffffff;
 }
+.button_width{
+  min-width:220px;
+  text-align:center;
+}
+.linkstore.button_width{
+    margin-right: 20px;
+    padding: 23px 28px;
+    max-width: 220px;
+    min-width: 220px;  
+    background-color: rgba(255,255,255,.9);
+}
+.linkstore.button_width img{
+  width:24%;
+}
 .banner_btn {
     font: 500 16px "Poppins",sans-serif;
     border-radius: 4px;
@@ -659,6 +673,22 @@ a.popup-youtube .fa {
     -o-transition: all .2s linear;
     transition: all .2s linear;
     cursor: pointer;
+}
+.app_downloadbanner svg{
+    width: 28%;
+    position: none;
+    position: static;
+    bottom: 0;
+    height: auto;
+}
+.app_downloadbanner{
+  margin-top:30px;
+
+}
+.dwnload_app{
+  width:auto;
+  display:inline;
+  margin-right:20px;
 }
 .banner_btn:hover,
 .icons:hover,
@@ -1693,4 +1723,7 @@ h4{
 }
 .campaign_sectitle{
   font-size:17px;
+}
+.abtesting{
+  display:none;
 }
