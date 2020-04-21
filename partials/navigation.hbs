@@ -1,0 +1,6 @@
+
+        {{#foreach navigation}}
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}} menu-item nav-item" role="menuitem">
+                <a href="{{url absolute="true"}}" class="nav-link menu-top">{{label}}</a>
+            </li>
+        {{/foreach}}

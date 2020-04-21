@@ -1724,6 +1724,12 @@ h4{
 .campaign_sectitle{
   font-size:17px;
 }
-.abtesting{
+.abtesting,.featuredpage{
   display:none;
+}
+.marketinglanding.featured.no-image{
+  display:none;
+}
+.featuredpage.featured.no-image{
+  display:block;
 }
