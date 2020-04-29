@@ -1733,3 +1733,9 @@ h4{
 .featuredpage.featured.no-image{
   display:block;
 }
+.index_download{
+  margin-top:30px;
+}
+.app_downloadbanner.index_download svg{
+  width:32%;
+}
