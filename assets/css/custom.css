@@ -1739,3 +1739,77 @@ h4{
 .app_downloadbanner.index_download svg{
   width:32%;
 }
+#search_field{
+  display:inline-table;
+  height:100%;
+  margin-bottom:60px;
+}
+.post_titel{
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 44px;
+  text-overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#4a5269;
+  font-size:18px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 35px 20px 0px;
+  width: 100%;
+  line-height:1.7;
+
+}
+
+.post_titel:hover{
+  color:#F15162;
+}
+.ease{
+      -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.box-shadow{
+  -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+  padding-bottom:35px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom:40px;
+  border-radius: 5px 5px 0px ;
+}
+.blog_excerpt{
+  display: -webkit-box!important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  padding:20px 20px 0px;
+  color:#4a5269;
+  line-height:1.7;
+  word-break: break-all;
+}
+
+.box-shadow:hover img {
+    transform: scale(1.1, 1.1);
+}
+.overflow{
+  overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

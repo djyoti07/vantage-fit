@@ -502,6 +502,7 @@
 	.n_hero_banner_area{
 		margin-bottom:20px;
 	}
+		
 }
 @media only screen and  (min-width:320px) and (max-width:1024px) and (orientation:landscape){
 	.winner{
