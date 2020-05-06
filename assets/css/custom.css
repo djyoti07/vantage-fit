@@ -1626,6 +1626,10 @@ blockquote p {
   width:100%;
   border-radius:5px;
 }
+.main_title h1.singlepost_header {
+    font-size: 35px;
+    padding: 0px 170px;
+}
 /*contact us page*/
 .hs-input {
     background: #fff!important;
