@@ -1621,6 +1621,11 @@ blockquote p {
 .post-content  a:hover{
   text-decoration:underline;
 }
+.post-content img.detailspostimg{
+  margin-top:0px;
+  width:100%;
+  border-radius:5px;
+}
 /*contact us page*/
 .hs-input {
     background: #fff!important;

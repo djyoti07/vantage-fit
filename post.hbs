@@ -24,7 +24,17 @@ into the {body} of the default.hbs template --}}
 			        <div class="container custom-container">
 			            <div class="row post-content details-post">
 			            	
-            			<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">{{content}}</div>
+            			<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            				<div class="imageholder">
+            					<img class="detailspostimg img-responsive"
+							            srcset="{{img_url feature_image}}"
+							            
+							            src="{{img_url feature_image}}"
+							            alt="{{title}}"
+							        />
+            				</div>
+            				<div><p><i>Published on {{date published_at format="DD-MM-YYYY"}}</i></p></div>
+            				{{content}}</div>
             			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
             				<div class="downloadsection text-center">
                                 <div class="b10">
