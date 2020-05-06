@@ -1611,10 +1611,7 @@ blockquote p {
 .b10{
   padding-bottom:0px!important;
 }
-.requestdemoblog{
-  color:#ffffff!important;
-  margin-top:0px!important;
-}
+
 .post-content  a{
   color:#F15162;
 }
@@ -1629,6 +1626,10 @@ blockquote p {
 .main_title h1.singlepost_header {
     font-size: 35px;
     padding: 0px 170px;
+}
+.downloadsection h3{
+  margin-top:0px;
+  margin-bottom:20px;
 }
 /*contact us page*/
 .hs-input {
