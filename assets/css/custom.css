@@ -1631,6 +1631,34 @@ blockquote p {
   margin-top:0px;
   margin-bottom:20px;
 }
+.post-content .tagspost {
+    margin-right: 35px;
+    position: relative;
+}
+.tagspost:after {
+    position: absolute;
+    content: "|";
+    top: -1px;
+    right: -20px;
+}
+.readtime_wrapper {
+    display:inline-block;
+    margin-top:-10px;
+}
+.tagspost {
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font: 400 14px "Poppins",sans-serif;
+}
+.tagspost {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
+}
 /*contact us page*/
 .hs-input {
     background: #fff!important;
