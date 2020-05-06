@@ -1494,8 +1494,8 @@ article.post-card .post-card-content{
   font-size:40px;
 }
 .post-content img{
-  width:100%;
-  margin:20px 0px;
+  width:90%;
+  margin:40px 0px;
 }
 
 blockquote {
@@ -1508,7 +1508,7 @@ blockquote {
     overflow: hidden;
     border-left: 6px solid #F15162;
     z-index: 0;
-    margin: 20px 0px 30px;
+    margin: 50px 0px;
     width:100%;
     border-left: 6px solid #F15162;
     color: #181818;
@@ -1519,26 +1519,29 @@ blockquote p {
 .post-content h2{
   color:#181818;
   font-size:30px;
-  margin-bottom:20px;
-  margin-top:20px;
+  margin-bottom:30px;
+  margin-top:40px;
+  line-height:1.5;
 }
 .post-content h3{
   color:#181818;
   font-size:25px;
-  margin-bottom:20px;
-  margin-top:20px;
+  margin-bottom:30px;
+  margin-top:40px;
   width:100%;
+  line-height:1.5;
 }
 .post-content h4{
   color:#181818;
   font-size:20px;
-  margin-bottom:20px;
-  margin-top:20px;
+  margin-bottom:30px;
+  margin-top:40px;
   width:100%;
+  line-height:1.5;
 }
 
 .details-post strong{
-  font-weight:700;
+  font-weight:600;
 }
 .details-post ul li{
   margin-bottom:5px;
@@ -1569,7 +1572,7 @@ blockquote p {
 .sticky{
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: 150px;
 }
 .title-post-ind{
   font-size: 14px;
@@ -1604,6 +1607,19 @@ blockquote p {
   padding:30px 30px 50px;
   border-radius:6px;
   font-size:17px;
+}
+.b10{
+  padding-bottom:0px!important;
+}
+.requestdemoblog{
+  color:#ffffff!important;
+  margin-top:0px!important;
+}
+.post-content  a{
+  color:#F15162;
+}
+.post-content  a:hover{
+  text-decoration:underline;
 }
 /*contact us page*/
 .hs-input {
@@ -1802,6 +1818,7 @@ h4{
 .overflow{
   overflow:hidden;
 }
+
 
 
 

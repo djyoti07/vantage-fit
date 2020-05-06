@@ -530,6 +530,12 @@
 	    font: 500 14px "Poppins",sans-serif;
 	    padding: 14px 22px;
 	}
+	.downloadsection img{
+		width:80%!important;
+	}
+	.downloadsection .banner_btn{
+		padding:10px;
+	}
 }
 @media only screen and (min-width:1024px) and (max-width:1200px){
 
@@ -537,6 +543,11 @@
 		width:120px;
 		height:120px;
 		
+	}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+	.downloadsection img{
+		width:50%;
 	}
 }
 
