@@ -78,7 +78,7 @@
 	.wellnessprogram p{
 	  	padding:0px;
 	}
-	.title_head{
+	.title_head,.main_title h1.singlepost_header,.post-content h2{
 		font-size:20px;
 	}
 	.left-activity,.right-activity{
@@ -427,6 +427,9 @@
 	.page-template .title_head,
 	.title_second .second_heading{
 		font-size:22px;
+	}
+	.downloadsection.sticky{
+		margin-bottom:40px;
 	}
 		
 }

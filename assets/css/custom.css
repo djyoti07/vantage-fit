@@ -1572,7 +1572,7 @@ blockquote p {
 .sticky{
   position: -webkit-sticky;
   position: sticky;
-  top: 150px;
+  top: 120px;
 }
 .title-post-ind{
   font-size: 14px;
@@ -1628,8 +1628,8 @@ blockquote p {
     padding: 0px 170px;
 }
 .downloadsection h3{
-  margin-top:0px;
-  margin-bottom:20px;
+  margin-top:5px;
+  margin-bottom:10px;
 }
 .post-content .tagspost {
     margin-right: 35px;
@@ -1644,6 +1644,9 @@ blockquote p {
 .readtime_wrapper {
     display:inline-block;
     margin-top:-10px;
+}
+.downloadsection img{
+  margin:40px 0px 60px;
 }
 .tagspost {
     float: left;
