@@ -2,6 +2,12 @@
 	.header_area .navbar .navbar-nav .menu-item a {
 		font-size:12px;
 	}
+	.main_title h1.singlepost_header{
+		padding:15px;
+	}
+	span.marketinglanding{
+		width:100%;
+	}
 
 }
 @media (min-width:320px) and (max-width:1023px){
