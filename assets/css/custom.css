@@ -1691,7 +1691,7 @@ blockquote p {
   margin-bottom:20px;
   line-height:30px;
 }
-ul.bullets li::before {
+ul.bullets li::before,.contentarea li:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1703,7 +1703,7 @@ ul.bullets li::before {
     -webkit-border-radius: 50%;
     border: 2px solid #F15162;
 }
- .bullets li {
+ .bullets li,.contentarea li {
     list-style: none;
     position: relative;
     padding: 0 0 0 20px;
