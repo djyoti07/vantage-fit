@@ -1903,7 +1903,10 @@ article.post-card .img-holder{
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
+.content_benefits .innertext.innerheading{
+  font-size:23px;
+  min-height:67px;
+}
 
 
 
