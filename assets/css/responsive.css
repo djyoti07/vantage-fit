@@ -423,6 +423,7 @@
 	.content_benefits .innertext{
 		font-size:18px;
 		margin-bottom:5px;
+		margin-top:15px;
 	}
 	.page-template .title_head,
 	.title_second .second_heading{
@@ -435,6 +436,7 @@
 	    font-size: 20px;
 	    min-height: unset;
 	    margin-bottom: 0px;
+	    margin-top:15px;
 	}
 		
 }
