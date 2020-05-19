@@ -1907,7 +1907,9 @@ article.post-card .img-holder{
   font-size:23px;
   min-height:67px;
 }
-
+.content_benefits .innertext.innerheading span{
+  display:block;
+}
 
 
 

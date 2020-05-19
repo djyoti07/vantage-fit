@@ -8,6 +8,10 @@
 	span.marketinglanding{
 		width:100%;
 	}
+	.content_benefits .innertext.innerheading span{
+	  display:inline;
+	}
+	
 
 }
 @media (min-width:320px) and (max-width:1023px){
