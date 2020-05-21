@@ -236,6 +236,19 @@
 	span.marketinglanding.no-image {
 	    width: 100%;
 	}
+	.author-detail img {
+		margin-left: 15px
+	}
+	.downloadsection .hs_submit.hs-submit input[type=submit] {
+		font-size: 14px
+	}
+	.downloadsection .hs_submit.hs-submit {
+		width: 60%;
+		height: 45px
+	}
+	.post-title.sidebartitle {
+		text-align: left
+	}
 
 }
 @media (min-width: 1250px){
@@ -442,6 +455,46 @@
 	    margin-bottom: 0px;
 	    margin-top:15px;
 	}
+	.downloadsection img {
+		width: 70%
+	}
+	.content_c {
+		padding: 30px 20px
+	}
+	.sideheading {
+		font-size: 20px
+	}
+	img.freebookblog {
+		left: 12%
+	}
+	img.bokcover {
+		float: none;
+		margin-bottom: 30px;
+		width: 55%;
+		padding-right: 0
+	}
+	.ebookbutton {
+		margin-top: 40px
+	}
+	.contentebook {
+		font-size: 14px
+	}
+	.request-demo-form.ebook {
+		width: 100%;
+		max-width: 100%;
+		padding: 20px
+	}
+	.ebook-image {
+		margin-bottom: 30px
+	}
+	.content_benefits .innertext {
+		font-size: 18px;
+		margin-bottom: 5px
+	}
+	.page-template .title_head,
+	.title_second .second_heading {
+		font-size: 22px
+	}
 		
 }
 @media only screen and (min-width:768px) and (max-width:1023px){
@@ -522,6 +575,42 @@
 	.n_hero_banner_area{
 		margin-bottom:20px;
 	}
+	.downloadsection .dwnloadbookimage,
+	.downloadsection .hs_submit.hs-submit,
+	.downloadsection .imagesticky,
+	.downloadsection img {
+		width: 35%
+	}
+	.downloadsection .freeebook {
+		width: 15%;
+		top: -37px;
+		right: 29%
+	}
+	.downloadsection .requestdemo_sidebar {
+		width: 34%
+	}
+	.downloadsection .vfitheart {
+		width: 15%
+	}
+	.downloadsection .requestdemo_sidebar {
+		left: 30%
+	}
+	.downloadsection .subscribe {
+		width: auto
+	}
+	.contentebook {
+		font-size: 14px;
+		line-height: 1.4
+	}
+	.sideheading {
+		font-size: 20px
+	}
+	img.bokcover {
+		width: 55%
+	}
+	.ebookbutton {
+		margin-top: 35px
+	}
 		
 }
 @media only screen and  (min-width:320px) and (max-width:1024px) and (orientation:landscape){
@@ -554,10 +643,13 @@
 	    padding: 14px 22px;
 	}
 	.downloadsection img{
-		width:80%!important;
+		width:80%;
 	}
 	.downloadsection .banner_btn{
 		padding:10px;
+	}
+	.title_second .second_heading{
+		font-size:25px;
 	}
 }
 @media only screen and (min-width:1024px) and (max-width:1200px){
@@ -578,5 +670,81 @@
 	    margin-bottom: 0px;
 	}
 }
+@media only screen and (min-width:320px) and (max-width:767px) and (orientation:landscape){
+	.downloadsection .freeebook {
+		width: 16%;
+		right: 27%;
+	}
+	.downloadsection .dwnloadbookimage {
+		width: 35%!important;
+	}
+	.downloadsection .banner_btn {
+		padding: 12px 45px!important;
+	}
+	.downloadsection .hs_submit.hs-submit,
+	.downloadsection img {
+		width: 35%;
+	}
+	.requestdemo_sidebar {
+		margin: auto!important;
+	}
+	.downloadsection .vfitheart {
+		width: 15%;
+	}
+	.downloadsection .subscribe {
+		width: auto;
+	}
+	img.bokcover {
+		margin-bottom: 10px;
+	}
+	.app_downloadbanner img {
+		width: 30%;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:1023px) and (orientation:landscape) {
+	.downloadsection .dwnloadbookimage,
+	.downloadsection .hs_submit.hs-submit,
+	.downloadsection .imagesticky,
+	.downloadsection img {
+		width: 35%!important;
+	}
+	.downloadsection .freeebook {
+		width: 15%!important;
+		top: -37px;
+		right: 29%;
+	}
+	.downloadsection .requestdemo_sidebar {
+		width: 34%!important;
+	}
+	.downloadsection .vfitheart {
+		width: 15%;
+	}
+	.downloadsection .requestdemo_sidebar {
+		left: 30%;
+	}
+	.downloadsection .subscribe {
+		width: auto;
+	}
+}
 
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+	.downloadsection .banner_btn {
+		padding: 12px 15px;
+	}
+	img.bokcover {
+		width: 55%;
+	}
+	.ebookbutton {
+		margin-top: 35px;
+	}
+	.app_downloadbanner img {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px) {
+	.downloadsection .banner_btn {
+		padding: 12px 20px;
+	}
+}
 
