@@ -2437,18 +2437,21 @@ h3.cta-inline {
 }
 
 .popupbottom.overlayPop.slideDown {
-	display: none;
+	display: none!important;
 }
 
 .popupbottom.overlayPop.slideUp {
 	display: block;
 }
-img.donloadappimg {
-	width: 27%;
-}
-.block1 {
-	display: block;
-}
-.block2 {
-	display: none;
-}
+	img.donloadappimg {
+		width: 27%;
+	}
+	.block1 {
+		display: block;
+	}
+	.block2 {
+		display: none;
+	}
+	.app_downloadbanner img.buildapp{
+		width:30%;
+	}
