@@ -1,10 +1,10 @@
 <script>
   (function($){
 $(document).ready(function () {
-   $(".overlayPop").show(5000);
-const showMsg = localStorage.getItem('showMsg');
+   $(".overlayPop").hide();
+    const showMsg = localStorage.getItem('showMsg');
         if(showMsg !== 'false'){
-
+          $(".overlayPop").show(1000);
           $('.overlayPop').addClass("slideUp");
         }
         $(".close-fd").click(function() {
@@ -13,17 +13,18 @@ const showMsg = localStorage.getItem('showMsg');
         }); 
         if(showMsg == 'false'){
           $('.overlayPop').addClass("slideDown");
+        
         }
       });
 })(jQuery);
 </script>
-<div class="popupbottom overlayPop wow fadeInUp animated " data-wow-delay="4s" style="visibility: visible; -webkit-animation-delay: 4s; -moz-animation-delay: 4s; animation-delay: 4s; animation-name: fadeInUp;" id="bottommodal">
+<div class="popupbottom overlayPop wow fadeInUp  " data-wow-delay="3s" style="visibility: visible; -webkit-animation-delay: 3s; -moz-animation-delay: 3s; animation-delay: 3s; animation-name: fadeInUp;" id="bottommodal">
    <div class="appdownloadbanner  text-center  healthforce innerspace">
    <button type="button" class="close buttonpopup close-fd" onclick="document.getElementById('bottommodal').style.display = 'none';">
     <span><svg class="crossico" width="30" height="30" viewBox="0 0 17 17"> <path class="fill_path" fill-rule="evenodd" d="M16.293 1.592l-1.3-1.3-6.7 6.701-6.7-6.7-1.3 1.299 6.7 6.7-6.7 6.701 1.3 1.3 6.7-6.7 6.7 6.7 1.3-1.3-6.7-6.7z"></path> </svg></span>
     </button>                   
     <div class="sideheading">Build a Healthy Workforce!</div>
-     <p>Download app</p>
+     <p>Download Vantage Fit app</p>
         <div class="app_downloadbanner index_download">
           <div class=" transform button-style dwnload_app">
             <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">

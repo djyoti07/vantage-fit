@@ -2400,6 +2400,8 @@ h3.cta-inline {
 	width: 30%;
 	z-index: 9;
 	transition: all .2s ease-in-out;
+	 -webkit-box-shadow: 0 50px 70px 0 rgba(0, 11, 40, .24);
+    box-shadow: 0 50px 70px 0 rgba(0, 11, 40, .24);
 }
 
 .popupbottom .app_downloadbanner img {
@@ -2408,7 +2410,7 @@ h3.cta-inline {
 
 .popupbottom .appdownloadbanner {
 	margin: 0px;
-	border-radius: 6px 0px 0px 6px;
+	border-radius: 6px 0px 0px 0px;
 }
 
 .popupbottom .dwnload_app {
@@ -2449,7 +2451,7 @@ h3.cta-inline {
 	.block1 {
 		display: block;
 	}
-	.block2 {
+	.block2,.popupbottom{
 		display: none;
 	}
 	.app_downloadbanner img.buildapp{
