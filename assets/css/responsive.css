@@ -504,6 +504,13 @@
 	.popupbottom .innerspace {
 		padding: 20px;
 	}
+	.wellness-background .downloadbook {
+	    width: 50%;
+	    margin-bottom:30px;
+	}
+	.wellness-background {
+		text-align:center;
+	}
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
