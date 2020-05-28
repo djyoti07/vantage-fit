@@ -1,17 +1,21 @@
 <script>
 (function($){ 
 $(document).ready(function () {
-    const showMsg = localStorage.getItem('showMsg');
-    if(showMsg !== 'false'){
-      $('.overlayPop').addClass("slideUp");
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      const showMsg = localStorage.getItem('showMsg');
+      if(showMsg !== 'false'){
+        $('.overlayPop').addClass("slideUp");
+      }
     }
-    $(".close-fd").click(function() {
-      $(".overlayPop").addClass("slideDown");
-        localStorage.setItem('showMsg', 'false');
-    }); 
-    if(showMsg == 'false'){
-      $('.overlayPop').addClass("slideDown");    
-    }
+      $(".close-fd").click(function() {
+        $(".overlayPop").addClass("slideDown");
+          localStorage.setItem('showMsg', 'false');
+      }); 
+      if(showMsg == 'false'){
+        $('.overlayPop').addClass("slideDown");    
+      }
+  });
 });
 })(jQuery);
 </script>
