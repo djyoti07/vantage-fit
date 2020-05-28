@@ -1,5 +1,19 @@
 <script>
-
+(function($){ 
+$(document).ready(function () {
+    const showMsg = localStorage.getItem('showMsg');
+    if(showMsg !== 'false'){
+      $('.overlayPop').addClass("slideUp");
+    }
+    $(".close-fd").click(function() {
+      $(".overlayPop").addClass("slideDown");
+        localStorage.setItem('showMsg', 'false');
+    }); 
+    if(showMsg == 'false'){
+      $('.overlayPop').addClass("slideDown");    
+    }
+});
+})(jQuery);
 </script>
 <div class="popupbottom overlayPop  " id="bottommodal">
    <div class="appdownloadbanner  text-center  healthforce innerspace">

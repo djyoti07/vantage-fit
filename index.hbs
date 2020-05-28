@@ -581,16 +581,6 @@ $('.popupyoutubevideo,.popupvideosection').magnificPopup({
       preloader: false,
       fixedContentPos: false
   });
-    const showMsg = localStorage.getItem('showMsg');
-    if(showMsg !== 'false'){
-      $('.overlayPop').addClass("slideUp");
-    }
-    $(".close-fd").click(function() {
-      $(".overlayPop").addClass("slideDown");
-        localStorage.setItem('showMsg', 'false');
-    }); 
-    if(showMsg == 'false'){
-      $('.overlayPop').addClass("slideDown");    
-    }
 });
+
 </script>
