@@ -1,3 +1,42 @@
+<script>
+(function($){ 
+$(document).ready(function () {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      const showMsg = localStorage.getItem('showMsg');
+      if(showMsg !== 'false'){
+        $('.overlayPop').addClass("slideUp");
+      }
+    }
+      $(".close-fd").click(function() {
+        $(".overlayPop").addClass("slideDown");
+          localStorage.setItem('showMsg', 'false');
+      }); 
+      if(showMsg == 'false'){
+        $('.overlayPop').addClass("slideDown");    
+      }
+  });
+});
+})(jQuery);
+</script>
+<div class="popupbottom overlayPop  " id="bottommodal">
+   <div class="appdownloadbanner  text-center  healthforce innerspace">
+   <button type="button" class="close buttonpopup close-fd" >
+    <span><svg class="crossico" width="30" height="30" viewBox="0 0 17 17"> <path class="fill_path" fill-rule="evenodd" d="M16.293 1.592l-1.3-1.3-6.7 6.701-6.7-6.7-1.3 1.299 6.7 6.7-6.7 6.701 1.3 1.3 6.7-6.7 6.7 6.7 1.3-1.3-6.7-6.7z"></path> </svg></span>
+    </button>                   
+    <div class="sideheading">Build a Healthy Workforce!</div>
+     <p>Download Vantage Fit app</p>
+        <div class="app_downloadbanner index_download">
+          <div class=" transform button-style dwnload_app">
+            <a href="https://apps.apple.com/in/app/vantage-fit/id1393594182" target="_blank">
+              <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/appstore.png" alt="ios"></a>
+          </div>
+          <div class=" transform button-style dwnload_app">
+              <a href="https://play.google.com/store/apps/details?id=com.bargaintechnologies.vantagefit.v_fit" target="_blank"><img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/googleplay.png" alt="playstore"></a>              
+          </div>
+       </div>
+    </div>
+</div>
 {{#is "vfit-contest,app-download"}}
 <footer class="new_footer_area bg_color">
       <div class="footer_bottom">

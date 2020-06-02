@@ -11,6 +11,9 @@
 	.content_benefits .innertext.innerheading span {
 		display: inline;
 	}
+	.popupbottom.horizontalpopup .innerspace {
+	    padding: 10px 5px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
@@ -510,6 +513,14 @@
 	}
 	.wellness-background {
 		text-align:center;
+	}
+	.horizontaltext{
+		font-size:14px;
+		line-height:1.4;
+		margin-bottom:10px;
+	}
+	.popupbottom.horizontalpopup .appdownloadbanner .text-right{
+		text-align:center!important;
 	}
 }
 

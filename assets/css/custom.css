@@ -2450,8 +2450,7 @@ img.donloadappimg {
 	display: block;
 }
 
-.block2,
-.popupbottom {
+.block2 {
 	display: none;
 }
 
@@ -2505,10 +2504,34 @@ img.donloadappimg {
 	display: block;
 }
 
-.block2 {
+.block2,
+.popupbottom {
 	display: none;
 }
 
 .app_downloadbanner img.buildapp {
 	width: 32%;
+}
+/*horizontalpopup*/
+.new_footer_area{
+	margin-bottom:70px;
+}
+.popupbottom.horizontalpopup{
+	width:100%;
+}
+.popupbottom.horizontalpopup .app_downloadbanner img{
+	width:20%;
+}
+.popupbottom.horizontalpopup  .index_download{
+	margin-top:0px;
+}
+.popupbottom.horizontalpopup  .innerspace{
+	padding:20px;
+}
+.popupbottom.horizontalpopup .appdownloadbanner{
+	border-radius:0px;
+}
+.horizontaltext{
+	font-weight:500;
+	font-size:18px;
 }
