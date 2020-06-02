@@ -737,7 +737,7 @@ a.popup-youtube .fa {
 }
 
 .button_width {
-	min-width: 220px;
+	min-width: 200px;
 	text-align: center;
 }
 
@@ -756,7 +756,7 @@ a.popup-youtube .fa {
 .banner_btn {
 	font: 500 16px Poppins, sans-serif;
 	border-radius: 4px;
-	padding: 18px 43px;
+	padding: 16px 35px;
 	-webkit-transition: all .2s linear;
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
@@ -1369,7 +1369,7 @@ textarea:focus {
 	border: 1px solid #4c5267;
 	font: 500 16px Poppins, sans-serif;
 	border-radius: 4px;
-	padding: 18px 43px;
+	padding: 16px 43px;
 	-webkit-transition: all .2s linear;
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
