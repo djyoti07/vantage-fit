@@ -2458,12 +2458,12 @@ img.donloadappimg {
 	width: 30%;
 }
 
-.popupbottom {
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	animation: slideBottom 4s forwards;
+.slideUp {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	animation: slideBottom 1s forwards;
 }
 
 @keyframes slideBottom {
@@ -2478,10 +2478,10 @@ img.donloadappimg {
 }
 
 .slideDown {
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 	animation: slideUp 4s forwards;
 }
 
@@ -2514,10 +2514,11 @@ img.donloadappimg {
 }
 /*horizontalpopup*/
 .new_footer_area{
-	margin-bottom:70px;
+	margin-bottom:80px;
 }
 .popupbottom.horizontalpopup{
 	width:100%;
+	
 }
 .popupbottom.horizontalpopup .app_downloadbanner img{
 	width:20%;
@@ -2530,6 +2531,10 @@ img.donloadappimg {
 }
 .popupbottom.horizontalpopup .appdownloadbanner{
 	border-radius:0px;
+	background-image: -webkit-linear-gradient(0deg, #fa6967 0, #f56765 1%, #ed6a58 100%);
+	-webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .06);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .06);
+    color:#ffffff;
 }
 .horizontaltext{
 	font-weight:500;

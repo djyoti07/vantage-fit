@@ -14,6 +14,9 @@
 	.popupbottom.horizontalpopup .innerspace {
 	    padding: 10px 5px;
 	}
+	.new_footer_area .footer_bottom{
+		padding-bottom:25px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
@@ -641,6 +644,9 @@
 	}
 	.popupbottom .app_downloadbanner {
 		margin-bottom: 0px;
+	}
+	.popupbottom.horizontalpopup .app_downloadbanner img{
+		width:35%;
 	}
 }
 

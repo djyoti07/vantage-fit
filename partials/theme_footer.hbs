@@ -2,9 +2,12 @@
 (function($){ 
 $(document).ready(function () {
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 200) {
-      $('.overlayPop').addClass("slideUp");
-      } 
+    if ($(window).scrollTop() > 550) {
+      console.log($(window).scrollTop());
+      $('.overlayPop').show().addClass("slideUp").removeClass("slideDown");
+    } else {
+      $('.overlayPop').removeClass("slideUp").addClass("slideDown").hide("1000");
+    }
   });
 });
 })(jQuery);
