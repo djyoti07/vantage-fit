@@ -2513,7 +2513,7 @@ img.donloadappimg {
 	width: 32%;
 }
 /*horizontalpopup*/
-.new_footer_area{
+.new_footer_area.popupspc{
 	margin-bottom:80px;
 }
 .popupbottom.horizontalpopup{
@@ -2592,7 +2592,11 @@ img.donloadappimg {
 	z-index:-1;
 }
 
-
+.horizontalpopup .buttonpopup {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+}
 
 
 
