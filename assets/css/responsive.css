@@ -17,14 +17,14 @@
 	.new_footer_area .footer_bottom{
 		padding-bottom:25px;
 	}
-	.iconslandingpage ul li{
-		width:30%;
-	}
 	.welness_banner .request-demo-form {
 	    margin-bottom: 40px;
 	}
 	.welness_banner {
 	    padding-bottom: 40px;
+	}
+	.n_banner_content.empwelness {
+	    padding-top: 0px;
 	}
 }
 
@@ -533,6 +533,12 @@
 	}
 	.popupbottom.horizontalpopup .appdownloadbanner .text-right{
 		text-align:center!important;
+	}	
+	.iconslandingpage ul li{
+		width:44%;
+	}
+	.iconslandingpage ul li:nth-child(even){
+		border-right:none;
 	}
 }
 
@@ -696,6 +702,9 @@
 	.title_second .second_heading {
 		font-size: 25px;
 	}
+	.n_banner_content.empwelness {
+	    padding-top: 100px;
+	}
 }
 
 @media only screen and (min-width:1024px) and (max-width:1200px) {
@@ -713,6 +722,12 @@
 		font-size: 22px;
 		min-height: unset;
 		margin-bottom: 0;
+	}
+	.iconslandingpage ul li{
+		width:30%;
+	}
+	.iconslandingpage ul li:nth-child(3),.iconslandingpage ul li:nth-child(6){
+		border-right:none;
 	}
 }
 
