@@ -211,8 +211,8 @@ $('.popupyoutubevideo,.popupvideosection').magnificPopup({
   });
   $(document).ready(function () {
     $(window).scroll(function() {
+      const showMsg = localStorage.getItem('showMsg');
       if ($(window).scrollTop() > 550) {
-        const showMsg = localStorage.getItem('showMsg');
           if(showMsg !== 'false'){
             $(".new_footer_area").addClass("popupspc");
             $('.overlayPop').addClass("slideUp").removeClass("slideDown");
