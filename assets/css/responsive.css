@@ -729,6 +729,9 @@
 	.iconslandingpage ul li:nth-child(3),.iconslandingpage ul li:nth-child(6){
 		border-right:none;
 	}
+	.new_footer_area.popupspc{
+		margin-bottom:70px;
+	}
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
