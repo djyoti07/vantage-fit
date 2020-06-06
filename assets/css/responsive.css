@@ -26,6 +26,9 @@
 	.n_banner_content.empwelness {
 	    padding-top: 0px;
 	}
+	.request-demo-form.position{
+		min-height:0px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
