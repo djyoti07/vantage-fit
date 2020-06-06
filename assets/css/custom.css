@@ -2608,8 +2608,13 @@ img.donloadappimg {
 .request-demo-form.position  .hs-form{
 	margin:10px 0px;
 }
-
-
+.popupbottom.overlayPop.slideUp.marketinglanding.featured{
+	display:none;
+}
+.marketinglanding.featured.new_footer_area.popupspc{
+	margin-bottom:0px;
+	display:block;
+}
 
 
 
