@@ -2596,9 +2596,17 @@ img.donloadappimg {
     position: absolute;
     top: 5px;
     right: 12px;
+    z-index:99;
 }
-
-
+.request-demo-form.position {
+    padding: 40px 40px 55px;
+}
+.request-demo-form .title_head{
+	font-size:25px;
+}
+.request-demo-form.position  .hs-form{
+	margin:10px 0px;
+}
 
 
 
