@@ -706,7 +706,7 @@ header.navbar_fixed .navbar .search_cart .search a.nav-link:before {
 }
 
 .n_banner_content h1 {
-	font-size: 40px;
+	font-size: 39px;
 	line-height: 52px;
 	font-weight: 600;
 	margin-bottom: 30px;
@@ -2540,3 +2540,68 @@ img.donloadappimg {
 	font-weight:500;
 	font-size:18px;
 }
+.iconslandingpage ul {
+	padding-inline-start:0px;
+	margin-bottom:0px;
+}
+.iconslandingpage ul li {
+    display: inline-block;
+    list-style-type:none;
+    margin: 30px 0px;
+    width:15%;
+    border-right:1px solid #d9dde7;
+}
+.iconslandingpage ul li:last-child{
+	border-right:none;
+}
+.iconslandingpage img {
+    width: 25%;
+}
+.iconslandingpage p{
+	font-weight: 500;
+    line-height: 1.4;
+    padding-top: 20px;
+    margin-bottom:0px;
+}
+.iconslandingpage{
+	width:100%;
+}
+.bz-shadow{
+	-webkit-box-shadow: 0 3px 10.92px 1.08px rgba(0, 0, 0, .07);
+    -moz-box-shadow: 0 3px 10.92px 1.08px rgba(0, 0, 0, .07);
+    box-shadow: 0 3px 10.92px 1.08px rgba(0, 0, 0, .07);
+    margin-bottom:40px;
+}
+.n_banner_content.empwelness{
+	padding-top:140px;
+}
+.welness_banner{
+	padding-top:120px;
+}
+
+.request-demo-form .actions{
+	text-align:center;
+	z-index:99;
+}
+.formbackground{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	right:0px;
+	z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

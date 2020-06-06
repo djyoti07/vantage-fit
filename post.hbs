@@ -24,148 +24,131 @@ into the {body} of the default.hbs template --}}
 			        <div class="container custom-container">
 			            <div class="row post-content details-post">
 			            	
-            			<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-            				<div class="imageholder">
-            					<img class="detailspostimg img-responsive"
-							            srcset="{{img_url feature_image}}"
-							            
-							            src="{{img_url feature_image}}"
-							            alt="{{title}}"
-							        />
-            				</div>
-            				<!--<div>                        
-                                <div class="tagspost"> 
-                                 {{date format="DD-MM-YYYY"}} 
-                            	</div>
-                                <div class="readtime_wrapper">{{reading_time}}
+                			<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                				<div class="imageholder">
+                					<img class="detailspostimg img-responsive"
+    							            srcset="{{img_url feature_image}}"
+    							            
+    							            src="{{img_url feature_image}}"
+    							            alt="{{title}}"
+    							        />
+                				</div>
+                				<div class="contentarea contentresource">{{content}}</div>
+                             </div>
+    			                 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                    <!--downloadebook-->
+                                    <div class="downloadsection text-center " style="position:relative;">
+                                        <div class="innerspace" >
+                                            A Complete Guide To 
+                                            <div class="sideheading">Corporate Wellness Programs</div>
+                                        </div>
+                                        <div style="position:relative;z-index:9">
+                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/_guide-to-corporate-wellness.png" alt="wellnessprogram" class="dwnloadbookimage">
+                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/freeebook.png" alt="free ebook" class="freeebook">
+                                        </div>
+                                        <div class="ebookbackground compny_background">
+                                        </div>
+                                        <div class="transform button_sidebar">
+                                            <a class="popup-youtube banner_btn blackbutton button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/">
+                                               <span>Free Download </span>
+                                            </a>
+                                          </div>
+                                    </div>
+                                    <!--requestdemo-->
+                                    <div class="downloadsection text-center " style="position:relative">
+                                        <div class="compny_background min_hght innerspace">
+                                            <div>Get your employees healthy and fit with </div>
+                                            <div class="sideheading">Vantage Fit</div>
+
+                                        </div>
+                                        <div class="request_demo text-center min_hght_2">
+                                            <img  src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Vfit-phone.png" alt="requestdemo" class="requestdemo_sidebar">
+                                        </div>
+                                        
+                                        <div class="transform button_sidebar">
+                                            <a class="popup-youtube banner_btn blackbutton button-style" href="https://www.vantagefit.io/request-demo">
+                                               <span>Request Demo</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--subscribe to newsletter-->
+                                    <div class="downloadsection text-center innerspace subscribebackground" style="position:relative">
+                                        <img  src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Vfit-heart.png" alt="vfit" class="vfitheart">
+                                        <div>Stay updated with Vantage Fit by signing up for our newsletter!
+                                        </div>
+                                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                                        <script>
+                                          hbspt.forms.create({
+                                            portalId: "6153052",
+                                            formId: "1fab61f2-748b-4322-8a07-bd1ff6f1f18a"
+                                        });
+                                        </script>
+                                        <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/person-running.png" alt="subscribe" class="subscribe">
+                                    </div>
+                                    <div class="rightsidebar  wow fadeInRight " data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+                                        {{#get "posts" include="tags,authors" limit="6"  order="published_at desc"}}
+                                        <div class="innerspace_w">
+                                        <div class="post-title sidebartitle ">Recent Post
+                                        </div>
+                                        
+                                            {{#foreach posts}}
+                                            <div class=" d-flex align_items_center ind-row">
+                                            <div class="pclrd col-lg-4 col-md-3 col-xs-12 col-sm-3 pclr"><a href="{{url}}"><img class="img-ind img-responsive" src="{{img_url feature_image}}" alt="{{title}}"/></a></div>
+                                                
+                                            <div class="col-lg-8  col-md-9 col-xs-12 col-sm-9" style="line-height:1.5"><a href="{{url}}" class="title-post-ind">{{title}}</a>
+                                            <div class="smallfont">
+                                                {{date format="DD-MM-YYYY"}}
+                                            </div>
+                                            </div>
+                                            </div>
+                                            {{/foreach}}
+                                        
+                                        </div>
+                                        
+                                        {{/get}}
+
+                                            <div class="hghtpost"></div>
+                                            <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/pattern-recentpost.png" alt="postdesign" class="postdesign">
+                                    </div>
+                                    <!--downloadebook sticky-->
+                                    <div class="downloadsection text-center sticky innerspace compny_background hidden-xs hidden-sm">
+                                        <div class="sideheading">Download our eBook for Free</div>
+                                        <div class="b15">
+                                            A Complete Guide To Corporate Wellness Programs
+                                        </div>
+                                        <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Book_Cover.png" alt="wellnessprogram" class="imagesticky">
+                                        
+                                        <div class="transform ">
+                                            <a class="popup-youtube banner_btn white_button button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/">
+                                               <span style="color: #ffffff;">Free Download </span>
+                                            </a>
+                                          </div>
+                                    </div>
                                 </div>
+        	               </div>
+        	            </div>
+        	       </section>
+    	            <!--download ebok-->
+    	            <section class="section_space b10 hidden-xs">
+    				    <div class="col-lg-12 contentebook compny_background innerspace mb10">
+                             <div class="flexd row">
+                                <div class="col-md-5 col-lg-5 col-xs-12 col-sm-6 text-center">
+                                    <img class="pulseblog hidden-xs" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/heart-lines.png" alt="pulse">
+                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/freeebook.png" alt="free ebook" class="freebookblog">
+                                    <div class="position">
+                                        <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Book_Cover.png" class="bokcover" alt="wellnessprogram">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-xs-12 col-sm-6 text-center title_second"><span class="sideheading" style="font-weight:normal">Download our Complete Guide on</span> <div class="second_heading" style="color:#ffffff">Corporate Wellness Program</div> <span class="sideheading" style="font-weight:normal">For A Healthier Workplace Experience</span>
+                                <div class="transform ebookbutton">
+                                        <a class="popup-youtube banner_btn white_button button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/?__hstc=181257784.d5f3d59ee4a3da153080d7b1c2cc5fa9.1585022128913.1589608180387.1589621505475.45&amp;__hssc=181257784.9.1589621505475&amp;__hsfp=1493941965"> 
+                                           <span style="color: #ffffff;">Free Download </span>
+                                        </a>
+                                      </div>
+                                  </div>
                             </div>
-                            <div class="wellness-background text-center title_second">
-                            	<div class="second_heading" style="color:#ffffff">Download our eBook for Free</div>
-                            	<p  style="color:#ffffff">A Complete Guide To Corporate Wellness Programs</p>
-                            	<div class="transform">
-						            <a class="popup-youtube banner_btn white_button button-style" href="/ebook/free-ebook-corporate-wellness-program/">
-						               <span style="color: #ffffff;">Free Download </span>
-						            </a>
-						          </div>
-                            </div>-->
-            				<div class="contentarea contentresource">{{content}}</div></div>
-            			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                            <!--downloadebook-->
-                                            <div class="downloadsection text-center " style="position:relative;">
-                                                <div class="innerspace" >
-                                                    A Complete Guide To 
-                                                    <div class="sideheading">Corporate Wellness Programs</div>
-                                                </div>
-                                                <div style="position:relative;z-index:9">
-                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/_guide-to-corporate-wellness.png" alt="wellnessprogram" class="dwnloadbookimage">
-                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/freeebook.png" alt="free ebook" class="freeebook">
-                                                </div>
-                                                <div class="ebookbackground compny_background">
-                                                </div>
-                                                <div class="transform button_sidebar">
-                                                    <a class="popup-youtube banner_btn blackbutton button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/">
-                                                       <span>Free Download </span>
-                                                    </a>
-                                                  </div>
-                                            </div>
-                                            <!--requestdemo-->
-                                            <div class="downloadsection text-center " style="position:relative">
-                                                <div class="compny_background min_hght innerspace">
-                                                    <div>Get your employees healthy and fit with </div>
-                                                    <div class="sideheading">Vantage Fit</div>
-
-                                                </div>
-                                                <div class="request_demo text-center min_hght_2">
-                                                    <img  src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Vfit-phone.png" alt="requestdemo" class="requestdemo_sidebar">
-                                                </div>
-                                                
-                                                <div class="transform button_sidebar">
-                                                    <a class="popup-youtube banner_btn blackbutton button-style" href="https://www.vantagefit.io/request-demo">
-                                                       <span>Request Demo</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!--subscribe to newsletter-->
-                                            <div class="downloadsection text-center innerspace subscribebackground" style="position:relative">
-                                                <img  src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Vfit-heart.png" alt="vfit" class="vfitheart">
-                                                <div>Stay updated with Vantage Fit by signing up for our newsletter!
-                                                </div>
-                                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                                                <script>
-                                                  hbspt.forms.create({
-                                                    portalId: "6153052",
-                                                    formId: "1fab61f2-748b-4322-8a07-bd1ff6f1f18a"
-                                                });
-                                                </script>
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/person-running.png" alt="subscribe" class="subscribe">
-                                            </div>
-                                            <div class="rightsidebar  wow fadeInRight " data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
-                                                {{#get "posts" include="tags,authors" limit="6"  order="published_at desc"}}
-                                                <div class="innerspace_w">
-                                                <div class="post-title sidebartitle ">Recent Post
-                                                </div>
-                                                
-                                                    {{#foreach posts}}
-                                                    <div class=" d-flex align_items_center ind-row">
-                                                    <div class="pclrd col-lg-4 col-md-3 col-xs-12 col-sm-3 pclr"><a href="{{url}}"><img class="img-ind img-responsive" src="{{img_url feature_image}}" alt="{{title}}"/></a></div>
-                                                        
-                                                    <div class="col-lg-8  col-md-9 col-xs-12 col-sm-9" style="line-height:1.5"><a href="{{url}}" class="title-post-ind">{{title}}</a>
-                                                    <div class="smallfont">
-                                                        {{date format="DD-MM-YYYY"}}
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    {{/foreach}}
-                                                
-                                                </div>
-                                                
-                                                {{/get}}
-
-                                                    <div class="hghtpost"></div>
-                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/pattern-recentpost.png" alt="postdesign" class="postdesign">
-                                            </div>
-                                            <!--downloadebook sticky-->
-                                            <div class="downloadsection text-center sticky innerspace compny_background hidden-xs hidden-sm">
-                                                <div class="sideheading">Download our eBook for Free</div>
-                                                <div class="b15">
-                                                    A Complete Guide To Corporate Wellness Programs
-                                                </div>
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Book_Cover.png" alt="wellnessprogram" class="imagesticky">
-                                                
-                                                <div class="transform ">
-                                                    <a class="popup-youtube banner_btn white_button button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/">
-                                                       <span style="color: #ffffff;">Free Download </span>
-                                                    </a>
-                                                  </div>
-                                            </div>
-                                        </div>
-							
-	            		</div>
-	            	</div>
-	            </section>
-	            <!--download ebok-->
-	            <section class="section_space b10 hidden-xs">
-    
-				    <div class="col-lg-12 contentebook compny_background innerspace mb10">
-                                            <div class="flexd row">
-                                            <div class="col-md-5 col-lg-5 col-xs-12 col-sm-6 text-center">
-                                                <img class="pulseblog hidden-xs" src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/heart-lines.png" alt="pulse">
-                                                <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/freeebook.png" alt="free ebook" class="freebookblog">
-                                                <div class="position">
-                                                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/v1588760727/VantageFit/website/Book_Cover.png" class="bokcover" alt="wellnessprogram">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7 col-lg-7 col-xs-12 col-sm-6 text-center title_second"><span class="sideheading" style="font-weight:normal">Download our Complete Guide on</span> <div class="second_heading" style="color:#ffffff">Corporate Wellness Program</div> <span class="sideheading" style="font-weight:normal">For A Healthier Workplace Experience</span>
-                                            <div class="transform ebookbutton">
-                                                    <a class="popup-youtube banner_btn white_button button-style" href="https://www.vantagefit.io/ebook/free-ebook-corporate-wellness-program/?__hstc=181257784.d5f3d59ee4a3da153080d7b1c2cc5fa9.1585022128913.1589608180387.1589621505475.45&amp;__hssc=181257784.9.1589621505475&amp;__hsfp=1493941965"> 
-                                                       <span style="color: #ffffff;">Free Download </span>
-                                                    </a>
-                                                  </div></div>
-                                        </div>
-                                        </div>
-
-				  </section>
+                        </div>
+	                </section>
 	        </div>
         </div>
     </div>

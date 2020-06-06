@@ -17,6 +17,15 @@
 	.new_footer_area .footer_bottom{
 		padding-bottom:25px;
 	}
+	.iconslandingpage ul li{
+		width:30%;
+	}
+	.welness_banner .request-demo-form {
+	    margin-bottom: 40px;
+	}
+	.welness_banner {
+	    padding-bottom: 40px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
