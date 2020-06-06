@@ -2611,7 +2611,7 @@ img.donloadappimg {
 .popupbottom.overlayPop.slideUp.marketinglanding.featured{
 	display:none;
 }
-.marketinglanding.featured.new_footer_area.popupspc{
+.marketinglanding.featured.new_footer_area.popupspc,.marketinglanding.featured.new_footer_area{
 	margin-bottom:0px;
 	display:block;
 }
