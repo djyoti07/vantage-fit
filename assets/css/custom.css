@@ -2463,7 +2463,7 @@ img.donloadappimg {
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
-	animation: slideBottom 1s forwards;
+	animation: slideBottom 3s forwards;
 }
 
 @keyframes slideBottom {
@@ -2478,11 +2478,11 @@ img.donloadappimg {
 }
 
 .slideDown {
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-	animation: slideUp 4s forwards;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	animation: slideUp 3s forwards;
 }
 
 @keyframes slideUp {
