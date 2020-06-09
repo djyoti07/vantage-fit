@@ -2573,10 +2573,23 @@ img.donloadappimg {
     margin-bottom:40px;
 }
 .n_banner_content.empwelness{
-	padding-top:140px;
+	padding-top:80px;
+}
+.n_banner_content.empwelness p{
+	padding-bottom:0px;
+}
+.n_banner_content.empwelness hr{
+	border-top:1px solid #ffffff;
+	opacity:.6;
+}
+.n_banner_content.empwelness b{
+	font-weight:600;
 }
 .welness_banner{
 	padding-top:120px;
+}
+.n_banner_content.empwelness h1{
+	font-weight:500;
 }
 
 .request-demo-form .actions{
@@ -2600,7 +2613,7 @@ img.donloadappimg {
 }
 .request-demo-form.position {
     padding: 40px 40px 55px;
-    min-height:510px;
+    min-height:580px;
 }
 .request-demo-form .title_head{
 	font-size:25px;
@@ -2614,6 +2627,10 @@ img.donloadappimg {
 .marketinglanding.featured.new_footer_area.popupspc,.marketinglanding.featured.new_footer_area{
 	margin-bottom:0px;
 	display:block;
+}
+.demoformtext{
+	font-size:13px;
+	margin-top:20px;
 }
 
 
