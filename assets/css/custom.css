@@ -1319,6 +1319,7 @@ label {
 	margin: 40px auto 0;
 	float: right;
 	margin-bottom: 120px;
+	min-height:510px;
 }
 
 ul.hs-error-msgs.inputs-list {

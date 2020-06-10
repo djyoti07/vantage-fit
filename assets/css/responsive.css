@@ -32,6 +32,9 @@
 	.admin_features{
 		max-width:100%;
 	}
+	.request-demo-form{
+		min-height:0px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
