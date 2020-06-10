@@ -1349,7 +1349,7 @@ textarea:focus {
 }
 
 .page-template .title_head {
-	font-size: 40px;
+	font-size: 39px;
 	color: #2c2d4f;
 	font-weight: 600;
 	line-height: 1.2;
@@ -2636,7 +2636,10 @@ img.donloadappimg {
 	flex-grow: 0;
 }
 
-
+.admin_features{
+	max-width:800px;
+	margin:auto;
+}
 
 
 

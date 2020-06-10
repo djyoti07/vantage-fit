@@ -29,6 +29,9 @@
 	.request-demo-form.position{
 		min-height:0px;
 	}
+	.admin_features{
+		max-width:100%;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
