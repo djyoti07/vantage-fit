@@ -2552,6 +2552,7 @@ img.donloadappimg {
     width:15%;
     border-right:1px solid #d9dde7;
     vertical-align: middle;
+    min-height:60px;
 }
 .iconslandingpage ul li a
 {
