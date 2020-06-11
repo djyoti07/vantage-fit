@@ -2551,6 +2551,15 @@ img.donloadappimg {
     margin: 30px 0px;
     width:15%;
     border-right:1px solid #d9dde7;
+    vertical-align: middle;
+}
+.iconslandingpage ul li a
+{
+	color:#4c5267;
+}
+.iconslandingpage ul li a:hover
+{
+	color:#f15162;
 }
 .iconslandingpage ul li:last-child{
 	border-right:none;
@@ -2641,7 +2650,9 @@ img.donloadappimg {
 	max-width:800px;
 	margin:auto;
 }
-
+.mb_10im{
+	margin-bottom:0px!important;
+}
 
 
 
