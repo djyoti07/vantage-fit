@@ -106,11 +106,31 @@ No of users- <span class="users">0</span>
 {{!-- Ghost Content API --}}
 <script type="text/javascript" src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 <script>
-  /*$('#range').on("input", function() {
+
+  var width = ($("#range").val())/10;
+  $("#slider-fill").attr("style", "width: "+ (width) + "%;");
+  $(".slider-handle").attr("style", "left: "+ (width) + "%;");
+  $('#range').on("input", function() {
     var priceValue;
     var inputs = $("output[attr]");
     var user = this.value;
     $(".users").text(user);
+    var width = ($("#range").val())/10;
+    
+    if(width > 98){
+
+      $("#slider-fill").attr("style", "width: "+ (98) +"%;");
+      $(".slider-handle").attr("style", "left: "+ (96) +"%;");
+    }
+    else if(width < 2){
+      $("#slider-fill").attr("style", "width: "+ (2) +"%;");
+      $(".slider-handle").attr("style", "left: "+ (2) +"%;");
+    }
+    else{
+      $("#slider-fill").attr("style", "width: "+ (width ) +"%;");
+      $(".slider-handle").attr("style", "left: "+ (width-1) +"%;");
+    }
+    
     inputs.each(function(){ 
       var priceValue = $(this).attr('attr');
        //console.log("user"+user);
@@ -118,7 +138,7 @@ No of users- <span class="users">0</span>
        //console.log("total"+$(this).val((user)*priceValue));
        $(this).val((user)*priceValue);
     });
-    }).trigger("change");*/
+    }).trigger("change");
 (function($) {
   $.fn.circleGraphic = function(options) {
     $.fn.circleGraphic.defaults = {
