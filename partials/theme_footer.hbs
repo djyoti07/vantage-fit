@@ -1,3 +1,13 @@
+<!--<label for="range">
+      <input type="range" name="range" id="range" min="0" max="1000" step="5" value="0"/>
+</label>
+No of users- <span class="users">0</span>
+<div class="out">
+ Free<output for="range" class="output" attr='3'></output>
+ Premium<output for="range" class="output" attr='5'></output>
+ Enterprice<output for="range" class="output" attr='9'></output>
+</div>-->
+<!--new-->
 <div class="popupbottom overlayPop  horizontalpopup marketinglanding {{post_class}}" id="bottommodal">
    <div class="appdownloadbanner  text-center  healthforce row d-flex align_items_center innerspace">  
    <button type="button" class="close buttonpopup close-fd" >
@@ -96,6 +106,19 @@
 {{!-- Ghost Content API --}}
 <script type="text/javascript" src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 <script>
+  /*$('#range').on("input", function() {
+    var priceValue;
+    var inputs = $("output[attr]");
+    var user = this.value;
+    $(".users").text(user);
+    inputs.each(function(){ 
+      var priceValue = $(this).attr('attr');
+       //console.log("user"+user);
+       //console.log("price"+priceValue);
+       //console.log("total"+$(this).val((user)*priceValue));
+       $(this).val((user)*priceValue);
+    });
+    }).trigger("change");*/
 (function($) {
   $.fn.circleGraphic = function(options) {
     $.fn.circleGraphic.defaults = {
