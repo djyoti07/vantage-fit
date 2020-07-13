@@ -110,21 +110,24 @@ No of users- <span class="users">0</span>
   var width = ($("#range").val())/10;
   $("#slider-fill").attr("style", "width: "+ (width) + "%;");
   $(".slider-handle").attr("style", "left: "+ (width) + "%;");
+  var noOfUser = $('#range').val();
+  $(".usersbox .users").text(noOfUser);
   $('#range').on("input", function() {
     var priceValue;
     var inputs = $("output[attr]");
     var user = this.value;
     $(".users").text(user);
     var width = ($("#range").val())/10;
-    
-    if(width > 98){
+    $("#slider-fill").attr("style", "width: "+ (width ) +"%;");
+      $(".slider-handle").attr("style", "left: "+ (width-1) +"%;");
+    if(width > 97){
 
       $("#slider-fill").attr("style", "width: "+ (98) +"%;");
       $(".slider-handle").attr("style", "left: "+ (96) +"%;");
     }
-    else if(width < 2){
-      $("#slider-fill").attr("style", "width: "+ (2) +"%;");
-      $(".slider-handle").attr("style", "left: "+ (2) +"%;");
+    else if(width < 4){
+      $("#slider-fill").attr("style", "width: "+ (3) +"%;");
+      $(".slider-handle").attr("style", "left: "+ (3) +"%;");
     }
     else{
       $("#slider-fill").attr("style", "width: "+ (width ) +"%;");
