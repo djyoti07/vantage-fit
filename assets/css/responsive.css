@@ -38,6 +38,10 @@
 	.iconslandingpage ul li {
 		min-height:0px;
 	}
+	
+	.details-post ul{
+		padding-inline-start:10px;
+	}
 }
 
 @media (min-width:320px) and (max-width:1023px) {
