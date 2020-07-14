@@ -2245,15 +2245,15 @@ article.post-card .img-holder {
 }
 
 img.bokcover {
-	width: 45%;
+	width: 37%;
 	float: right;
 	padding-right: 10px;
 }
 
 img.freebookblog {
 	position: absolute;
-	width: 22%;
-	left: 40%;
+	width: 15%;
+	left: 53%;
 	top: 13%;
 	z-index: 9;
 }
@@ -2264,7 +2264,7 @@ img.freebookblog {
 
 img.pulseblog {
 	position: absolute;
-	width: 60%;
+	width: 66%;
 	bottom: 7%;
 	left: -15px;
 }
@@ -2687,6 +2687,12 @@ img.donloadappimg {
 }
 .content_c ol li:before{
 	content:none;
-	}
+}
+.resourceebookd .sideheading{
+	font-size:17px;
+}
+.resourceebookd .title_second .second_heading{
+	font-size:26px;
+}
 
 
