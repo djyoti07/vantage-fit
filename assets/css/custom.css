@@ -2655,6 +2655,38 @@ img.donloadappimg {
 	margin-bottom:0px!important;
 }
 
-
+.content_c {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 40px 40px 25px;
+    margin-top: 50px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+.content_c .table_heading {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-left: 3px solid #f15162;
+    padding-left: 15px;
+    font-weight:300;
+}
+.table_subheading {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.content_c ol {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+}
+.content_c ol li {
+    list-style: none;
+    padding-left: 0;
+}
+.content_c ol li:before{
+	content:none;
+	}
 
 

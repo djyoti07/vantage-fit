@@ -188,6 +188,9 @@
 	}
 	.main_title p {
 		padding: 0 20px;
+	    font-size: 15px;
+	    line-height: 1.7;
+	    margin-top: 15px;
 	}
 	.pricingouter {
 		padding: 30px 0;
@@ -357,10 +360,10 @@
 		font-size: 17px;
 	}
 	.breadcrumb_area_two {
-		padding: 127px 0 67px;
+		padding: 127px 0 40px 0px;
 	}
 	.breadcrumb_content h1 {
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.main-content {
 		padding: 50px 0;
@@ -551,6 +554,12 @@
 	}
 	.iconslandingpage ul li:nth-child(even){
 		border-right:none;
+	}
+	.popupbottom.horizontalpopup .app_downloadbanner img {
+	    width: 43%;
+	}
+	.popupbottom.horizontalpopup .innerspace{
+		padding:10px 14px;
 	}
 }
 
@@ -744,10 +753,16 @@
 	.new_footer_area.popupspc{
 		margin-bottom:70px;
 	}
+	.breadcrumb_area_two{
+		 padding: 165px 0 100px;
+	}
+	.main_title h1{
+		font-size:40px;
+	}
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
-	.popupbottom .app_downloadbanner img {
+	.popupbottom .app_downloadbanner img,.popupbottom.horizontalpopup .app_downloadbanner img{
 		width: 20%;
 	}
 	.downloadsection .freeebook {
