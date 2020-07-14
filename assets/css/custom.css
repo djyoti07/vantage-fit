@@ -1638,19 +1638,21 @@ blockquote p {
 
 .post-content h2 {
 	color: #181818;
-	font-size: 30px;
+	font-size: 28px;
 	margin-bottom: 30px;
 	margin-top: 40px;
 	line-height: 1.5;
+	font-weight:500;
 }
 
 .post-content h3 {
 	color: #181818;
-	font-size: 25px;
+	font-size: 24px;
 	margin-bottom: 30px;
 	margin-top: 40px;
 	width: 100%;
 	line-height: 1.5;
+	font-weight:400;
 }
 
 .post-content h4 {
@@ -1660,6 +1662,7 @@ blockquote p {
 	margin-top: 40px;
 	width: 100%;
 	line-height: 1.5;
+	font-weight:400;
 }
 
 .downloadsection.requestdemo {
@@ -1668,7 +1671,7 @@ blockquote p {
 }
 
 .details-post strong {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .details-post ul li {
@@ -2245,15 +2248,15 @@ article.post-card .img-holder {
 }
 
 img.bokcover {
-	width: 45%;
+	width: 37%;
 	float: right;
 	padding-right: 10px;
 }
 
 img.freebookblog {
 	position: absolute;
-	width: 22%;
-	left: 40%;
+	width: 15%;
+	left: 53%;
 	top: 13%;
 	z-index: 9;
 }
@@ -2264,7 +2267,7 @@ img.freebookblog {
 
 img.pulseblog {
 	position: absolute;
-	width: 60%;
+	width: 66%;
 	bottom: 7%;
 	left: -15px;
 }
@@ -2778,4 +2781,45 @@ input::-moz-focus-inner,
 input::-moz-focus-outer { 
   border: 0; 
 }
+
+.content_c {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 40px 40px 25px;
+    margin-top: 50px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+.content_c .table_heading {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-left: 3px solid #f15162;
+    padding-left: 15px;
+    font-weight:300;
+}
+.table_subheading {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.content_c ol {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+}
+.content_c ol li {
+    list-style: none;
+    padding-left: 0;
+}
+.content_c ol li:before{
+	content:none;
+}
+.resourceebookd .sideheading{
+	font-size:17px;
+}
+.resourceebookd .title_second .second_heading{
+	font-size:26px;
+}
+
 
