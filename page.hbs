@@ -26,6 +26,7 @@ into the {body} of the default.hbs template --}}
         		</div>
         	</div> 
         </section>
+
         <!--pricng starts-->
         <div class="main-content">
             <section>
@@ -41,17 +42,17 @@ into the {body} of the default.hbs template --}}
                     <div class = "col-lg-9 col-md-9 col-xs-12 col-sm-8">
                         <div class="user_heading">How many users do you expect?</div>
 
-                        <p class="secondarytext"><b>More than 1,000 users? <a href="/contact-us" class="companycolor">Contact Us</a></b>
+                        <p class="secondarytext"><b>More than 1,000 users? <a href="http://localhost:2368/contact-us" class="companycolor">Contact Us</a></b>
                     </div>
                     <div class = "col-lg-3 col-md-3 col-xs-12 col-sm-4">
                         <div class="usersbox text-center">
-                            <span class="users"></span>
+                            <span class="users">100</span>
                             <br>
                             Users
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pricecalculator">
-                        <label for="range">
+                        <!--<label for="range">
                               <input type="range" name="range" id="range" min="0" max="1000" step="5" value="200" class="slider-color"/>
                               <div id="slider-range">
                                   <div id="slider-fill">
@@ -59,21 +60,27 @@ into the {body} of the default.hbs template --}}
                                   <div class="slider-handle">
                                   </div>
                               </div>
-                        </label>
+                        </label>-->
+
+                      <div class="range-slider">
+                        <input class="range-slider__range" type="range" value="100" min="10" max="1000">
+                        <span class="range-slider__value"></span>
+                      </div>
+                       <div><span style="text-align:left">10 Users</span><span style="text-align:right">1000 users</span></div>
                         <div class="smallfont text-center">Move the slider to estimate how many people you expect to participate</div>
                     </div>
                   </div>
                 </div>
             </section>
             <section> 
-                <div class="out">
-                 Free<output for="range" class="output" attr='3'></output>
-                 Premium<output for="range" class="output" attr='5'></output>
-                 Enterprice<output for="range" class="output" attr='9'></output>
+                <div class="out" for="range">
+                 Free <output class="output" plan='1'>1</output><br>
+                 Premium <output class="output" plan='2'>2</output><br>
+                 Enterprice <output class="output" plan='3'>3</output>
                 </div>
             </section>
         </div>
-            <!--pricing ends-->
+        <!--pricing ends-->
 		    {{content}}
         </div>
     </div>
