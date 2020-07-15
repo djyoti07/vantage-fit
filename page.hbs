@@ -28,11 +28,11 @@ into the {body} of the default.hbs template --}}
         </section>
 
         <!--pricng starts-->
-        <div class="main-content">
+        <div class="main-content pricingpage">
             <section>
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><div class="title_head text-center wow fadeInUp title_spc animated" data-wow-delay=".3s" style="visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;">Choose a plan <br><span>that best fits your requirements</span></div></div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><h2 class="title_head text-center wow fadeInUp title_spc animated" data-wow-delay=".3s" style="visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;">Choose a plan <br><span>that best fits your requirements</span></h2></div>
                   </div>
                 </div>
             </section>
@@ -41,13 +41,11 @@ into the {body} of the default.hbs template --}}
                   <div class="row d-flex align_items_center noofUser pricingouter ">
                     <div class = "col-lg-9 col-md-9 col-xs-12 col-sm-8">
                         <div class="user_heading">How many users do you expect?</div>
-
                         <p class="secondarytext"><b>More than 1,000 users? <a href="http://localhost:2368/contact-us" class="companycolor">Contact Us</a></b>
                     </div>
                     <div class = "col-lg-3 col-md-3 col-xs-12 col-sm-4">
                         <div class="usersbox text-center">
-                            <span class="users">100</span>
-                            <br>
+                            <div class=""><span class="numberOfUserss"></span></div>
                             Users
                         </div>
                     </div>
@@ -66,18 +64,274 @@ into the {body} of the default.hbs template --}}
                         <input class="range-slider__range" type="range" value="100" min="10" max="1000">
                         <span class="range-slider__value"></span>
                       </div>
-                       <div><span style="text-align:left">10 Users</span><span style="text-align:right">1000 users</span></div>
+                       <div class="userFlex"><span style="text-align:left">10 Users</span><span class="d-right">1000 users</span></div>
                         <div class="smallfont text-center">Move the slider to estimate how many people you expect to participate</div>
                     </div>
                   </div>
                 </div>
             </section>
-            <section> 
-                <div class="out" for="range">
-                 Free <output class="output" plan='1'>1</output><br>
-                 Premium <output class="output" plan='2'>2</output><br>
-                 Enterprice <output class="output" plan='3'>3</output>
+            <section class="section_space">
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <ul class="tabValues pricingouter">
+                      <li attr="subscription" class="active">Subscription</li>
+                      <li attr="onetime">One Time </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+            </section>
+            <section class="section_space subscription showItem" > 
+              <div class="container custom-container">
+                <div class="row">
+                  <!--free-->
+                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4">
+                    <div class="pricingouter priceboxes freebox">
+                      <div class="text-center">
+
+                        <div>
+                          <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_94/v1580904957/VantageFit/website/free-plan-icon.png" alt="freeicon">
+                          <div class="chooseplan">Free</div>
+                          <div class="displayUsers"></div>
+                         </div>
+                        
+                        <div><output class="output" plan='0'></output></div>
+                        <div class="displayUsers"></div>
+                        <div class="priceperemployee" ><span>28-Day Trial</span></div>
+                      </div>
+                      <hr>
+                      <div class="additionals">
+                        <ul>
+                          <li>Access to One 4 week challenge</li>
+                          <li>Fixed Target of 5000 steps</li>
+                          <li>All features with realtime tracking</li>
+                        </ul>
+                      </div>
+                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="cta-price button-black transform text-center">
+                         <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Start Free Trial</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!--premium-->
+                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4">
+                    <div class="pricingouter priceboxes premiumbox">
+                      <div class="text-center">
+
+                        <div>
+                          <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_94/v1580904957/VantageFit/website/premium-plan-icon.png" alt="premiumicon">
+                          <div class="chooseplan">Premium</div>
+                          <div class="displayUsers"><span class="numberOfUserss"></span> Users</div>
+                         </div>
+                        
+                        <div><output class="output" plan='2'></output></div>
+                        <div class="displayUsers">per month</div>
+                        <div class="priceperemployee pricePer" plan="2"><span class="amountperperson"></span> per employee</div>
+                      </div>
+                      <hr>
+                      <div class="additionals">
+                        <ul>
+                          <li>Access to all Challenges</li>
+                          <li>Teams & Leaderboards</li>
+                          <li>Customisable Duration & Targets</li>
+                        </ul>
+                      </div>
+                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="cta-price button-black transform text-center">
+                         <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!--enterprise-->
+                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4">
+                    <div class="pricingouter priceboxes enterprisebox">
+                      <div class="text-center">
+
+                        <div>
+                          <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_94/v1580904957/VantageFit/website/enterprise-plan-icon.png" alt="enterpriseicon">
+                          <div class="chooseplan">Enterprise</div>
+                          <div class="displayUsers"><span class="numberOfUserss"></span> Users</div>
+                         </div>
+                        
+                        <div><output class="output" plan='3'></output></div>
+                        <div class='displayUsers'>per month</div>
+                        <div class="priceperemployee pricePer" plan="3"><span class="amountperperson"></span> per employee</div>
+                      </div>
+                      <hr>
+                      <div class="additionals">
+                        <ul>
+                          <li>Everything in Premium Included</li>
+                          <li>Dedicated Account Manager</li>
+                          <li>Enterprise Single Sign On</li>
+                        </ul>
+                      </div>
+                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="cta-price button-black transform text-center">
+                         <a href="/contact-us" class="button-style banner_btn">Contact Us</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section_space onetime hideItem"> 
+              <div class="container custom-container">
+                <div class="row">
+                  <!--onetimechallenge-->
+                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4 mx-auto">
+                   <div class="pricingouter priceboxes premiumbox">
+                      <div class="text-center">
+
+                        <div>
+                          <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_94/v1580904957/VantageFit/website/enterprise-plan-icon.png" alt="enterpriseicon">
+                          <div class="chooseplan">One Time Challenge </div>
+                          <div class="displayUsers"><span class="numberOfUserss"></span> Users</div>
+                         </div>
+                        
+                        <div><output class="output" plan='1'></output></div>
+                        <div class='displayUsers'>one time fee</div>
+                        <div class="priceperemployee pricePer" plan="1"><span class="amountperperson"></span> per employee</div>
+                      </div>
+                      <hr>
+                      <div class="additionals">
+                        <ul>
+                          <li>Maximum duration 12 weeks</li>
+                          <li>No Restriction on Type of challenge</li>
+                          <li>Customisable Targets and Prizes</li>
+                          <li>Unlimited Number of users</li>
+                          <li>All features with realtime tracking</li>
+                          <li>Teams Supported</li>
+                          <li>Leaderboard</li>
+                          <li>Admin Dashboard with Reports</li>
+                        </ul>
+                      </div>
+                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="cta-price button-black transform text-center">
+                         <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center"><div class="b15 smallfont">Need more time? Check our subscription options <a href="" class='companycolor'>here</a></div></div></div>
+              </div>
+            </section>
+            <!--Try VC for Free-->
+            <section class="section_space">
+              <div style="background:#f5f8fa">
+              <div class="container custom-container">
+                <div class="row d-flex align_items_center pricing_trial">
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
+                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_200/v1588760727/VantageFit/website/Vfit-phone.png" alt="freetrial" class="">
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown" >
+                    <div class="title_second">
+                      <h3 class="second_heading"><span>Try</span> Vantage Fit <span>for free</span></h3>
+                      <p>Start a 28-day free trial!</p>
+                      <div class="button-black transform b15">
+                        <a href="/request-demo" class="button-style banner_btn">Start Free Trial</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+            <section class="section_space">
+              <div class="container custom-container">
+              <div class="row  wow fadeInUp  animated" data-wow-delay=".3s" style="visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><div class="title_head text-center wow fadeInUp">Compare Plans</div></div>
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <p class=" text-center wow fadeInUp secondarytext " data-wow-delay=".6s" style="visibility: visible;-webkit-animation-delay: .6s; -moz-animation-delay: .6s; animation-delay: .6s;">Not sure which plan to pick? <a href="/contact-us" class="companycolor">Reach us</a> to us.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--subscription plans-->
+            <section class="section_space subscription showItem"> 
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
+                    <div>
+                      <div class="tablePlan text-center" align="center">
+                        <div class="indItems">
+                          <div></div>
+                          <div class="freebox">Free</div>
+                          <div class="premiumbox">Premium</div>
+                          <div class="enterprise">Enterprise</div>
+                        </div>
+                        <div class="pricingouter indItems">
+                          <table class="text-center" align="center">
+                            <tr>
+                              <td>Number of users</td>
+                              <td>Unlimited</td>
+                              <td>Unlimited</td>
+                              <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                              <td>Real-time tracking</td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Personalized Recommendations</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                             <tr>
+                              <td>Social Leaderboard</td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                          </table>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--one time plan-->
+            <section class="section_space onetime hideItem"> 
+              <div class="container custom-container">
+                <div class="row">
+                  onetime
+                </div>
+              </div>
+            </section>
+            <!--Our Plans-->
+            <section class="section_space">
+              <div style="background:#f5f8fa">
+              <div class="container custom-container">
+                <div class="row d-flex align_items_center pricing_trial">
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
+                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_350/v1588760727/VantageFit/website/image-questions.png" alt="freetrial" class="">
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown" >
+                    <div class="title_second">
+                      <div class="second_heading">Any questions about our plans?</div>
+                      <p>Request and schedule a free demo now</p>
+                      <div class="button-black transform b15">
+                        <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
             </section>
         </div>
         <!--pricing ends-->
