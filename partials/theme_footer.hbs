@@ -104,7 +104,7 @@ $('.tabValues li').on('click', function(){
     $(currentItem).removeClass("hideItem").addClass("showItem");
 });
 var numberOfUsers = $(".range-slider__range").val();
-var isPricingInUSD = false;
+var isPricingInUSD = true;
 $(".numberOfUserss").each(function(){
     $(this).text(numberOfUsers);
 });
@@ -174,7 +174,7 @@ Array.prototype.forEach.call(sliders,(slider)=>{
       $('.output').each(function(){ 
         var selectedPlan = $(this).attr('plan');
         var numberOfUsers = event.target.value;
-        var isPricingInUSD = false;
+        var isPricingInUSD = true;
         $(".noOfUsers").text(numberOfUsers);
         $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
         

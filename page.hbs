@@ -61,7 +61,7 @@ into the {body} of the default.hbs template --}}
                         </label>-->
 
                       <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="100" min="10" max="1000">
+                        <input class="range-slider__range" type="range" value="100" min="10" max="1000" step="10">
                         <span class="range-slider__value"></span>
                       </div>
                        <div class="userFlex"><span style="text-align:left">10 Users</span><span class="d-right">1000 users</span></div>
@@ -108,7 +108,7 @@ into the {body} of the default.hbs template --}}
                           <li>All features with realtime tracking</li>
                         </ul>
                       </div>
-                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="action"><a href="#subscriptionPlan">Learn More</a></div>
                       <div class="cta-price button-black transform text-center">
                          <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Start Free Trial</a>
                       </div>
@@ -138,7 +138,7 @@ into the {body} of the default.hbs template --}}
                           <li>Customisable Duration & Targets</li>
                         </ul>
                       </div>
-                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="action"><a href="#subscriptionPlan">Learn More</a></div>
                       <div class="cta-price button-black transform text-center">
                          <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
                       </div>
@@ -168,7 +168,7 @@ into the {body} of the default.hbs template --}}
                           <li>Enterprise Single Sign On</li>
                         </ul>
                       </div>
-                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="action"><a href="#subscriptionPlan">Learn More</a></div>
                       <div class="cta-price button-black transform text-center">
                          <a href="/contact-us" class="button-style banner_btn">Contact Us</a>
                       </div>
@@ -209,7 +209,7 @@ into the {body} of the default.hbs template --}}
                           <li>Admin Dashboard with Reports</li>
                         </ul>
                       </div>
-                      <div class="action"><a href="#">Learn More</a></div>
+                      <div class="action"><a href="#onetimePlan">Learn More</a></div>
                       <div class="cta-price button-black transform text-center">
                          <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
                       </div>
@@ -245,7 +245,8 @@ into the {body} of the default.hbs template --}}
               </div>
             </div>
             </section>
-            <section class="section_space">
+            <!--subscription plans-->
+            <section class="section_space subscription showItem" id="subscriptionPlan"> 
               <div class="container custom-container">
               <div class="row  wow fadeInUp  animated" data-wow-delay=".3s" style="visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;">
                   <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><div class="title_head text-center wow fadeInUp">Compare Plans</div></div>
@@ -254,22 +255,19 @@ into the {body} of the default.hbs template --}}
                   </div>
                 </div>
               </div>
-            </section>
-            <!--subscription plans-->
-            <section class="section_space subscription showItem"> 
-              <div class="container custom-container">
+              <div class="container custom-container comparePlansSection">
                 <div class="row">
                   <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
-                    <div>
                       <div class="tablePlan text-center" align="center">
                         <div class="indItems">
                           <div></div>
-                          <div class="freebox">Free</div>
-                          <div class="premiumbox">Premium</div>
-                          <div class="enterprise">Enterprise</div>
+                          <div class="freeBox">Free</div>
+                          <div class="premiumBox">Premium</div>
+                          <div class="enterpriseBox">Enterprise</div>
                         </div>
                         <div class="pricingouter indItems">
-                          <table class="text-center" align="center">
+                          <table class="text-center tableSubscription" align="center">
+                            <tbody>
                             <tr>
                               <td>Number of users</td>
                               <td>Unlimited</td>
@@ -294,20 +292,112 @@ into the {body} of the default.hbs template --}}
                               <td><span class="checkmark"></span></td>
                               <td><span class="checkmark"></span></td>
                             </tr>
+                            <tr>
+                              <td>Contest Management</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Incentivization</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Badges and Trophies</td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Custom Weekly Themes</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Analytics Dashboard</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Priority Support</td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Customized Plan</td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Launch Material</td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>SSO Integration</td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                            <tr>
+                              <td>Dedicated Account Manager</td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td><span class="checkmark"></span></td>
+                            </tr>
+                          </tbody>
                           </table>
                           
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </section>
             <!--one time plan-->
-            <section class="section_space onetime hideItem"> 
+            <section class="onetime hideItem section_space" id="onetimePlan"> 
               <div class="container custom-container">
-                <div class="row">
-                  onetime
+                  <div class="row">
+                  <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
+                      <div class="tablePlan text-center" align="center">
+                        <div class="indItems">
+                          <div class="premiumBox">Included Features</div>
+                        </div>
+                        <div class="pricingouter indItems">
+                          <table class="text-center tableSubscription" align="center">
+                            <tbody>
+                              <tr>
+                                <td>Number of users</td>
+                                <td>Unlimited</td>
+                              </tr>
+                              <tr>
+                                <td>Real-time tracking</td>
+                                <td><span class="checkmark"></span></td>
+                              </tr>
+                              <tr>
+                                <td>Social Leaderboard</td>
+                                <td><span class="checkmark"></span></td>
+                              </tr>
+                              <tr>
+                                <td>Badges and Trophies</td>
+                                <td><span class="checkmark"></span></td>
+                              </tr>
+                              <tr>
+                                <td>Teams</td>
+                                <td><span class="checkmark"></span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </section>
@@ -332,6 +422,67 @@ into the {body} of the default.hbs template --}}
                 </div>
               </div>
             </div>
+            </section>
+            <section class="section_space">
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center "><img src="https://res.cloudinary.com/vantagecircle/image/upload/w_50/v1588760727/VantageFit/website/faq1.png" alt="FAQ" class=""></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"><div class="title_head text-center wow fadeInUp title_spc b15">Frequently Asked Questions</div></div>
+              </div>
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
+                    <!--accordion-->
+                    <div id="accordion" class="">
+                        <div class="card ">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--accordion ends-->
+                  </div>
+                </div>
+              </div>
             </section>
         </div>
         <!--pricing ends-->
