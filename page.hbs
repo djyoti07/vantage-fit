@@ -85,7 +85,7 @@ into the {body} of the default.hbs template --}}
             <section class="section_space subscription showItem" > 
               <div class="container custom-container">
                 <div class="row">
-                  <!--free-->
+                  <!--###### free plan box ######-->
                   <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4">
                     <div class="pricingouter priceboxes freebox">
                       <div class="text-center">
@@ -98,7 +98,7 @@ into the {body} of the default.hbs template --}}
                         
                         <div><output class="output" plan='0'></output></div>
                         <div class="displayUsers"></div>
-                        <div class="priceperemployee" ><span>28-Day Trial</span></div>
+                        <div class="priceperemployee pricePer" plan="0"><span class="amountperperson"></span></div>
                       </div>
                       <hr>
                       <div class="additionals">
@@ -115,7 +115,7 @@ into the {body} of the default.hbs template --}}
                       
                     </div>
                   </div>
-                  <!--premium-->
+                  <!--###### premium box -->
                   <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4">
                     <div class="pricingouter priceboxes premiumbox">
                       <div class="text-center">
@@ -178,11 +178,22 @@ into the {body} of the default.hbs template --}}
                 </div>
               </div>
             </section>
-            <section class="section_space onetime hideItem"> 
+            <section class="onetime hideItem" id="oneTimeChallengeBox"> 
               <div class="container custom-container">
                 <div class="row">
-                  <!--onetimechallenge-->
-                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4 mx-auto">
+                  <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 mx-auto">
+                    <i class="fa fa-calendar"></i>
+                    <select id="selectedNumberOfWeeks">
+                      <option value = "2">2 Weeks</option>
+                      <option value = "4">4 Weeks</option>
+                      <option value = "8">8 Weeks</option>
+                      <option value = "12">12 Weeks</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <!--###### onetimechallenge box -->
+                  <div class="col-md-4 col-lg-4 col-xs-12 col-sm-4 mx-auto onetimeBox">
                    <div class="pricingouter priceboxes premiumbox">
                       <div class="text-center">
 
@@ -352,6 +363,42 @@ into the {body} of the default.hbs template --}}
                               <td> - </td>
                               <td><span class="checkmark"></span></td>
                             </tr>
+                            <tr class='greyBackground'>
+                              <td></td>
+                              <td class="freebox">
+                                <table align="center" class="innerTable">
+                                  <tbody>
+                                    <tr>
+                                      <td class="cta-price button-black transform text-center">
+                                         <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Start Free Trial</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td class="premiumbox">
+                                <table align="center" class="innerTable">
+                                  <tbody>
+                                    <tr>
+                                      <td class="cta-price button-black transform text-center">
+                                         <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Request Demo</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td class="enterprisebox">
+                                <table align="center" class="innerTable">
+                                  <tbody>
+                                    <tr>
+                                      <td class="cta-price button-black transform text-center">
+                                         <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Contact Us</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
                           </tbody>
                           </table>
                           
@@ -361,7 +408,7 @@ into the {body} of the default.hbs template --}}
                 </div>
               </div>
             </section>
-            <!--one time plan-->
+            <!-- ###### one time plan box #####-->
             <section class="onetime hideItem section_space" id="onetimePlan"> 
               <div class="container custom-container">
                   <div class="row">
@@ -401,28 +448,35 @@ into the {body} of the default.hbs template --}}
                 </div>
               </div>
             </section>
-            <!--Our Plans-->
+            <!--###### Schedule a VFit Demo Form ######-->
             <section class="section_space">
-              <div style="background:#f5f8fa">
               <div class="container custom-container">
                 <div class="row d-flex align_items_center pricing_trial">
-                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
-                    <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_350/v1588760727/VantageFit/website/image-questions.png" alt="freetrial" class="">
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 healthforce wow fadeInDown" >
-                    <div class="title_second">
-                      <div class="second_heading">Any questions about our plans?</div>
-                      <p>Request and schedule a free demo now</p>
-                      <div class="button-black transform b15">
-                        <a href="/request-demo" class="button-style banner_btn">Request Demo</a>
-                      </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="title_head text-center wow fadeInUp " >Schedule a Vantage Fit Demo</div>
+                  </div> 
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <p class=" text-center wow fadeInUp secondarytext" data-wow-delay=".6s" style="visibility: visible;-webkit-animation-delay: .6s; -moz-animation-delay: .6s; animation-delay: .6s;">How Corporate Wellness program Can Help Your Organisation</p>
                     </div>
-                    
                   </div>
-                </div>
+                  <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
+                    
+                      <!--[if lte IE 8]>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                        <![endif]-->
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                          hbspt.forms.create({
+                          portalId: "6153052",
+                          formId: "c169c509-7422-4098-bdd2-085a67d82092"
+                        });
+                        </script>
+                        <p class="smallfont text-center">We safeguard your personal information in accordance with our Privacy Policy</p>
+                  </div>
               </div>
-            </div>
             </section>
+            <hr>
+            <!-- ###########   FAQ #########-->
             <section class="section_space">
               <div class="container custom-container">
                 <div class="row">
@@ -433,13 +487,12 @@ into the {body} of the default.hbs template --}}
               <div class="container custom-container">
                 <div class="row">
                   <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 mx-auto ">
-                    <!--accordion-->
+                    <!--####### accordion-->
                     <div id="accordion" class="">
                         <div class="card ">
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1
                               </button>
                             </h5>
                           </div>
@@ -479,11 +532,12 @@ into the {body} of the default.hbs template --}}
                           </div>
                         </div>
                       </div>
-                    <!--accordion ends-->
+                    <!-- #######  accordion ends ########-->
                   </div>
                 </div>
               </div>
             </section>
+            <!-- ####### FAQ  ends ########-->
         </div>
         <!--pricing ends-->
 		    {{content}}

@@ -3056,7 +3056,7 @@ input::-moz-focus-outer {
 	margin-bottom:40px;
 	border:none;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
-	padding:20px 30px;
+	padding:10px 30px;
 }
 #accordion .btn-link ,
 #accordion .btn-link:hover{
@@ -3067,18 +3067,80 @@ input::-moz-focus-outer {
 }
 #accordion .card-header{
 	background:none;
-	border-bottom:1px solid rgba(0,0,0,.1);
-	padding: 20px;
+	border-bottom:0;
+	padding: 10px 0px;
 }
 .card-body{
 	font-size:13px;
-	padding:20px;
+	padding:20px 0px;
 }
 
+#accordion .btn:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  z-index: 11;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #f15162;
+  border-left: 2px solid #f15162;
+  top: 13px;
+  transform: rotate(225deg);
+}
+#accordion .btn{
+	padding:10px 0px 10px 25px;
+	position:relative;
+  transition: all 0.2s linear;
+}
+#accordion .collapsed.btn:before {
+	transform: rotate(130deg);
+	top: 14px;
+}
+.collapse.show{
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+.pricingpage .hs_submit{
+	text-align:center;
+}
 
+.indItems table td .innerTable td{
+	padding:0px;
+	border:0;
+}
+.innerTable .cta-price.button-black a{
+	display:block;
+	padding:10px 5px;
+}
+.greyBackground{
+	background: #f5f8fa;
+}
+tr.greyBackground td {
+    height: 60px;
+}
+tr.greyBackground td a:hover{
+	box-shadow:none;
+}
+#selectedNumberOfWeeks {
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 60px;
+    border-color: rgba(0,0,0,.1);
+    text-align-last: center; 
+    text-indent: 15px;
+}
+#oneTimeChallengeBox{
+	margin-top:50px;
+}
+#oneTimeChallengeBox .onetimeBox{
+	margin-top:100px;
+}
 
-
-
+#oneTimeChallengeBox .fa-calendar{
+	    position: absolute;
+    top: 20px;
+    left: 34px;
+}
 
 
 

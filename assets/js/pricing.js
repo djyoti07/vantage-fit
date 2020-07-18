@@ -22,6 +22,8 @@ $('.output').each(function(){
 /*Price per employee*/
 $('.pricePer').each(function(){
   var selectedPlan = $(this).attr('plan');
+  console.log(selectedPlan);
+  var isPricingInUSD = true;
   //if(isPricingInUSD){ var currency = "$";} else{ var currency = "₹";}
   $(this).find(".amountperperson").text(getPlanRate(selectedPlan, isPricingInUSD)); 
 });
@@ -56,8 +58,10 @@ Array.prototype.forEach.call(sliders,(slider)=>{
 //var selectedPlan = 2
 //var numberOfUsers = 10
 //var isPricingInUSD = true
-var selectedNumberOfWeeks = 8
-
+var selectedNumberOfWeeks = $("#selectedNumberOfWeeks option:selected").val();
+$("#selectedNumberOfWeeks").change(function() {
+var selectedNumberOfWeeks = $(this). find("option:selected"). val();
+});
 /*
 0 = Free
 1 = One time challenge
@@ -69,26 +73,26 @@ var selectedNumberOfWeeks = 8
 /*
 dummy function to test out the logic
 */
-function run() {
+function run(selectedPlan, selectedNumberOfWeeks) {
+  var selectedPlan = selectedPlan;
+  var selectedNumberOfWeeks = selectedNumberOfWeeks;
   var postFix = '';
   if (selectedPlan == 1) {
     postFix = ` for ${selectedNumberOfWeeks} week(s)`
   } else {
     postFix = ` per month`
   }
-
   const plan = getPlanName(selectedPlan)
   const currency = getCurrencySymbol(isPricingInUSD)
   const billingValue = getTotalPrice(numberOfUsers, isPricingInUSD, selectedPlan)
-
   const message = `${numberOfUsers} users for ${plan} plan => ${currency}${billingValue}`
-  console.log(message + postFix)
-  console.log(getPlanRate(selectedPlan, isPricingInUSD))
+  //console.log(message + postFix)
+  //console.log(getPlanRate(selectedPlan, isPricingInUSD))
 }
 
 /*price return*/
 function getPricePerUserPerWeek(plan, usd) {
-  if (plan === 1) {
+  if (plan == 1) {
     if (usd) { return 1 } else { return 10  }
   } else if (plan == 2) {
     if (usd) { return 1 } else { return 10 }
@@ -119,17 +123,17 @@ function getPlanRate(plan, isPricingInUSD) {
   default:
     // for one time challenge rates are per week, for others rate are monthly, to calculate monthly we consider the cost of 4 weeks
     var rateMultiplier = 1
-    if (plan !== 1) {
+    if (plan != 1) {
       rateMultiplier = 4
     }
     const rate = `${getCurrencySymbol(isPricingInUSD)}` + `${getPricePerUserPerWeek(plan, isPricingInUSD)*rateMultiplier} per employee`
-    if (plan === 1) { return rate + "/week" } else { return rate }
+    if (plan == 1) { return rate + "/week" } else { return rate }
   }
 }
 
 function getTotalPrice(plan,  usd, numberOfUsers) {
   const cost = getCost(plan, usd, numberOfUsers)
-  if (cost !== null) {
+  if (cost != null) {
     return `${cost}`
   } else {
     return "Contact us"
@@ -145,7 +149,8 @@ function getCost(plan, usd, numberOfUsers) {
 }
 
 function getWeeklyOrMonthlyFactor(plan) {
-  if (plan === 1) { return selectedNumberOfWeeks } else { return 4 }
+  console.log(selectedNumberOfWeeks); 
+  if (plan == 1) { return selectedNumberOfWeeks } else { return 4 }
 }
 
 
