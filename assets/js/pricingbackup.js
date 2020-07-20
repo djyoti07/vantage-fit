@@ -97,3 +97,4 @@ function applyFill(slider) {
   slider.style.background = bg;
 }
 });
+
