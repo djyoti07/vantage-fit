@@ -2709,6 +2709,8 @@ img.donloadappimg {
 }
 */
 
+
+/*pricing- new*/
 .content_c {
     position: relative;
     margin-bottom: 50px;
@@ -3155,4 +3157,45 @@ tr.greyBackground td a:hover{
 .userLimit img{
 	padding-right:20px;
 }
+
+.modal-dialog{
+	min-width:700px;
+}
+.modal-content{
+	border-radius:0px;
+}
+
+.modal-body,
+.modal-header{
+	padding:20px 30px;
+}
+.close {
+  position: absolute;
+  right: 32px;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  padding:0px!important;
+  margin:0px!important;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 3px;
+  background-color: #333;
+  top:23px;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
 

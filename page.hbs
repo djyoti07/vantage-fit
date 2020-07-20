@@ -39,7 +39,7 @@ into the {body} of the default.hbs template --}}
             <section>
                 <div class="container price-container">
                   <div class="row d-flex align_items_center noofUser pricingouter ">
-                    <div class = "col-lg-9 col-md-9 col-xs-12 col-sm-8">
+                    <div class = "col-lg-9 col-md-9 col-xs-12 col-sm-8 mobCenter">
                         <div class="user_heading">How many users do you expect?</div>
                         <p class="secondarytext"><b>More than 1,000 users? <a href="http://localhost:2368/contact-us" class="companycolor">Contact Us</a></b>
                     </div>
@@ -111,7 +111,7 @@ into the {body} of the default.hbs template --}}
                       </div>
                       <div class="action"><a href="#subscriptionPlan">Learn More</a></div>
                       <div class="cta-price button-black transform text-center">
-                         <a href="https://vantagefit.ghost.io/request-demo" class="button-style banner_btn">Start Free Trial</a>
+                         <a href="javascript void(0)" class="button-style banner_btn" data-toggle="modal" data-target="#pricingModal">Start Free Trial</a>
                       </div>
                       
                     </div>
@@ -238,8 +238,8 @@ into the {body} of the default.hbs template --}}
             <!--Try VC for Free-->
             <section class="section_space">
               <div style="background:#f5f8fa">
-              <div class="container custom-container">
-                <div class="row d-flex align_items_center pricing_trial">
+              <div class="container custom-container mobCenter">
+                <div class="row d-flex align_items_center pricing_trial column-change">
                   <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
                     <img src="https://res.cloudinary.com/vantagecircle/image/upload/w_200/v1588760727/VantageFit/website/Vfit-phone.png" alt="freetrial" class="">
                   </div>
@@ -540,11 +540,78 @@ into the {body} of the default.hbs template --}}
             </section>
             <!-- ####### FAQ  ends ########-->
         </div>
+        <!--  ######### Modal for FORM ########## -->
+        <div class="modal" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="pricingModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-center" id="pricingModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script>
+                          hbspt.forms.create({
+                          portalId: "6153052",
+                          formId: "c169c509-7422-4098-bdd2-085a67d82092"
+                        });
+                        </script>
+                        <p class="smallfont text-center">We safeguard your personal information in accordance with our Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--pricing ends-->
 		    {{content}}
         </div>
     </div>
 </div>
+<style>
+    @media only screen and (max-width: 767px){
+        .usersbox{
+            max-width:50%;
+            margin:0px auto;
+            margin-top:20px;
+        }
+        .mobCenter{
+            text-align:center;
+        }
+        .tabValues.pricingouter {
+            padding: 0px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+
+        .indItems div:first-child {
+            display: none;
+        }
+        .indItems div{
+            width:32.3%;
+        }
+        .tableSubscription tr td:nth-child(3),
+        .tableSubscription tr td:nth-child(4){
+            display:none;
+        }
+    }
+    @media (min-width:320px) and (max-width:1024px) {
+        .noofUser.pricingouter{
+            padding:30px;
+        }
+        .user_heading {
+            font-size: 21px;
+        }
+        .displayUsers{
+            min-height:0px;
+        }
+        .pricingouter.priceboxes {
+            margin-bottom: 70px;
+        }
+        .indItems{
+            overflow-x:auto;
+        }
+    }
+</style>
 {{/post}}
 
 

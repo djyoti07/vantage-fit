@@ -1,4 +1,10 @@
 @media (min-width:320px) and (max-width:1024px) {
+	.noofUser.pricingouter{
+		padding:30px;
+	}
+	.user_heading {
+	    font-size: 21px;
+	}
 	.header_area .navbar .navbar-nav .menu-item a {
 		font-size: 12px;
 	}
@@ -367,7 +373,7 @@
 		padding: 127px 0 40px 0px;
 	}
 	.breadcrumb_content h1 {
-		font-size: 25px;
+		font-size: 26px;
 	}
 	.main-content {
 		padding: 50px 0;
@@ -478,7 +484,7 @@
 	}
 	.page-template .title_head,
 	.title_second .second_heading {
-		font-size: 22px;
+		font-size: 24px;
 	}
 	.downloadsection.sticky {
 		margin-bottom: 40px;
