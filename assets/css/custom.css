@@ -3175,6 +3175,7 @@ tr.greyBackground td a:hover{
 .modal-header{
 	padding:20px 30px;
 }
+/*
 .close {
   position: absolute;
   right: 32px;
@@ -3202,7 +3203,7 @@ tr.greyBackground td a:hover{
 }
 .close:after {
   transform: rotate(-45deg);
-}
+}*/
 
 .planIndBox{
 	padding-left:10px;
