@@ -97,42 +97,6 @@
 <script type="text/javascript" src="https://unpkg.com/@tryghost/content-api@1.0.0/umd/content-api.min.js"></script>
 <script>
 
-/*
-
-  var width = ($("#range").val())/10;
-  $("#slider-fill").attr("style", "width: "+ (width) + "%;");
-  $(".slider-handle").attr("style", "left: "+ (width) + "%;");
-  var noOfUser = $('#range').val();
-  $(".usersbox .users").text(noOfUser);
-  $('#range').on("input", function() {
-    var priceValue;
-    var inputs = $("output[attr]");
-    var user = this.value;
-    $(".users").text(user);
-    var width = ($("#range").val())/10;
-    $("#slider-fill").attr("style", "width: "+ (width ) +"%;");
-      $(".slider-handle").attr("style", "left: "+ (width-1) +"%;");
-    if(width > 97){
-
-      $("#slider-fill").attr("style", "width: "+ (98) +"%;");
-      $(".slider-handle").attr("style", "left: "+ (96) +"%;");
-    }
-    else if(width < 4){
-      $("#slider-fill").attr("style", "width: "+ (3) +"%;");
-      $(".slider-handle").attr("style", "left: "+ (3) +"%;");
-    }
-    else{
-      $("#slider-fill").attr("style", "width: "+ (width ) +"%;");
-      $(".slider-handle").attr("style", "left: "+ (width-1) +"%;");
-    }
-    
-    inputs.each(function(){ 
-      var priceValue = $(this).attr('attr');
-       $(this).val((user)*priceValue);
-    });
-    }).trigger("change");
-
-  */
 (function($) {
   $.fn.circleGraphic = function(options) {
     $.fn.circleGraphic.defaults = {
