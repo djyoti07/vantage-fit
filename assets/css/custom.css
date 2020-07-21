@@ -3245,7 +3245,35 @@ tr.greyBackground td a:hover{
     -webkit-border-radius: 50%;
     border: 2px solid #f15162;
 }
-
+.request-demo-form input[type="text"],
+.request-demo-form input[type="email"],
+.request-demo-form select,
+.request-demo-form textarea{
+	outline: 0;
+    color: #666;
+    border-radius: 4px!important;
+    padding: 6px 13px 5px;
+    width: 95%;
+    font-size: 13px;
+    border: 1px solid #cbd6e2;
+    height: 40px;
+    background-color: #fff!important;
+    transition: all .3s ease!important;
+    font-family: Poppins, sans-serif!important;
+}
+.request-demo-form input[type="submit"]{
+	background: #f15162!important;
+    color: #fff;
+    border-color: #f15162;
+    padding: 12px 55px;
+    border-radius: 5px;
+    margin-top: 40px;
+    outline: 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+	
 
 
 
