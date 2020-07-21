@@ -1,0 +1,402 @@
+@media (min-width:320px) and (max-width:1024px) {
+	.header_area .navbar .navbar-nav .menu-item a {
+		font-size: 12px;
+	}
+	.request-demo-form{
+		margin-bottom:40px;
+	}
+	.main_title h1.singlepost_header {
+		padding: 15px;
+	}
+	.new_footer_area .footer_bottom{
+		padding-bottom:25px;
+	}
+	.welness_banner .request-demo-form {
+	    margin-bottom: 40px;
+	}
+	.welness_banner {
+	    padding-bottom: 40px;
+	}
+	.n_banner_content.empwelness {
+	    padding-top: 0px;
+	}
+	.request-demo-form.position{
+		min-height:0px;
+	}
+	.request-demo-form{
+		min-height:0px;
+	}
+	.hbspt-form .form-columns-2 .hs-form-field{
+		width:100%;
+		float:none;
+	}
+}
+
+@media (min-width:320px) and (max-width:1023px) {
+	.header_area .navbar .btn_get {
+	    background: #f15162;
+	}
+	.header_area .navbar .navbar-nav .menu-item {
+		margin-right: 0;
+	}
+	.header_area {
+		background: #fff;
+	}
+	.menu>.nav-item>.nav-link:before {
+		display: none;
+	}
+	.header_area .navbar .navbar-nav .menu-item a.active {
+		color: #f15162;
+	}
+	.header_area .navbar .navbar-nav .menu-item a {
+		color: #181818;
+		font-size: 12px;
+	}
+	.stick_logo {
+		display: block;
+	}
+	.d_logo {
+		display: none;
+	}
+	.left_pclr {
+		padding-left: 15px;
+	}
+	.mobile_img .mobile_banner {
+		width: 40%;
+		margin-top: 20px;
+	}
+	.main_title h1.singlepost_header,
+	.post-content h2,
+	.title_head {
+		font-size: 20px;
+	}
+	.left-activity,
+	.right-activity {
+		padding-right: 15px;
+		padding-left: 15px;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+		position: relative;
+		right: 0;
+		left: 0;
+	}
+	.row_elementor {
+		display: grid;
+	}
+	section.section_space {
+		padding: 35px 0 0 0;
+	}
+	.title_spc {
+		padding-bottom: 20px
+	}
+	.outline-round:last-child {
+		margin-bottom: 0;
+	}
+	.box_item div,
+	.box_item h6 {
+		padding-left: 0;
+	}
+	.default-spc {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.page-template .title_head {
+		font-size: 24px;
+	}
+	.title_second h3 {
+		font-size: 22px;
+	}
+	.mobile_img .mobile_banner {
+		left: 0;
+	}
+	.main_title p {
+		padding: 0 20px;
+	    font-size: 15px;
+	    line-height: 1.7;
+	    margin-top: 15px;
+	}
+	.column-left,
+	.column-right {
+		border-right: 0;
+		padding: 0 40px;
+	}
+	.details-post {
+		max-width: 100%;
+	}
+	.pclr {
+		padding: 0 15px;
+	}
+	.activecolor {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	.mobheader {
+		text-align: center;
+	}
+	.mobheader .navbar {
+		display: inline-block;
+	}
+	.mobileview {
+		display: block!important;
+	}
+	.desktopview {
+		display: none;
+	}
+	.button_width {
+		min-width: auto;
+	}
+	span.marketinglanding.no-image {
+		width: 100%;
+	}
+}
+
+@media (min-width:1250px) {
+	.container {
+		max-width: 1370px;
+	}
+	.container.custom-container {
+		max-width: 1250px;
+	}
+}
+
+@media (max-width:991px) {
+	.new_footer_top .f_widget {
+		margin-bottom: 20px;
+	}
+	.pl_70 {
+		padding-left: 0;
+	}
+	.f_social_icon_two a,
+	.footer_bottom {
+		font-size: 13px;
+	}
+	.menu>.nav-item {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid rgba(237, 237, 237, .4);
+	}
+	.downloadlogo {
+		margin-bottom: 20px;
+	}
+	.textleft,
+	.textright {
+		text-align: center!important;
+	}
+}
+
+@media (max-width:767px) {
+	img.donloadappimg {
+		width: 35%;
+	}
+	.app_downloadbanner img.buildapp {
+		width: 40%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.footer_bottom .text-right {
+		text-align: left!important;
+	}
+	.new_footer_top {
+		padding: 50px 0 0;
+	}
+	.f_widget .mb_40 {
+		margin-bottom: 16px;
+	}
+	.banner_btn {
+		padding: 10px 8px!important;
+		font-size: 11px;
+	}
+	.header_area .navbar .navbar-nav .menu-item {
+		margin-right: 0;
+	}
+	.btn_hover {
+		width: 55%;
+		margin-top: 10px;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.header_area {
+		background: #fff;
+	}
+	.menu>.nav-item>.nav-link:before {
+		display: none;
+	}
+	.header_area .navbar .navbar-nav .menu-item a.active {
+		color: #f15162;
+	}
+	.hidden-xs {
+		display: none;
+	}
+	.column-change {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.content_benefits h6 {
+		font-size: 17px;
+	}
+	.breadcrumb_area_two {
+		padding: 127px 0 40px 0px;
+	}
+	.breadcrumb_content h1 {
+		font-size: 25px;
+	}
+	.main-content {
+		padding: 50px 0;
+	}
+	.request-demo-form {
+		width: 100%;
+	}
+	.wrapper {
+		padding: 0;
+	}
+	.request-demo-form.ebook {
+		width: 100%;
+		max-width: 100%;
+		padding: 20px;
+	}
+	.content_benefits .innertext {
+		font-size: 18px;
+		margin-bottom: 5px;
+		margin-top: 15px;
+	}
+	.page-template .title_head,
+	.title_second .second_heading {
+		font-size: 22px;
+	}
+	.content_c {
+		padding: 30px 20px;
+	}
+	.sideheading {
+		font-size: 20px;
+	}
+	.request-demo-form.ebook {
+		width: 100%;
+		max-width: 100%;
+		padding: 20px;
+	}
+	.ebook-image {
+		margin-bottom: 30px;
+	}
+	.content_benefits .innertext {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.page-template .title_head,
+	.title_second .second_heading {
+		font-size: 22px;
+	}
+	.iconslandingpage ul li{
+		width:44%;
+	}
+	.iconslandingpage ul li:nth-child(even){
+		border-right:none;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+	.widget img {
+		max-width: 60%;
+	}
+	.hidden-sm {
+		display: none;
+	}
+	.btn_hover {
+		width: 30%;
+		margin-top: 10px;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.ipadcolumn-change {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.page-template .title_head {
+		margin-bottom: 10px;
+	}
+	.main_features.img-responsive {
+		width: 100%;
+	}
+	.banner_btn {
+		font: 500 14px Poppins, sans-serif;
+		padding: 14px 22px;
+	}
+	.request-demo-form {
+		width: 100%;
+	}
+	.imagerunning {
+		margin-bottom: 40px;
+	}
+	.winner {
+		width: 50%;
+		margin-top: 30px;
+	}
+	.breadcrumb_area_two.campaginbreadcrumb {
+		padding: 130px 0 30px 0;
+	}
+	.title_default {
+		margin-bottom: 30px;
+	}
+	.campaignlpage h4,
+	.page-template .campaignlandingpage .title_head {
+		font-size: 30px;
+	}
+	.breadcrumb_content h1.mob_firstheading {
+		font-size: 30px;
+	}
+	.mob-space {
+		margin-top: 30px;
+	}
+	.contentebook {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	.sideheading {
+		font-size: 20px;
+	}
+	img.bokcover {
+		width: 55%;
+	}
+	.ebookbutton {
+		margin-top: 35px;
+	}
+}
+
+@media only screen and (min-width:320px) and (max-width:1024px) and (orientation:landscape) {
+	.winner {
+		width: auto!important;
+		margin-top: 30px;
+	}
+	.app_downloadbanner svg {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+	.hidden-sml {
+		display: none;
+	}
+	.title_second .second_heading {
+		font-size: 25px;
+	}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+	.requestdemopage{
+		padding-bottom:80px;
+	}
+	.new_footer_area.popupspc{
+		margin-bottom:70px;
+	}
+	.breadcrumb_area_two{
+		 padding: 165px 0 100px;
+	}
+	.main_title h1{
+		font-size:40px;
+	}
+}
+
