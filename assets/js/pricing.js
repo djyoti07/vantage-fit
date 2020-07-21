@@ -112,7 +112,6 @@ function getWeeklyOrMonthlyFactor(plan) {
 
 /*Per employee Price*/
 function getPlanRate(plan, isPricingInUSD) {
-  console.log(plan);
   switch (plan) {
   case '0':
     return "28-day Free Trial"

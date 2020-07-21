@@ -1,5 +1,5 @@
 @media (min-width:320px) and (max-width:1024px) {
-	body form.form div.form-col-1, body form.form div.form-col-2,
+	.form div.form-col-1, .form div.form-col-2,
 	textarea {
 	    width: 100%!important;
 	    float: none!important;
