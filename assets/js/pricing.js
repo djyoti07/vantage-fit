@@ -12,7 +12,7 @@ $(".numberOfUserss").each(function(){
 
 $('.output').each(function(){ 
   var selectedPlan = $(this).attr('plan');
-  $(this).html("<span>" + getCurrencySymbol() + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+  $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
 });
 
 
@@ -44,7 +44,7 @@ const sliders = document.querySelectorAll('.range-slider');
         var isPricingInUSD = true;
         $(".noOfUsers").text(numberOfUsers);
         $(".numberOfUserss").attr("users", numberOfUsers);
-        $(this).html("<span>" + getCurrencySymbol() + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+        $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
         
       });
       $(".numberOfUserss").each(function(){
@@ -69,7 +69,7 @@ $("#selectedNumberOfWeeks").change(function(plan,  usd, numberOfUsers) {
     var selectedPlan = 1 ;
     var isPricingInUSD = true;
     getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers );
-    $(".onetimeBox .output").text(getCurrencySymbol() + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+    $(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
         
 });
 function getTotalPrice(plan,  usd, numberOfUsers) {
@@ -114,7 +114,7 @@ function getWeeklyOrMonthlyFactor(plan) {
 function getPlanRate(plan, isPricingInUSD) {
   switch (plan) {
   case '0':
-    return "28-day Free Trial"
+    return "100 users"
   default:
     // for one time challenge rates are per week, for others rate are monthly, to calculate monthly we consider the cost of 4 weeks
     var rateMultiplier = 1
@@ -201,61 +201,5 @@ $('.tabValues li').on('click', function(){
 
 
  */
- /*
 
-
-function getTotalPriceText(plan, usd, numberOfUsers ) {
-  const cost = getCost(plan, usd, numberOfUsers)
-  if (cost !== null) {
-    if (cost > 0) {
-      if (usd) {
-        return `$${cost}`
-      } else {
-        return `₹${cost}`
-      }
-    } else {
-      return "FREE"
-    }
-  } else {
-    return "Contact us"
-  }
-}
-
-function getCost(plan, usd, numberOfUsers) {
-  if (numberOfUsers >= 1000) {
-    return null
-  } else {
-    return getPricePerUser(plan, usd) * numberOfUsers
-  }
-}
-const sliders = document.querySelectorAll('.range-slider');
-Array.prototype.forEach.call(sliders,(slider)=>{
-  slider.querySelector('input').addEventListener('input', (event)=>{
-    //slider.querySelector('span').innerHTML = event.target.value;
-      
-      console.log(event.target.value);
-      applyFill(slider.querySelector('input'));
-      $('.output').each(function(){ 
-        var selectedPlan = $(this).attr('plan');
-        var numberOfUsers = event.target.value;
-        var isPricingInUSD = true;
-        $(".noOfUsers").text(numberOfUsers);
-        $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
-        
-      });
-      $(".numberOfUserss").each(function(){
-          var numberOfUsers = event.target.value;
-          $(this).text(numberOfUsers);
-      });
-
-  });
-  applyFill(slider.querySelector('input'));  
-});
-
-function applyFill(slider) {
-  const percentage = 100*(slider.value-slider.min)/(slider.max-slider.min);
-  const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
-  slider.style.background = bg;
-}
-*/
 });

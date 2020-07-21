@@ -4,6 +4,9 @@
 	    width: 100%!important;
 	    float: none!important;
 	}
+	p {
+	    font-size: 14px;
+	}
 	.mobileView.active,
 	.tabsViewMobile.active{
 		display:block!important;
@@ -44,7 +47,7 @@
         padding:30px;
     }
     .user_heading {
-        font-size: 21px;
+        font-size: 18px;
     }
     .displayUsers{
         min-height:0px;
@@ -60,8 +63,18 @@
       background: #f5f8fa!important;
       color:#2c2d4f!important;
     }
-    .indItems.tabsViewMobile .active{
+    .indItems.tabsViewMobile .premiumBox.active,
+    #onetimePlan .indItems .premiumBox{
       border-bottom: 5px solid #F48567;
+      color:#F48567!important;
+    }
+    .indItems.tabsViewMobile .freeBox.active{
+      border-bottom: 5px solid #49CCBA;
+      color:#49CCBA!important;
+    }
+    .indItems.tabsViewMobile .enterpriseBox.active{
+      border-bottom: 5px solid #1E76A9;
+      color:#1E76A9!important;
     }
 
     .indItems .firstItem {
@@ -593,7 +606,7 @@
 	}
 	.page-template .title_head,
 	.title_second .second_heading {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.downloadsection.sticky {
 		margin-bottom: 40px;
