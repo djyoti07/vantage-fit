@@ -2871,6 +2871,9 @@ input::-moz-focus-outer {
 	 padding: 10px 25px;
 	 font-size:14px;
 	 font-weight:400;
+	 display: block;
+    max-width: 160px;
+    margin: 0px auto;
 }
 .freebox .cta-price.button-black a{
 	color:#ffffff!important;
@@ -3013,7 +3016,7 @@ input::-moz-focus-outer {
     transform: rotate(45deg);
 }
 #subscriptionPlan .indItems table td:first-child,
-#subscriptionPlan .indItems div:first-child{
+#subscriptionPlan .indItems .firstItem{
     width: 35%;
 }
 .tableSubscription td:nth-child(2) .checkmark:after{
@@ -3066,6 +3069,7 @@ input::-moz-focus-outer {
     color: #282835;
     text-decoration: none;
     font-size:14px;
+    text-align:left;
 }
 #accordion .card-header{
 	background:none;
@@ -3076,7 +3080,9 @@ input::-moz-focus-outer {
 	font-size:13px;
 	padding:20px 0px;
 }
-
+.card-body p{
+	font-size:13px;
+}
 #accordion .btn:before {
   content: "";
   position: absolute;
@@ -3197,5 +3203,53 @@ tr.greyBackground td a:hover{
 .close:after {
   transform: rotate(-45deg);
 }
+
+.planIndBox{
+	padding-left:10px;
+	padding-right:10px;
+}
+.additionals ul {
+    padding-inline-start: 16px;
+}
+.mobileView,
+.tabsViewMobile{
+	display:none!important;
+}
+.mobileCta{
+	width:100%!important;
+	border-bottom:0;
+}
+.mobileView .cta-price{
+	width:100%!important;
+	margin-bottom:15px!important;
+	margin-top:15px;
+}
+
+#accordion li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+    margin-bottom: 15px;
+}
+#accordion ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid #f15162;
+}
+
+
+
+
+
+
+
+
 
 

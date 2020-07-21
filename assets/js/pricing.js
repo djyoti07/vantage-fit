@@ -1,12 +1,5 @@
 $(document).ready(function(){
-  /*tabs*/
-$('.tabValues li').on('click', function(){
-    var currentItem = '.'+ $(this).attr('attr');
-    $('.tabValues').find(".active").removeClass('active');
-    $(this).addClass('active');
-    $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
-    $(currentItem).removeClass("hideItem").addClass("showItem");
-});
+
 var numberOfUsers = '';
 var numberOfUsers = $(".range-slider__range").val();
 var isPricingInUSD = true;
@@ -157,6 +150,32 @@ function applyFill(slider) {
   const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
   slider.style.background = bg;
 }
+
+/*Mobile View */
+$("#subscriptionPlan .indItems.tabsViewMobile div").click(function(){
+ 
+  var className = $(this).attr('attr');
+  $("#subscriptionPlan .tableSubscription td").hide();
+$("#subscriptionPlan .indItems div, #subscriptionPlan .tableSubscription div").removeClass("active");
+   $("#subscriptionPlan .tableSubscription td:first-child").show();
+  console.log($("#subscriptionPlan .tableSubscription" + " ."+className+"Plan").show());
+  $("#subscriptionPlan .tableSubscription" + " ."+className+"Plan").show();
+
+  
+  $(this).addClass("active");
+  $(".mobileView").find(".active").removeClass("active");
+  $(".mobileView" + "."+className+"Plan").addClass("active");
+
+});
+
+/*tabs*/
+$('.tabValues li').on('click', function(){
+  var currentItem = '.'+ $(this).attr('attr');
+  $('.tabValues').find(".active").removeClass('active');
+  $(this).addClass('active');
+  $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
+  $(currentItem).removeClass("hideItem").addClass("showItem");
+});
 /*
 0 = Free
 1 = One time challenge
