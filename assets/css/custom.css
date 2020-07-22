@@ -3309,7 +3309,15 @@ select{
 	padding-bottom:0px;
 }
 /*request demo pardot formends*/
+.position_letter,
+.contentpost img.ebookbanner,
+.downloadsection{
+	display:none;
+}
 
+.rightsidebar{
+	margin-top:0px;
+}
 
 
 
