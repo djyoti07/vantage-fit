@@ -1787,9 +1787,6 @@ blockquote p {
 	font-size: 14px;
 }
 
-.hs-input {
-	background: #fff!important;
-}
 
 .contactusimage {
 	position: absolute;
@@ -1800,8 +1797,7 @@ blockquote p {
 	height: 100%;
 }
 
-.hbspt-form .input textarea {
-	width: 97%!important;
+textarea {
 	min-height: 70px;
 }
 
@@ -3095,6 +3091,9 @@ input::-moz-focus-outer {
   border-left: 2px solid #f15162;
   top: 13px;
   transform: rotate(225deg);
+  -webkit-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 #accordion .btn{
 	padding:10px 0px 10px 25px;
@@ -3244,18 +3243,52 @@ tr.greyBackground td a:hover{
     -webkit-border-radius: 50%;
     border: 2px solid #f15162;
 }
+select {
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+select{
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%)!important;
+  background-position:
+    calc(100% - 20px) calc(1em + 8px), calc(100% - 15px) calc(1em + 8px)!important;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+/*resquest demo pardot form */
+
 .request-demo-form input[type="text"],
 .request-demo-form input[type="email"],
+.request-demo-form input[type="tel"],
 .request-demo-form select,
 .request-demo-form textarea{
 	outline: 0;
     color: #666;
     border-radius: 4px!important;
     padding: 6px 13px 5px;
-    width: 95%;
+    width: 97%!important;
     font-size: 13px;
     border: 1px solid #cbd6e2;
-    height: 40px;
+    height: 45px;
     background-color: #fff!important;
     transition: all .3s ease!important;
     font-family: Poppins, sans-serif!important;
@@ -3275,6 +3308,8 @@ tr.greyBackground td a:hover{
 .requestdemopage{
 	padding-bottom:0px;
 }
+/*request demo pardot formends*/
+
 
 
 
