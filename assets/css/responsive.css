@@ -1,4 +1,8 @@
 @media (min-width:320px) and (max-width:1024px) {
+	.modal-body.request-demo-form {
+	    box-shadow: none;
+	    padding: 0px 20px;
+	}
 	.form div.form-col-1, .form div.form-col-2,
 	textarea {
 	    width: 100%!important;
