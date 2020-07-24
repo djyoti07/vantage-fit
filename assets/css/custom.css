@@ -2750,10 +2750,10 @@ img.donloadappimg {
 	max-width:1000px;
 }
 .noofUser{
-	padding:50px 100px;
+	padding:30px 60px;
 }
 .user_heading{
-	font-size:25px;
+	font-size:22px;
 	font-weight:400;
 	margin-bottom:10px;
 }
@@ -2766,7 +2766,7 @@ img.donloadappimg {
 	padding:20px;
 }
 .usersbox .numberOfUserss{
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 500;
 	color:#f8654a;
 }
@@ -2774,7 +2774,7 @@ img.donloadappimg {
 	font-size:12px;
 }
 .range-slider {
-  margin: 60px 0 5px 25px;
+  margin: 0px 0 5px 0px;
 }
 .range-slider {
   width: 100%;
@@ -2791,7 +2791,7 @@ img.donloadappimg {
 }
 .range-slider__range {
   -webkit-appearance: none;
-  width: 90%;
+  width: 95%;
   height: 20px;
   border-radius: 15px;
   background:#d3d3d3;
@@ -2911,9 +2911,9 @@ input::-moz-focus-outer {
 	min-height:30px;
 }
 .output{
-	font-size:35px;
+	font-size:33px;
 	font-weight:500;
-	margin-top:20px;
+	margin-top:10px;
 }
 .tabValues{
 	width:max-content;
@@ -2943,8 +2943,8 @@ input::-moz-focus-outer {
 	color:#f15162;
 }
 .userFlex {
-    margin: 0px 28px 30px;
-    width: 90%;
+    margin: 0px;
+    width: 95%;
     font-size:12px;
     font-weight:500;
 }
@@ -3138,10 +3138,10 @@ tr.greyBackground td a:hover{
     height:55px;
 }
 #oneTimeChallengeBox{
-	margin-top:50px;
+	margin-top:30px;
 }
 #oneTimeChallengeBox .onetimeBox{
-	margin-top:100px;
+	margin-top:40px;
 }
 
 #oneTimeChallengeBox .fa-calendar{
@@ -3290,7 +3290,18 @@ input[type="submit"]:hover{
     -o-transform: translateY(-2px);
     transform: translateY(-2px);
 }
-    
+ .mobCenter p{
+ 	font-size:14px;
+ }  
+ .pricecalculator{
+ 	padding:0px;
+ }
+ .tabsViewDisp{
+ 	margin-top:40px;
+ }
+ section.section_space.subscription {
+    padding-top: 60px;
+}
 /*resquest demo pardot form */
 
 .request-demo-form input[type="text"],

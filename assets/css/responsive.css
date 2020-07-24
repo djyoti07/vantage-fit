@@ -1,4 +1,10 @@
 @media (min-width:320px) and (max-width:1024px) {
+	section.section_space.subscription{
+		padding-top:30px;
+	}
+	.output{
+		font-size:22px;
+	}
 	.modal-body.request-demo-form {
 	    box-shadow: none;
 	    padding: 0px 20px;
@@ -23,7 +29,7 @@
 		display:block!important;
 	}
 	#oneTimeChallengeBox{
-		margin-top:20px;
+		margin-top:0px;
 	}
 	.additionals{
 		padding:0px 15px;
@@ -96,7 +102,7 @@
     }
 
     .pricingouter.priceboxes img{
-      width:22%;
+      width:15%;
     }
 
     #onetimePlan .indItems div{
@@ -889,6 +895,9 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+	#oneTimeChallengeBox .onetimeBox {
+	    margin-top: 50px;
+	}
 	.downloadsection img {
 		width: 50%;
 	}
