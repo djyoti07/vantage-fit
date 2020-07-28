@@ -1086,7 +1086,8 @@ img.vfit {
 
 .main_title h1 {
 	color: #fff;
-	font-size: 50px;
+    font-size: 48px;
+    padding: 0px 60px;
 }
 
 .main-content {
@@ -3346,7 +3347,9 @@ input[type="submit"]:hover{
 .rightsidebar{
 	margin-top:0px;
 }
-
+p.submit {
+    text-align: center;
+}
 
 
 
