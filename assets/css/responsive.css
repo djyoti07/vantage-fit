@@ -1,4 +1,7 @@
 @media (min-width:320px) and (max-width:1024px) {
+	.featurestext .trackertext{
+		font-size:14px;
+	}
 	section.section_space.subscription{
 		padding-top:30px;
 	}

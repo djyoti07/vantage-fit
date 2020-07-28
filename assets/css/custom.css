@@ -1086,8 +1086,10 @@ img.vfit {
 
 .main_title h1 {
 	color: #fff;
-    font-size: 48px;
-    padding: 0px 60px;
+    font-size: 45px;
+    padding: 0px 75px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .main-content {
