@@ -431,6 +431,9 @@
 }
 
 @media (max-width:767px) {
+	#search_field .box-shadow{
+		max-height:unset;
+	}
 	.userFlex > span:first-child {
 	    float: left;
 	}
@@ -907,6 +910,9 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+	#search_field .box-shadow{
+		max-height:335px;
+	}
 	#oneTimeChallengeBox .onetimeBox {
 	    margin-top: 50px;
 	}

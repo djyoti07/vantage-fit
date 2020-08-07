@@ -3340,17 +3340,15 @@ input[type="submit"]:hover{
 	padding-bottom:0px;
 }
 /*request demo pardot formends*/
-.
-.position_letter,
-.contentpost img.ebookbanner,
-.downloadsection{
+
+.position_letter{
 	display:none;
-}
-.rightsidebar{
-	margin-top:0px;
 }
 p.submit {
     text-align: center;
+}
+#search_field .box-shadow{
+	max-height:435px;
 }
 
 
