@@ -24,7 +24,12 @@ $('.pricePer').each(function(){
   $(".chooseplan").text(getPlanName(selectedPlan));
 });
 
-
+$("#subscriptionSwitch").click(function(){
+  $('.tabValues').find(".active").removeClass('active');
+  $(".subscriptiontab").addClass("active");
+  $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
+  $(".subscription").removeClass("hideItem").addClass("showItem");
+});
 /*slider*/
 const settings={
   fill: '#f8654a',
