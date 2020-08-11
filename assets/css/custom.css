@@ -3171,6 +3171,7 @@ tr.greyBackground td a:hover{
 }
 .modal-content{
 	border-radius:0px;
+	max-height: 736px;
 }
 
 .modal-body,
@@ -3355,6 +3356,4 @@ p.submit {
 
 
 
-
-
-
+    
