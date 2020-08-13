@@ -1,4 +1,5 @@
 @media (min-width:320px) and (max-width:1024px) {
+
 	.modal-dialog {
 	    min-width: unset;
 	}
@@ -56,9 +57,6 @@
 	#accordion{
 		margin-top:30px;
 	}
-	.displayUsers {
-	      min-height: 30px;
-	  }
       .noofUser.pricingouter{
         padding:30px;
     }
@@ -434,6 +432,15 @@
 }
 
 @media (max-width:767px) {
+	.displayUsers{
+		min-height:0px;
+	}
+	.contentresource img{
+		width:100%;
+	}
+	.post-content .downloadsection{
+		margin-top:30px;
+	}
 	#search_field .box-shadow{
 		max-height:unset;
 	}
@@ -701,7 +708,6 @@
 		padding: 20px;
 	}
 	.wellness-background .downloadbook {
-	    width: 50%;
 	    margin-bottom:30px;
 	}
 	.wellness-background {
@@ -891,9 +897,6 @@
 		font: 500 14px Poppins, sans-serif;
 		padding: 14px 22px;
 	}
-	.downloadsection img {
-		width: 80%;
-	}
 	.downloadsection .banner_btn {
 		padding: 10px;
 	}
@@ -913,14 +916,18 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
+
+	.displayUsers {
+	      min-height: 30px;
+	  }
+	.app_downloadbanner img{
+		margin-bottom:20px;
+	}
 	#search_field .box-shadow{
 		max-height:335px;
 	}
 	#oneTimeChallengeBox .onetimeBox {
 	    margin-top: 50px;
-	}
-	.downloadsection img {
-		width: 50%;
 	}
 	.content_benefits .innertext.innerheading {
 		font-size: 22px;

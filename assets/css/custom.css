@@ -2291,7 +2291,6 @@ h3.cta-inline {
 }
 
 .app_downloadbanner img {
-	width: 19%;
 	margin: 0;
 }
 
@@ -2456,9 +2455,6 @@ img.donloadappimg {
 	display: none;
 }
 
-.app_downloadbanner img.buildapp {
-	width: 30%;
-}
 
 .slideUp {
 	-webkit-transition: all .2s ease-in-out;
@@ -2511,9 +2507,6 @@ img.donloadappimg {
 	display: none;
 }
 
-.app_downloadbanner img.buildapp {
-	width: 32%;
-}
 /*horizontalpopup*/
 .new_footer_area.popupspc{
 	margin-bottom:80px;
