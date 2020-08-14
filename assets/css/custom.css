@@ -975,9 +975,6 @@ img.vfit {
 	padding-top: 30px;
 }
 
-.featuresimg img {
-	width: 35px;
-}
 
 .mid-activity {
 	padding: 0;
@@ -1132,7 +1129,6 @@ img.vfit {
 }
 
 .image-content img {
-	width: 30px;
 	padding-right: 10px;
 }
 
@@ -1502,7 +1498,6 @@ textarea:focus {
 }
 
 .featurespage img {
-	width: 6%;
 	padding-bottom: 15px;
 }
 
@@ -1511,7 +1506,7 @@ textarea:focus {
 }
 
 .main_features.img-responsive {
-	width: 80%;
+	width: auto;
 }
 
 .pricingouter {
