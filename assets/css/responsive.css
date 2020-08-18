@@ -1,5 +1,7 @@
 @media (min-width:320px) and (max-width:1024px) {
-
+	.popupbottom .app_downloadbanner img{
+		margin-bottom:20px;
+	}
 	.modal-dialog {
 	    min-width: unset;
 	}
@@ -432,6 +434,14 @@
 }
 
 @media (max-width:767px) {
+	#pardot-form .form-field span span {
+	    float: left;
+	    width: 100%;
+	}
+	body form.form div.form-col-1,
+	body form.form div.form-col-2{
+		width:100%;
+	}
 	.displayUsers{
 		min-height:0px;
 	}
@@ -727,9 +737,9 @@
 	.iconslandingpage ul li:nth-child(even){
 		border-right:none;
 	}
-	.popupbottom.horizontalpopup .app_downloadbanner img {
+	/*.popupbottom.horizontalpopup .app_downloadbanner img {
 	    width: 43%;
-	}
+	}*/
 	.popupbottom.horizontalpopup .innerspace{
 		padding:10px 14px;
 	}
@@ -814,10 +824,9 @@
 	.n_hero_banner_area {
 		margin-bottom: 20px;
 	}
-	.downloadsection .dwnloadbookimage,
-	.downloadsection .hs_submit.hs-submit,
-	.downloadsection .imagesticky,
-	.downloadsection img {
+	
+	/*.downloadsection .hs_submit.hs-submit,
+	.downloadsection .imagesticky {
 		width: 35%;
 	}
 	.downloadsection .freeebook {
@@ -836,7 +845,7 @@
 	}
 	.downloadsection .subscribe {
 		width: auto;
-	}
+	}*/
 	.contentebook {
 		font-size: 14px;
 		line-height: 1.4;
@@ -855,10 +864,10 @@
 	}
 	.popupbottom .app_downloadbanner {
 		margin-bottom: 0px;
-	}
+	}/*
 	.popupbottom.horizontalpopup .app_downloadbanner img{
 		width:35%;
-	}
+	}*/
 }
 
 @media only screen and (min-width:320px) and (max-width:1024px) and (orientation:landscape) {
@@ -882,6 +891,13 @@
 @media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
 	.hidden-sml {
 		display: none;
+	}
+	.popupbottom .app_downloadbanner img{
+		width:auto;
+	}
+	.popupbottom .text-right{
+		text-align:center!important;
+		margin-top:20px;
 	}
 	.left-activity,
 	.right-activity {
@@ -916,7 +932,13 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
-
+.popupbottom .app_downloadbanner img{
+		width:auto;
+	}
+	.popupbottom .text-right{
+		text-align:center!important;
+		margin-top:20px;
+	}
 	.displayUsers {
 	      min-height: 30px;
 	  }
@@ -958,13 +980,13 @@
 	.additionals {
         min-height: 200px;
     }
-	.downloadsection .freeebook {
+	/*.downloadsection .freeebook {
 		width: 16%;
 		right: 27%;
 	}
 	.downloadsection .dwnloadbookimage {
 		width: 35%!important;
-	}
+	}*/
 	.downloadsection .banner_btn {
 		padding: 12px 45px!important;
 	}

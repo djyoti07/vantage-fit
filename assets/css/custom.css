@@ -248,10 +248,6 @@ i:before {
 	text-align: right!important;
 }
 
-.navbar-brand>img {
-	width: 220px;
-}
-
 .header_area.navbar_fixed .navbar .btn_get.btn-meta:hover {
 	color: #fff;
 }
@@ -837,14 +833,12 @@ img.vfit {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 50%;
 }
 
 .pulse {
 	position: absolute;
 	top: 6%;
 	right: -2px;
-	width: 16%;
 }
 
 .img-responsive {
@@ -879,14 +873,14 @@ img.vfit {
 .outline-round::before {
 	content: "";
 	position: absolute;
-	left: 0;
-	top: 5px;
+	left: 15px;
 	width: 11px;
 	height: 11px;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border: 2px solid #f15162;
+	margin-top:5px;
 }
 
 .rel_text {
@@ -1055,14 +1049,12 @@ img.vfit {
 	top: 0;
 	z-index: -1;
 	height: 100%;
-	width: 50%;
 }
 
 .breadcrumb_pulse {
 	position: absolute;
 	right: 0;
 	top: 25%;
-	width: 22%;
 }
 
 .vc-btn-gradient-general {
@@ -2173,7 +2165,6 @@ article.post-card .img-holder {
 }
 
 .downloadsection .imagesticky {
-	width: 70%;
 	margin: 30px 0 50px;
 }
 
@@ -2400,10 +2391,10 @@ h3.cta-inline {
 	box-shadow: 0 50px 70px 0 rgba(0, 11, 40, .24);
 }
 
-.popupbottom .app_downloadbanner img {
-	width: 40%;
+/*.popupbottom .app_downloadbanner img {
+	width: auto;
 }
-
+*/
 .popupbottom .appdownloadbanner {
 	margin: 0;
 	border-radius: 6px 0 0 0;
@@ -2510,9 +2501,9 @@ img.donloadappimg {
 	width:100%;
 	
 }
-.popupbottom.horizontalpopup .app_downloadbanner img{
+/*.popupbottom.horizontalpopup .app_downloadbanner img{
 	width:20%;
-}
+}*/
 .popupbottom.horizontalpopup  .index_download{
 	margin-top:0px;
 }
@@ -3338,8 +3329,26 @@ p.submit {
 #search_field .box-shadow{
 	max-height:435px;
 }
-
-
+#pardot-form .form-field span span {
+    float: left;
+    width: 50%;
+}
+#pardot-form .form-field span {
+    float: left;
+    width: 100%;
+}
+#pardot-form .form-field span span input[type=checkbox], 
+#pardot-form .form-field span span input[type=radio] {
+    float: left;
+    margin-top: 8px;
+    margin-right: 6px;
+}
+#pardot-form .form-field span.value label {
+    width: auto;
+    margin-top: 0px;
+    display: inline;
+    padding-right: 15px;
+}
 
 
 
