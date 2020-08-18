@@ -3343,7 +3343,12 @@ p.submit {
     margin-top: 8px;
     margin-right: 6px;
 }
-
+#pardot-form .form-field span.value label {
+    width: auto;
+    margin-top: 0px;
+    display: inline;
+    padding-right: 15px;
+}
 
 
 
