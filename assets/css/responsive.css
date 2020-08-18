@@ -822,10 +822,9 @@
 	.n_hero_banner_area {
 		margin-bottom: 20px;
 	}
-	.downloadsection .dwnloadbookimage,
-	.downloadsection .hs_submit.hs-submit,
-	.downloadsection .imagesticky,
-	.downloadsection img {
+	
+	/*.downloadsection .hs_submit.hs-submit,
+	.downloadsection .imagesticky {
 		width: 35%;
 	}
 	.downloadsection .freeebook {
@@ -844,7 +843,7 @@
 	}
 	.downloadsection .subscribe {
 		width: auto;
-	}
+	}*/
 	.contentebook {
 		font-size: 14px;
 		line-height: 1.4;
@@ -966,13 +965,13 @@
 	.additionals {
         min-height: 200px;
     }
-	.downloadsection .freeebook {
+	/*.downloadsection .freeebook {
 		width: 16%;
 		right: 27%;
 	}
 	.downloadsection .dwnloadbookimage {
 		width: 35%!important;
-	}
+	}*/
 	.downloadsection .banner_btn {
 		padding: 12px 45px!important;
 	}
