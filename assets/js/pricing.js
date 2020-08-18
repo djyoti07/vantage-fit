@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+const observer = lozad();
+observer.observe();
 var numberOfUsers = '';
 var numberOfUsers = $(".range-slider__range").val();
 var isPricingInUSD = true;
