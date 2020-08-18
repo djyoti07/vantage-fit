@@ -432,6 +432,14 @@
 }
 
 @media (max-width:767px) {
+	#pardot-form .form-field span span {
+	    float: left;
+	    width: 100%;
+	}
+	body form.form div.form-col-1,
+	body form.form div.form-col-2{
+		width:100%;
+	}
 	.displayUsers{
 		min-height:0px;
 	}
