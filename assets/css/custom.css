@@ -3338,7 +3338,20 @@ p.submit {
 #search_field .box-shadow{
 	max-height:435px;
 }
-
+#pardot-form .form-field span span {
+    float: left;
+    width: 50%;
+}
+#pardot-form .form-field span {
+    float: left;
+    width: 100%;
+}
+#pardot-form .form-field span span input[type=checkbox], 
+#pardot-form .form-field span span input[type=radio] {
+    float: left;
+    margin-top: 8px;
+    margin-right: 6px;
+}
 
 
 
