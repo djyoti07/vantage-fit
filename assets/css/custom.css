@@ -248,10 +248,6 @@ i:before {
 	text-align: right!important;
 }
 
-.navbar-brand>img {
-	width: 220px;
-}
-
 .header_area.navbar_fixed .navbar .btn_get.btn-meta:hover {
 	color: #fff;
 }
@@ -837,14 +833,12 @@ img.vfit {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 50%;
 }
 
 .pulse {
 	position: absolute;
 	top: 6%;
 	right: -2px;
-	width: 16%;
 }
 
 .img-responsive {
@@ -1055,14 +1049,12 @@ img.vfit {
 	top: 0;
 	z-index: -1;
 	height: 100%;
-	width: 50%;
 }
 
 .breadcrumb_pulse {
 	position: absolute;
 	right: 0;
 	top: 25%;
-	width: 22%;
 }
 
 .vc-btn-gradient-general {
@@ -2399,10 +2391,10 @@ h3.cta-inline {
 	box-shadow: 0 50px 70px 0 rgba(0, 11, 40, .24);
 }
 
-.popupbottom .app_downloadbanner img {
-	width: 40%;
+/*.popupbottom .app_downloadbanner img {
+	width: auto;
 }
-
+*/
 .popupbottom .appdownloadbanner {
 	margin: 0;
 	border-radius: 6px 0 0 0;
@@ -2509,9 +2501,9 @@ img.donloadappimg {
 	width:100%;
 	
 }
-.popupbottom.horizontalpopup .app_downloadbanner img{
+/*.popupbottom.horizontalpopup .app_downloadbanner img{
 	width:20%;
-}
+}*/
 .popupbottom.horizontalpopup  .index_download{
 	margin-top:0px;
 }
