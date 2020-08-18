@@ -1602,9 +1602,7 @@ article.post-card .post-card-content {
 	font-size: 40px;
 }
 
-.post-content img {
-	width: 100%;
-}
+
 
 blockquote {
 	background-color: #fff;
@@ -1692,7 +1690,7 @@ blockquote p {
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 150px;
+	top: 130px;
 }
 
 .ind-row {
@@ -1730,7 +1728,6 @@ blockquote p {
 
 .post-content img.detailspostimg {
 	margin-top: 0;
-	width: 100%;
 	border-radius: 5px;
 }
 
