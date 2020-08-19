@@ -3346,6 +3346,18 @@ p.submit {
     display: inline;
     padding-right: 15px;
 }
+/*sprite*/
+.sprite{
+	background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1597675970/VantageFit/website/sprite-vantagefit.png);
+    height: 41px;
+    
+}
+.activitytracker{
+	background-position: 0px -693px;
+}
+.activitytrackeractive{
+	background-position: 0px -710px;
+}
 
 
 
