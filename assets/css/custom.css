@@ -1117,7 +1117,7 @@ img.vfit {
 
 .image-content div {
 	font-weight: 600;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 
 .image-content img {
@@ -1422,9 +1422,9 @@ textarea:focus {
 	display: none;
 }
 
-.active-sec .second-image {
+/*.active-sec .second-image {
 	display: inline-block;
-}
+}*/
 
 .active-sec .first-image {
 	display: none;
@@ -3348,18 +3348,86 @@ p.submit {
 }
 /*sprite*/
 .sprite{
-	background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1597675970/VantageFit/website/sprite-vantagefit.png);
-    height: 41px;
-    
+	background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1597675970/VantageFit/website/sprite-vantagefit.png) no-repeat;
+    height: 41px;  
 }
 .activitytracker{
-	background-position: 0px -693px;
+	background-position: 15px -691px;
 }
 .activitytrackeractive{
-	background-position: 0px -710px;
+	background-position: 15px -649px;
+}
+.active-sec .second-image{
+	display:block;
+}
+.heartmonitor{
+	background-position: 10px -730px;
+}
+.heartmonitoractive{
+	background-position: 10px -763px;
+}
+.wearabledev{
+	background-position: 16px -802px;
+}
+.wearabledevactive{
+	background-position: 16px -848px;
+}
+.contestchallenges{
+	background-position: 12px -1023px;
+}
+.contestchallengesactive{
+	background-position: 12px -980px;
+}
+.healthrisk{
+	background-position: 15px -1151px;
+}
+.healthriskactive{
+	background-position: 15px -1192px;
+}
+.moodometer{
+	background-position: 13px -1067px;
+}
+.moodometeractive{
+	background-position: 13px -1110px;
+}
+.redeemfitness{
+	background-position: 14px -1231px;
+}
+.redeemfitnessactive{
+	background-position: 14px -1269px;
+}
+.leaderboardrealtime{
+	background-position: 12px -893px;
+}
+.leaderboardrealtimeactive{
+	background-position: 12px -936px;
+}
+/*.iconplay .playicon {
+	background-position: 12px -1395px;
+	height: 66px;
+    width: 79px;
+}*/
+.realicon {
+    display: inline-block;
+    width: 27px;
+    vertical-align: middle;
+	height:35px;
+}
+.configureicon {
+    background-position: -1px -1305px;
+}
+.realtimeprogress{
+	background-position: -1px -1358px;
+}
+
+.healthinsignts{
+	background-position: -1px -1332px;
 }
 
 
 
 
-    
+
+
+
+
