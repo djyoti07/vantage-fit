@@ -1,1 +1,106 @@
-!function(i){if("function"==typeof define&&define.amd)define(["jquery"],i);else if("object"==typeof module&&module.exports){var t=require("jquery");i(t),module.exports=t}else i(jQuery)}(function(i){function t(i){this.init(i)}t.prototype={value:0,size:100,startAngle:-Math.PI,thickness:"auto",fill:{gradient:["#3aeabb","#fdd250"]},emptyFill:"rgba(0, 0, 0, .1)",animation:{duration:1200,easing:"circleProgressEasing"},animationStartValue:0,reverse:!1,lineCap:"butt",insertMode:"prepend",constructor:t,el:null,canvas:null,ctx:null,radius:0,arcFill:null,lastFrameValue:0,init:function(t){i.extend(this,t),this.radius=this.size/2,this.initWidget(),this.initFill(),this.draw(),this.el.trigger("circle-inited")},initWidget:function(){this.canvas||(this.canvas=i("<canvas>")["prepend"==this.insertMode?"prependTo":"appendTo"](this.el)[0]);var t=this.canvas;if(t.width=this.size,t.height=this.size,this.ctx=t.getContext("2d"),window.devicePixelRatio>1){var e=window.devicePixelRatio;t.style.width=t.style.height=this.size+"px",t.width=t.height=this.size*e,this.ctx.scale(e,e)}},initFill:function(){function t(){var t=i("<canvas>")[0];t.width=a.size,t.height=a.size,t.getContext("2d").drawImage(e,0,0,s,s),a.arcFill=a.ctx.createPattern(t,"no-repeat"),a.drawFrame(a.lastFrameValue)}var e,a=this,n=this.fill,r=this.ctx,s=this.size;if(!n)throw Error("The fill is not specified!");if("string"==typeof n&&(n={color:n}),n.color&&(this.arcFill=n.color),n.gradient){var l=n.gradient;if(1==l.length)this.arcFill=l[0];else if(l.length>1){for(var o=n.gradientAngle||0,h=n.gradientDirection||[s/2*(1-Math.cos(o)),s/2*(1+Math.sin(o)),s/2*(1+Math.cos(o)),s/2*(1-Math.sin(o))],c=r.createLinearGradient.apply(r,h),d=0;d<l.length;d++){var u=l[d],g=d/(l.length-1);i.isArray(u)&&(g=u[1],u=u[0]),c.addColorStop(g,u)}this.arcFill=c}}n.image&&(n.image instanceof Image?e=n.image:(e=new Image).src=n.image,e.complete?t():e.onload=t)},draw:function(){this.animation?this.drawAnimated(this.value):this.drawFrame(this.value)},drawFrame:function(i){this.lastFrameValue=i,this.ctx.clearRect(0,0,this.size,this.size),this.drawEmptyArc(i),this.drawArc(i)},drawArc:function(i){if(0!==i){var t=this.ctx,e=this.radius,a=this.getThickness(),n=this.startAngle;t.save(),t.beginPath(),this.reverse?t.arc(e,e,e-a/2,n-2*Math.PI*i,n):t.arc(e,e,e-a/2,n,n+2*Math.PI*i),t.lineWidth=a,t.lineCap=this.lineCap,t.strokeStyle=this.arcFill,t.stroke(),t.restore()}},drawEmptyArc:function(i){var t=this.ctx,e=this.radius,a=this.getThickness(),n=this.startAngle;i<1&&(t.save(),t.beginPath(),i<=0?t.arc(e,e,e-a/2,0,2*Math.PI):this.reverse?t.arc(e,e,e-a/2,n,n-2*Math.PI*i):t.arc(e,e,e-a/2,n+2*Math.PI*i,n),t.lineWidth=a,t.strokeStyle=this.emptyFill,t.stroke(),t.restore())},drawAnimated:function(t){var e=this,a=this.el,n=i(this.canvas);n.stop(!0,!1),a.trigger("circle-animation-start"),n.css({animationProgress:0}).animate({animationProgress:1},i.extend({},this.animation,{step:function(i){var n=e.animationStartValue*(1-i)+t*i;e.drawFrame(n),a.trigger("circle-animation-progress",[i,n])}})).promise().always(function(){a.trigger("circle-animation-end")})},getThickness:function(){return i.isNumeric(this.thickness)?this.thickness:this.size/14},getValue:function(){return this.value},setValue:function(i){this.animation&&(this.animationStartValue=this.lastFrameValue),this.value=i,this.draw()}},i.circleProgress={defaults:t.prototype},i.easing.circleProgressEasing=function(i){return i<.5?.5*(i*=2)*i*i:1-.5*(i=2-2*i)*i*i},i.fn.circleProgress=function(e,a){var n="circle-progress",r=this.data(n);if("widget"==e){if(!r)throw Error('Calling "widget" method on not initialized instance is forbidden');return r.canvas}if("value"==e){if(!r)throw Error('Calling "value" method on not initialized instance is forbidden');if(void 0===a)return r.getValue();var s=arguments[1];return this.each(function(){i(this).data(n).setValue(s)})}return this.each(function(){var a=i(this),r=a.data(n),s=i.isPlainObject(e)?e:{};if(r)r.init(s);else{var l=i.extend({},a.data());"string"==typeof l.fill&&(l.fill=JSON.parse(l.fill)),"string"==typeof l.animation&&(l.animation=JSON.parse(l.animation)),(s=i.extend(l,s)).el=a,r=new t(s),a.data(n,r)}})}});
+
+(function($) {
+  $.fn.circleGraphic = function(options) {
+    $.fn.circleGraphic.defaults = {
+      color: '#05c8ad',
+      startAngle: 0,
+      //endAngle:50
+    };
+    $(this).each(function() {
+      let $this = $(this)
+      var opts = $.extend({}, $.fn.circleGraphic.defaults, options);
+      var percentage = $(this).find('.circle').attr('data-percent');
+      //var percentage = $this.html();
+      var ID = "c" + percentage + Math.random();
+      $this.append("<canvas width='200' height='200' id='" + ID + "'></canvas>");
+      var canvas = document.getElementById(ID),
+      context = canvas.getContext('2d');
+      var Width = $this.width();
+      $this.height(Width);
+      var Height = $this.height();
+
+      canvas.width = Width;
+      canvas.height = Height;
+      var startAngle = opts.startAngle,
+        endAngle = percentage / 100,
+        angle = startAngle,
+        radius = Width * 0.4;
+
+      function drawTrackArc() {
+        context.beginPath();
+        context.strokeStyle = '#ecfdfb';
+        context.lineWidth = 7;
+        context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (endAngle * 360 + 270), false);
+        context.stroke();
+        context.closePath();
+      }
+
+      function drawOuterArc(_angle, _color) {
+        var angle = _angle;
+        var color = _color;
+        context.beginPath();
+        context.strokeStyle = color;
+        context.lineWidth = 7;
+
+        context.font = '300 70px Poppins,sans-serif';
+        context.arc(Width / 2, Height / 2, radius, (Math.PI / 180) * (startAngle * 360 - 90), (Math.PI / 180) * (angle * 360 - 90), false);
+        context.stroke();
+        context.closePath();
+      }
+
+      function numOfPercentage(_angle, _color) {
+        var angle = Math.ceil(_angle * 100);
+        var color = _color;
+        context.fillStyle = '#4a5269';
+        var metrics = context.measureText(angle);
+        var textWidth = metrics.width;
+        var xPos = Width / 2 - textWidth / 2,
+          yPos = Height / 2 + textWidth / 2;
+          context.textAlign ='center';
+          context.direction = 'ltr'
+        context.fillText(angle + "%", 137, 157);
+      }
+
+      function drawACircleInTheEnd() {
+        let radians = angle * 2 * Math.PI;
+        context.beginPath();
+        context.arc(Width / 2 + radius * (Math.sin(radians)),
+          Height / 2 - radius * (Math.cos(radians)),
+          3,
+          0,
+          2 * Math.PI,
+          false);
+
+        context.fillStyle = '#05c8ad';
+        context.fill();
+        context.lineWidth = 7;
+        context.strokeStyle = '#05c8ad';
+        context.stroke();
+      }
+          
+
+      function draw() {
+        var loop = setInterval(function() {
+        var elementPos = $('.circleGraphic').offset().top;
+              var topOfWindow = $(window).scrollTop();
+              var animate = $('.circleGraphic').data('animate');
+               if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                  context.clearRect(0, 0, Width, Height);
+                  drawTrackArc();
+                  drawOuterArc(angle, opts.color);
+                  numOfPercentage(angle, opts.color);
+                  drawACircleInTheEnd();
+                  angle += 0.01;
+                  if (angle > endAngle) {
+                    clearInterval(loop);
+                  }
+             }
+
+        }, 1000 / 60);
+      }
+      draw();
+      return $this;
+    })
+  };
+})(jQuery);
+$('.circleGraphic').circleGraphic();
