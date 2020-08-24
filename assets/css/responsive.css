@@ -1,4 +1,6 @@
 @media (min-width:320px) and (max-width:1024px) {
+	.mob_image{width:100%;}
+	.circleGraphic{display:none;}
 	.popupbottom .app_downloadbanner img{
 		margin-bottom:20px;
 	}

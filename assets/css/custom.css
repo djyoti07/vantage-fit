@@ -1126,7 +1126,7 @@ img.vfit {
 
 .healthyworkforce img {
 	position: relative;
-	bottom: -30px;
+	bottom: -58px;
 }
 
 section.section_space.video_area {
@@ -3349,7 +3349,7 @@ p.submit {
 /*sprite*/
 .sprite{
 	background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1597675970/VantageFit/website/sprite-vantagefit.png) no-repeat;
-    height: 41px;  
+    height: 40px;  
 }
 .activitytracker{
 	background-position: 15px -691px;
@@ -3423,8 +3423,55 @@ p.submit {
 .healthinsignts{
 	background-position: -1px -1332px;
 }
-
-
+.employeehealth{
+	background-position: 0px -45px;
+}
+.featuressprite{
+	margin-bottom:10px;
+	background-position-x:0px;
+}
+.employeehealthchallenges{
+	background-position: 0px 0px;
+}
+.employeehealthcampaigns{
+	background-position: 0px -120px;
+}
+.heartratemonitorfeatures{
+	background-position: 0px -83px;
+	height:35px;
+}
+.activitytrackerfeatures{
+	background-position: 0px -155px;
+}
+.calorietrackerfeatures{
+	background-position: 0px -193px;
+}
+.healthdiaryactive{
+	background-position: 0px -440px;
+}
+.trophyactive{
+	background-position: 0px -476px;
+}
+.trophyactive{
+	background-position: 0px -476px;
+}
+.fitnesspointsactive{
+	background-position: 0px -510px;
+}
+.giftcardactive{
+	background-position: 0px -552px;
+}
+.admindashboard{
+	background-position: 345px -596px;
+    height: 47px;
+}
+.popupyoutubevideo::before{
+	background: url("https://res.cloudinary.com/vantagecircle/image/upload/v1597675970/VantageFit/website/sprite-vantagefit.png");
+	background-position: 0px -596px;
+	height: 26px;
+  width: 26px;
+  position:absolute;
+}
 
 
 
