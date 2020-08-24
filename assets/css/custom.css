@@ -3472,7 +3472,10 @@ p.submit {
   width: 26px;
   position:absolute;
 }
-
+.faqpricing {
+    background-position: 550px -1462px;
+    height: 49px;
+}
 
 
 
