@@ -1,33 +1,27 @@
-<header class="header_area  header_stick" style="">
-   <nav class="navbar navbar-expand-lg menu_center">
-      <div class="container custom_container">
-         {{#if @site.logo}}
-         <a class="navbar-brand sticky_logo" href="/"> 
-            <img width="220" src="{{@site.logo}}" alt="{{@site.title}}" class="d_logo" />
-            <img width="220" data-src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" alt="Vantage Circle" class="stick_logo lozad">
-        </a> 
-         {{else}}
-                <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
-            {{/if}}
-          <button class="navbar-toggler collapsed marketinglanding {{post_class}}" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="menu_toggle"> <span class="hamburger"> <span></span> <span></span> <span></span> </span> <span class="hamburger-cross"> <span></span> <span></span> </span> </span> </button>
-          <span class="marketinglanding {{post_class}}">
-           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul id="menu-main-menu-global" class="navbar-nav menu  ml-auto" onclick="activefunc(event)">
-                 {{> "site-nav"}}
-              </ul>
-              <!--<a href="#" class="menu-login"> Login </a> -->
-              <a class="menu_cus btn_get btn-meta btn_hover menu-top" href="https://go.vantagefit.io/get-a-demo/">Request Demo </a>
-           </div>
-        </span>
-        {{#post}}
-         {{#has slug="employee-wellness-program"}}
-           <div class="collapse navbar-collapse justify-content-center landing_request" id="navbarSupportedContent">
-              <a class="menu_cus btn_get btn-meta btn_hover menu-top" href="#formrequest">Request Demo </a>
-           </div>
-        {{/has}}
-        {{/post}}
-      </div>
-   </nav>
+<header class="header_area  header_stick" style=""><nav class="navbar navbar-expand-lg menu_center"><div class="container custom_container">
+  {{#if @site.logo}}
+  <a class="navbar-brand sticky_logo" href="/"><img width="220" src="{{@site.logo}}" alt="{{@site.title}}" class="d_logo" /><img width="220" data-src="https://res.cloudinary.com/vantagecircle/image/upload/v1580904957/VantageFit/website/00-vantagefit-logo.png" alt="Vantage Circle" class="stick_logo lozad"></a> 
+  {{else}}
+ <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
+{{/if}}
+<button class="navbar-toggler collapsed marketinglanding {{post_class}}" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="menu_toggle"> <span class="hamburger"> <span></span> <span></span> <span></span> </span> <span class="hamburger-cross"> <span></span> <span></span> </span> </span> </button>
+<span class="marketinglanding {{post_class}}">
+<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+<ul id="menu-main-menu-global" class="navbar-nav menu  ml-auto" onclick="activefunc(event)">
+{{> "site-nav"}}
+</ul>
+<a class="menu_cus btn_get btn-meta btn_hover menu-top" href="https://go.vantagefit.io/get-a-demo/">Request Demo </a>
+</div>
+</span>
+{{#post}}
+{{#has slug="employee-wellness-program"}}
+<div class="collapse navbar-collapse justify-content-center landing_request" id="navbarSupportedContent">
+<a class="menu_cus btn_get btn-meta btn_hover menu-top" href="#formrequest">Request Demo </a>
+</div>
+{{/has}}
+{{/post}}
+</div>
+</nav>
 </header>     
 
 

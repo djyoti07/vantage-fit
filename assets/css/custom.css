@@ -725,10 +725,6 @@ header.navbar_fixed .navbar .search_cart .search a.nav-link:before {
 	padding-bottom: 10px;
 }
 
-a.popup-youtube .fa {
-	font-size: 20px;
-}
-
 .banner_btn.button_white {
 	background: #fff;
 }
@@ -1101,12 +1097,10 @@ img.vfit {
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
 }
-
 .hs-button,
 .hs_submit.hs-submit input {
 	padding: 10px 50px;
 }
-
 .hs_submit.hs-submit input:hover,
 .main-button:hover {
 	-webkit-transform: translateY(-2px);
@@ -1115,10 +1109,8 @@ img.vfit {
 	-o-transform: translateY(-2px);
 	transform: translateY(-2px);
 }
-
 .image-content div {
 	font-weight: 600;
-	/*margin-bottom: 10px;*/
 }
 
 .image-content img {
@@ -1161,7 +1153,7 @@ section.section_space.video_area {
 	margin: 0 auto;
 	position: relative;
 	z-index: 1;
-	background: url(https://res.cloudinary.com/vantagecircle/image/upload/v1597380700/VantageFit/website/video_vantagefit_compress.png) no-repeat;
+	background: url(https://res.cloudinary.com/vantagecircle/image/upload/w_400/v1597380700/VantageFit/website/video_vantagefit_compress.png) no-repeat;
 	background-size: cover;
 }
 
