@@ -1,1 +1,101 @@
-$(document).ready(function(){lozad().observe();var e=$(".range-slider__range").val();$(".numberOfUserss").each(function(){$(this).text(e),$(".numberOfUserss").attr("users",e)}),$(".output").each(function(){var t=$(this).attr("plan");$(this).html("<span>"+`${a(!0)}`+"</span>"+n(t,!0,e))}),$(".pricePer").each(function(){var e=$(this).attr("plan");$(this).find(".amountperperson").text(function(e,t){switch(e){case"0":return"100 users";default:var s=1;1!=e&&(s=4);const n=`${a(t)}`+`${i(e,t)*s} per employee`;return 1==e?n+"/week":n}}(e,!0)),$(".chooseplan").text(function(e){switch(e){case 0:return"FREE";case 1:return"One Time Challenge";case 2:return"Premium";case 3:return"Enterprise"}}(e))}),$("#subscriptionSwitch").click(function(){$(".tabValues").find(".active").removeClass("active"),$(".subscriptiontab").addClass("active"),$(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem"),$(".subscription").removeClass("hideItem").addClass("showItem")});const t={fill:"#f8654a",background:"#f5f8fa"},s=document.querySelectorAll(".range-slider");function n(e,t,s){const n=function(e,t,s){return i(e,t)*s*function(e){var t=$("#selectedNumberOfWeeks option:selected").val();return 1==e?t:4}(e)}(e,t,s);return null!=n?`${n}`:"Contact us"}function i(e,t){return 1==e?t?1:10:2==e?t?1:10:3==e?t?1.25:15:0}function a(e){return e?"$":"₹"}function r(e){const s=100*(e.value-e.min)/(e.max-e.min),n=`linear-gradient(90deg, ${t.fill} ${s}%, ${t.background} ${s+.1}%)`;e.style.background=n}Array.prototype.forEach.call(s,e=>{e.querySelector("input").addEventListener("input",t=>{r(e.querySelector("input"));var s=t.target.value;$(".output").each(function(){var e=$(this).attr("plan"),s=t.target.value;$(".noOfUsers").text(s),$(".numberOfUserss").attr("users",s),$(this).html("<span>"+`${a(!0)}`+"</span>"+n(e,!0,s))}),$(".numberOfUserss").each(function(){var e=t.target.value;$(this).text(e)}),1e3==s?$(".userLimit").show():$(".userLimit").hide()}),r(e.querySelector("input"))}),$("#selectedNumberOfWeeks").change(function(e,t,s){$(this).find("option:selected").val();n(1,!0,s=$(".numberOfUserss").attr("users")),$(".onetimeBox .output").html("<span>"+`${a(!0)}`+"</span>"+n(1,!0,s))}),$("#subscriptionPlan .indItems.tabsViewMobile div").click(function(){var e=$(this).attr("attr");$("#subscriptionPlan .tableSubscription td").hide(),$("#subscriptionPlan .indItems div, #subscriptionPlan .tableSubscription div").removeClass("active"),$("#subscriptionPlan .tableSubscription td:first-child").show(),console.log($("#subscriptionPlan .tableSubscription ."+e+"Plan").show()),$("#subscriptionPlan .tableSubscription ."+e+"Plan").show(),$(this).addClass("active"),$(".mobileView").find(".active").removeClass("active"),$(".mobileView."+e+"Plan").addClass("active")}),$(".tabValues li").on("click",function(){var e="."+$(this).attr("attr");$(".tabValues").find(".active").removeClass("active"),$(this).addClass("active"),$(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem"),$(e).removeClass("hideItem").addClass("showItem")})});
+$(document).ready(function(){
+lozad().observe();
+$('.tabValues li').on('click', function(){
+    var currentItem = '.'+ $(this).attr('attr');
+    $('.tabValues').find(".active").removeClass('active');
+    $(this).addClass('active');
+    $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
+    $(currentItem).removeClass("hideItem").addClass("showItem");
+});
+var numberOfUsers = $(".range-slider__range").val();
+var isPricingInUSD = true;
+$(".numberOfUserss").each(function(){
+    $(this).text(numberOfUsers);
+});
+const settings={
+  fill: '#f8654a',
+  background: '#f5f8fa'
+}
+$('.output').each(function(){ 
+  var selectedPlan = $(this).attr('plan');
+   $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
+});
+$('.pricePer').each(function(){
+  var selectedPlan = $(this).attr('plan');
+  if(isPricingInUSD){ var currency = "$";} else{ var currency = "₹";}
+  $(this).find(".amountperperson").text(currency + getPricePerUser(selectedPlan, isPricingInUSD)); 
+  });
+/*
+0 = Free
+1 = One time challenge
+2 = Premium
+3 = Enterprise
+ */
+function getPricePerUser(plan, usd) {
+  if (plan == 1) {
+    if (usd) { return 3 } else { return 30  }
+  } else if (plan == 2) {
+    if (usd) { return 3 } else { return 30 }
+  } else if (plan == 3) {
+    if (usd) { return 4 } else { return 40 }
+  } else {
+    return 0
+  }
+  
+}
+
+function getTotalPriceText(plan, usd, numberOfUsers ) {
+  const cost = getCost(plan, usd, numberOfUsers)
+  if (cost !== null) {
+    if (cost > 0) {
+      if (usd) {
+        return `$${cost}`
+      } else {
+        return `₹${cost}`
+      }
+    } else {
+      return "FREE"
+    }
+  } else {
+    return "Contact us"
+  }
+}
+
+function getCost(plan, usd, numberOfUsers) {
+  if (numberOfUsers >= 1000) {
+    return null
+  } else {
+    return getPricePerUser(plan, usd) * numberOfUsers
+  }
+}
+const sliders = document.querySelectorAll('.range-slider');
+Array.prototype.forEach.call(sliders,(slider)=>{
+  slider.querySelector('input').addEventListener('input', (event)=>{
+    //slider.querySelector('span').innerHTML = event.target.value;
+      
+      console.log(event.target.value);
+      applyFill(slider.querySelector('input'));
+      $('.output').each(function(){ 
+        var selectedPlan = $(this).attr('plan');
+        var numberOfUsers = event.target.value;
+        var isPricingInUSD = true;
+        $(".noOfUsers").text(numberOfUsers);
+        $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
+        
+      });
+      $(".numberOfUserss").each(function(){
+          var numberOfUsers = event.target.value;
+          $(this).text(numberOfUsers);
+      });
+
+  });
+  applyFill(slider.querySelector('input'));  
+});
+
+function applyFill(slider) {
+  const percentage = 100*(slider.value-slider.min)/(slider.max-slider.min);
+  const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
+  slider.style.background = bg;
+}
+});
+
