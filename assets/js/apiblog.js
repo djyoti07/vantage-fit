@@ -1,4 +1,28 @@
-jQuery(document).ready(function(e){new GhostContentAPI({host:" https://vantagefitblog.ghost.io",key:"ad75a783c6fd3a1665f4d6c225",version:"v2"}).posts.browse({limit:3,include:"tags,authors"}).then(a=>{a.forEach(a=>{e("#search_field").append('<div class="col-md-4 col-lg-4 col-sx-12 col-sm-4 d-left"><div class="box-shadow"><div class="overflow"><a href="'+a.url+'" target="_blank"><img class="img-responsive ease" src="'+a.feature_image+'" alt="blog"/></a></div><a href="'+a.url+'" target="_blank"><div class="post_titel">'+a.title+'</div></a><a href="'+a.url+'" target="_blank"><div class="blog_excerpt">'+a.excerpt+"</div></a></div></div>")})}).catch(e=>{console.error(e)})});
+
+  var config = {
+      'share-selected-text': true,
+      'load-more': true,
+      'infinite-scroll': false,
+      'infinite-scroll-step': 1,
+      'disqus-shortname': 'vantage-circle',
+      'content-api-host': ' https://vantagefitblog.ghost.io',
+      'content-api-key': 'ad75a783c6fd3a1665f4d6c225',
+  };
+  var ghostAPI = new GhostContentAPI({
+      host: config['content-api-host'],
+      key: config['content-api-key'],
+      version: 'v2'
+  });
+  ghostAPI.posts
+  .browse({limit: 3, include: 'tags,authors'})
+  .then((posts) => {
+      posts.forEach((post) => {
+        $('#search_field').append('<div class="col-md-4 col-lg-4 col-sx-12 col-sm-4 d-left"><div class="box-shadow"><div class="overflow"><a href="'+post.url+'" target="_blank"><img class="img-responsive ease" src="'+post.feature_image+'"/></a></div><a href="'+post.url+'" target="_blank"><div class="post_titel">'+post.title+'</div></a><a href="'+post.url+'" target="_blank"><div class="blog_excerpt">'+post.excerpt+'</div></a></div></div>');
+      });
+  })
+  .catch((err) => {
+      console.error(err);
+  });
 
 $(function(e){e(".popupyoutubevideo,.popupvideosection").magnificPopup({type:"iframe",mainClass:"mfp-fade",removalDelay:160,preloader:!1,fixedContentPos:!1}),e(document).ready(function(){e(window).scroll(function(){const o=localStorage.getItem("showMsg");e(window).scrollTop()>550?"false"!==o&&(e(".new_footer_area").addClass("popupspc"),e(".overlayPop").addClass("slideUp").removeClass("slideDown")):e(".overlayPop").removeClass("slideUp").addClass("slideDown").hide("1000"),e(".close-fd").click(function(){e(".new_footer_area").removeClass("popupspc"),e(".overlayPop").addClass("slideDown").removeClass("slideUp"),localStorage.setItem("showMsg","false")}),"false"==o&&(e(".new_footer_area").removeClass("popupspc"),e(".overlayPop").addClass("slideDown").removeClass("slideUp"))})})});
 (function($) {
