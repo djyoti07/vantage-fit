@@ -55,11 +55,14 @@ Array.prototype.forEach.call(sliders,(slider)=>{
 
 $("#selectedNumberOfWeeks").change(function(plan,  usd, numberOfUsers) {
     var selectedNumberOfWeeks = $(this). find("option:selected"). val();
-    var numberOfUsers = $(".numberOfUserss").attr("users");
+    var numberOfUsers = $(".usersbox .numberOfUserss").text();
     var selectedPlan = 1 ;
     var isPricingInUSD = true;
-    //getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers );
-    //$(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
+    var value = getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers);
+    console.log(selectedNumberOfWeeks);
+    console.log(value);
+    console.log(value/selectedNumberOfWeeks);
+    $(".onetimeBox .output").text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ) );
         
 });
 function getTotalPriceText(plan, usd, numberOfUsers ) {
@@ -97,10 +100,6 @@ function getPricePerUser(plan, usd) {
     return 0
   }
   
-}
-function getWeeklyOrMonthlyFactor(plan) {
-  var selectedNumberOfWeeks = $("#selectedNumberOfWeeks option:selected").val();
-  if (plan == 1) { return selectedNumberOfWeeks } else { return 4 }
 }
 
 /*
