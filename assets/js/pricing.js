@@ -6,21 +6,23 @@ var isPricingInUSD = true;
 /*no of users function*/
 $(".numberOfUserss").each(function(){
     $(this).text(numberOfUsers);
+    $(".numberOfUserss").attr("users", numberOfUsers);
 });
 /*Price in boxes*/
 
 $('.output').each(function(){ 
   var selectedPlan = $(this).attr('plan');
-   $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
+  $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
 });
 
 
 /*Price per employee*/
 $('.pricePer').each(function(){
   var selectedPlan = $(this).attr('plan');
-  if(isPricingInUSD){ var currency = "$";} else{ var currency = "₹";}
-  $(this).find(".amountperperson").text(currency + getPricePerUser(selectedPlan, isPricingInUSD)); 
-  });
+  var isPricingInUSD = true;
+  $(this).find(".amountperperson").text(getPlanRate(selectedPlan, isPricingInUSD)); 
+  $(".chooseplan").text(getPlanName(selectedPlan));
+});
 
 
 /*slider*/
@@ -29,24 +31,37 @@ const settings={
   background: '#f5f8fa'
 }
 const sliders = document.querySelectorAll('.range-slider');
-Array.prototype.forEach.call(sliders,(slider)=>{
+  Array.prototype.forEach.call(sliders,(slider)=>{
   slider.querySelector('input').addEventListener('input', (event)=>{
     //slider.querySelector('span').innerHTML = event.target.value;
-      
-      console.log(event.target.value);
+     
+      //console.log(event.target.value);
       applyFill(slider.querySelector('input'));
+      var numberOfUsers = event.target.value;
       $('.output').each(function(){ 
         var selectedPlan = $(this).attr('plan');
         var numberOfUsers = event.target.value;
         var isPricingInUSD = true;
         $(".noOfUsers").text(numberOfUsers);
-        $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
-        
+        $(".numberOfUserss").attr("users", numberOfUsers);
+        if(numberOfUsers < 1000){
+          $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+        }
+        else{
+           $(this).html(getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+        }
+              
       });
       $(".numberOfUserss").each(function(){
           var numberOfUsers = event.target.value;
           $(this).text(numberOfUsers);
       });
+      if(numberOfUsers == 1000){
+        $(".userLimit").show();
+      }
+      else {
+        $(".userLimit").hide();
+      }
 
   });
   applyFill(slider.querySelector('input'));  
@@ -55,51 +70,45 @@ Array.prototype.forEach.call(sliders,(slider)=>{
 
 $("#selectedNumberOfWeeks").change(function(plan,  usd, numberOfUsers) {
     var selectedNumberOfWeeks = $(this). find("option:selected"). val();
-    var numberOfUsers = $(".usersbox .numberOfUserss").text();
+    var numberOfUsers = $(".numberOfUserss").attr("users");
     var selectedPlan = 1 ;
     var isPricingInUSD = true;
-    var value = getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers);
-    console.log(selectedNumberOfWeeks);
-    console.log(value);
-    console.log(value/selectedNumberOfWeeks);
-    $(".onetimeBox .output").text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ) );
-        
-});
-function getTotalPriceText(plan, usd, numberOfUsers ) {
-  const cost = getCost(plan, usd, numberOfUsers)
-  if (cost !== null) {
-    if (cost > 0) {
-      if (usd) {
-        return `$${cost}`
-      } else {
-        return `₹${cost}`
-      }
-    } else {
-      return "FREE"
+    getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers );
+    if(numberOfUsers < 1000){
+      $(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
     }
+    else{
+      $(".onetimeBox .output").html(getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+    }
+            
+});
+function getTotalPrice(plan,  usd, numberOfUsers) {
+  const cost = getCost(plan, usd, numberOfUsers)
+  if (numberOfUsers < 1000 && cost != null) {
+      return `${cost}`
   } else {
     return "Contact us"
   }
 }
+
 function getCost(plan, usd, numberOfUsers) {
-  if (numberOfUsers >= 1000) {
-    return null
-  } else {
-    return getPricePerUser(plan, usd) * numberOfUsers
-  }
+  return getPricePerUserPerWeek(plan, usd) * numberOfUsers * getWeeklyOrMonthlyFactor(plan)
 }
 /* get price of plan*/
-function getPricePerUser(plan, usd) {
+function getPricePerUserPerWeek(plan, usd) {
   if (plan == 1) {
-    if (usd) { return 3 } else { return 30  }
+    if (usd) { return 1 } else { return 10  }
   } else if (plan == 2) {
-    if (usd) { return 3 } else { return 30 }
+    if (usd) { return 1 } else { return 10 }
   } else if (plan == 3) {
-    if (usd) { return 4 } else { return 40 }
+    if (usd) { return 1.25 } else { return 15 }
   } else {
     return 0
   }
-  
+}
+function getWeeklyOrMonthlyFactor(plan) {
+  var selectedNumberOfWeeks = $("#selectedNumberOfWeeks option:selected").val();
+  if (plan == 1) { return selectedNumberOfWeeks } else { return 4 }
 }
 
 /*
