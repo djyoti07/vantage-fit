@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-lozad().observe();
 $('.tabValues li').on('click', function(){
     var currentItem = '.'+ $(this).attr('attr');
     $('.tabValues').find(".active").removeClass('active');
