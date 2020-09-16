@@ -1,71 +1,32 @@
 jQuery(document).ready(function($){
-$('.tabValues li').on('click', function(){
-    var currentItem = '.'+ $(this).attr('attr');
-    $('.tabValues').find(".active").removeClass('active');
-    $(this).addClass('active');
-    $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
-    $(currentItem).removeClass("hideItem").addClass("showItem");
-});
+
+var numberOfUsers = '';
 var numberOfUsers = $(".range-slider__range").val();
 var isPricingInUSD = true;
+/*no of users function*/
 $(".numberOfUserss").each(function(){
     $(this).text(numberOfUsers);
 });
-const settings={
-  fill: '#f8654a',
-  background: '#f5f8fa'
-}
+/*Price in boxes*/
+
 $('.output').each(function(){ 
   var selectedPlan = $(this).attr('plan');
    $(this).text(getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
 });
+
+
+/*Price per employee*/
 $('.pricePer').each(function(){
   var selectedPlan = $(this).attr('plan');
   if(isPricingInUSD){ var currency = "$";} else{ var currency = "₹";}
   $(this).find(".amountperperson").text(currency + getPricePerUser(selectedPlan, isPricingInUSD)); 
   });
-/*
-0 = Free
-1 = One time challenge
-2 = Premium
-3 = Enterprise
- */
-function getPricePerUser(plan, usd) {
-  if (plan == 1) {
-    if (usd) { return 3 } else { return 30  }
-  } else if (plan == 2) {
-    if (usd) { return 3 } else { return 30 }
-  } else if (plan == 3) {
-    if (usd) { return 4 } else { return 40 }
-  } else {
-    return 0
-  }
-  
-}
 
-function getTotalPriceText(plan, usd, numberOfUsers ) {
-  const cost = getCost(plan, usd, numberOfUsers)
-  if (cost !== null) {
-    if (cost > 0) {
-      if (usd) {
-        return `$${cost}`
-      } else {
-        return `₹${cost}`
-      }
-    } else {
-      return "FREE"
-    }
-  } else {
-    return "Contact us"
-  }
-}
 
-function getCost(plan, usd, numberOfUsers) {
-  if (numberOfUsers >= 1000) {
-    return null
-  } else {
-    return getPricePerUser(plan, usd) * numberOfUsers
-  }
+/*slider*/
+const settings={
+  fill: '#f8654a',
+  background: '#f5f8fa'
 }
 const sliders = document.querySelectorAll('.range-slider');
 Array.prototype.forEach.call(sliders,(slider)=>{
@@ -91,10 +52,156 @@ Array.prototype.forEach.call(sliders,(slider)=>{
   applyFill(slider.querySelector('input'));  
 });
 
+
+$("#selectedNumberOfWeeks").change(function(plan,  usd, numberOfUsers) {
+    var selectedNumberOfWeeks = $(this). find("option:selected"). val();
+    var numberOfUsers = $(".numberOfUserss").attr("users");
+    var selectedPlan = 1 ;
+    var isPricingInUSD = true;
+    //getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers );
+    //$(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPriceText(selectedPlan, isPricingInUSD, numberOfUsers ));
+        
+});
+function getTotalPriceText(plan, usd, numberOfUsers ) {
+  const cost = getCost(plan, usd, numberOfUsers)
+  if (cost !== null) {
+    if (cost > 0) {
+      if (usd) {
+        return `$${cost}`
+      } else {
+        return `₹${cost}`
+      }
+    } else {
+      return "FREE"
+    }
+  } else {
+    return "Contact us"
+  }
+}
+function getCost(plan, usd, numberOfUsers) {
+  if (numberOfUsers >= 1000) {
+    return null
+  } else {
+    return getPricePerUser(plan, usd) * numberOfUsers
+  }
+}
+/* get price of plan*/
+function getPricePerUser(plan, usd) {
+  if (plan == 1) {
+    if (usd) { return 3 } else { return 30  }
+  } else if (plan == 2) {
+    if (usd) { return 3 } else { return 30 }
+  } else if (plan == 3) {
+    if (usd) { return 4 } else { return 40 }
+  } else {
+    return 0
+  }
+  
+}
+function getWeeklyOrMonthlyFactor(plan) {
+  var selectedNumberOfWeeks = $("#selectedNumberOfWeeks option:selected").val();
+  if (plan == 1) { return selectedNumberOfWeeks } else { return 4 }
+}
+
+/*
+0 = Free
+1 = One time challenge
+2 = Premium
+3 = Enterprise
+ */
+
+
+
+/*Per employee Price*/
+function getPlanRate(plan, isPricingInUSD) {
+  switch (plan) {
+  case '0':
+    return "100 users"
+  default:
+    // for one time challenge rates are per week, for others rate are monthly, to calculate monthly we consider the cost of 4 weeks
+    var rateMultiplier = 1
+    if (plan != 1) {
+      rateMultiplier = 4
+    }
+    const rate = `${getCurrencySymbol(isPricingInUSD)}` + `${getPricePerUserPerWeek(plan, isPricingInUSD)*rateMultiplier} per employee`
+    if (plan == 1) { return rate + "/week" } else { return rate }
+  }
+}
+
+
+
+function getCurrencySymbol(usd) {
+  if (usd) { return "$" } else { return "₹" }
+}
+function getPlanName(plan) {
+  switch (plan) {
+  case 0:
+    return "FREE"
+  case 1:
+    return "One Time Challenge"
+  case 2:
+    return "Premium"
+  case 3:
+    return "Enterprise"
+  }
+}
+/*color of slider */
 function applyFill(slider) {
   const percentage = 100*(slider.value-slider.min)/(slider.max-slider.min);
   const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
   slider.style.background = bg;
 }
+
+/*Mobile View */
+$("#subscriptionPlan .indItems.tabsViewMobile div").click(function(){
+ 
+  var className = $(this).attr('attr');
+  $("#subscriptionPlan .tableSubscription td").hide();
+$("#subscriptionPlan .indItems div, #subscriptionPlan .tableSubscription div").removeClass("active");
+   $("#subscriptionPlan .tableSubscription td:first-child").show();
+  console.log($("#subscriptionPlan .tableSubscription" + " ."+className+"Plan").show());
+  $("#subscriptionPlan .tableSubscription" + " ."+className+"Plan").show();
+
+  
+  $(this).addClass("active");
+  $(".mobileView").find(".active").removeClass("active");
+  $(".mobileView" + "."+className+"Plan").addClass("active");
+
 });
 
+/*tabs*/
+$('.tabValues li').on('click', function(){
+  var currentItem = '.'+ $(this).attr('attr');
+  $('.tabValues').find(".active").removeClass('active');
+  $(this).addClass('active');
+  $(".pricingpage").find(".showItem").removeClass("showItem").addClass("hideItem");
+  $(currentItem).removeClass("hideItem").addClass("showItem");
+});
+/*
+0 = Free
+1 = One time challenge
+2 = Premium
+3 = Enterprise
+
+
+/*calculation 
+
+1,200 = 200 * 4 = 400 (for plan 1, 200 User 2 weeks)
+1,200 = 200 * 4 = 800 (for plan 1, 200 User 4 weeks)
+1,200 = 200 * 4 = 1600 (for plan 1, 200 User 8 weeks)
+1,200 = 200 * 4 = 2400 (for plan 1, 200 User 16 weeks)
+2,200 = 1 * 200 = 200 * 4 = 800(for plan 2, 200 User)
+3,200 = 1.25 *200=250 *4 = 1000(plan 3 200 users)
+
+
+1,300 = 300 * 2 = 600 (plan 1 , 300 users, 2 weeks)
+1,300 = 300 * 8 = 2400 (plan 1 , 300 users. 4 weks)
+2,300 =1 * 300 = 300 * 4= 1200 (plan 2 , 300 users)
+3,300 = 1.25 *300 =375*4=1500 ((plan 3 , 300 users))
+
+
+
+
+ */
+
+});
