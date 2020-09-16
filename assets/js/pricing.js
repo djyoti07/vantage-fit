@@ -44,8 +44,13 @@ const sliders = document.querySelectorAll('.range-slider');
         var isPricingInUSD = true;
         $(".noOfUsers").text(numberOfUsers);
         $(".numberOfUserss").attr("users", numberOfUsers);
-        $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
-        
+        if(numberOfUsers < 1000){
+          $(this).html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+        }
+        else{
+           $(this).html(getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+        }
+              
       });
       $(".numberOfUserss").each(function(){
           var numberOfUsers = event.target.value;
@@ -69,12 +74,17 @@ $("#selectedNumberOfWeeks").change(function(plan,  usd, numberOfUsers) {
     var selectedPlan = 1 ;
     var isPricingInUSD = true;
     getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers );
-    $(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
-        
+    if(numberOfUsers < 1000){
+      $(".onetimeBox .output").html("<span>" + `${getCurrencySymbol(isPricingInUSD)}` + "</span>" + getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+    }
+    else{
+      $(".onetimeBox .output").html(getTotalPrice(selectedPlan, isPricingInUSD, numberOfUsers ));
+    }
+            
 });
 function getTotalPrice(plan,  usd, numberOfUsers) {
   const cost = getCost(plan, usd, numberOfUsers)
-  if (cost != null) {
+  if (numberOfUsers < 1000 && cost != null) {
       return `${cost}`
   } else {
     return "Contact us"
