@@ -735,7 +735,8 @@
 		line-height:1.4;
 		margin-bottom:10px;
 	}
-	.popupbottom.horizontalpopup .appdownloadbanner .text-right{
+	.popupbottom.horizontalpopup .appdownloadbanner .text-right,
+	.popupbottom.horizontalpopup .appdownloadbanner .text-left{
 		text-align:center!important;
 	}	
 	.iconslandingpage ul li{
@@ -896,6 +897,11 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+	.popupbottom.horizontalpopup .appdownloadbanner .text-right, 
+	.popupbottom.horizontalpopup .appdownloadbanner .text-left{
+		text-align:center!important;
+		margin-top:10px!important;
+	}
 	.hidden-sml {
 		display: none;
 	}
@@ -939,7 +945,12 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
-.popupbottom .app_downloadbanner img{
+	.popupbottom.horizontalpopup .appdownloadbanner .text-right, 
+	.popupbottom.horizontalpopup .appdownloadbanner .text-left{
+		text-align:center!important;
+		margin-top:10px!important;
+	}
+	.popupbottom .app_downloadbanner img{
 		width:auto;
 	}
 	.popupbottom .text-right{
@@ -970,7 +981,7 @@
 		border-right:none;
 	}
 	.new_footer_area.popupspc{
-		margin-bottom:70px;
+		margin-bottom:59px;
 	}
 	.breadcrumb_area_two{
 		 padding: 165px 0 100px;
